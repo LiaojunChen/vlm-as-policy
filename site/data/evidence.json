@@ -1,0 +1,402 @@
+[
+  {
+    "file": "full50_completion_review_restored_protocol_standard_20260922/robodawn/adjust_bottle/result.json",
+    "sha256": "d26418b62554d4926fc913f04173e54acb683c1a2dd3dac7278e38aeed0fca0c"
+  },
+  {
+    "file": "full50_completion_review_restored_protocol_standard_20260922/robodawn/adjust_bottle/trace.jsonl",
+    "sha256": "3d6042effa990916a540774867d468120a186724b0342e0647108383d71e4af5"
+  },
+  {
+    "file": "full50_completion_review_restored_protocol_standard_20260922/robodawn/beat_block_hammer/result.json",
+    "sha256": "284fe056adc4c653165416384733cb2acb02982ac131f4ad04f0556c23f681c8"
+  },
+  {
+    "file": "full50_completion_review_restored_protocol_standard_20260922/robodawn/beat_block_hammer/trace.jsonl",
+    "sha256": "22746a2c28a56dda3fb70cd90b352f3f1b2ad9a8c325583b25fdc577fcd01797"
+  },
+  {
+    "file": "full50_completion_review_restored_protocol_standard_20260922/robodawn/blocks_ranking_rgb/result.json",
+    "sha256": "af97e83e1661a5e69e67b5847f4e2893eb8ac9ef72f61706ff85da8f34bd1807"
+  },
+  {
+    "file": "full50_completion_review_restored_protocol_standard_20260922/robodawn/blocks_ranking_rgb/trace.jsonl",
+    "sha256": "9afdf7af538af6fee02979c918fc9fbbf35b344c8698b1a1d33e1ebd31989e73"
+  },
+  {
+    "file": "full50_completion_review_restored_protocol_standard_20260922/robodawn/blocks_ranking_size/result.json",
+    "sha256": "28384fb91be5395f888618b184d3c0182c7d25ef7188135211b3d762855b4195"
+  },
+  {
+    "file": "full50_completion_review_restored_protocol_standard_20260922/robodawn/blocks_ranking_size/trace.jsonl",
+    "sha256": "229142287c5cd6b80b409f38f6671a733b721f881005b7e34700558b285b823d"
+  },
+  {
+    "file": "full50_completion_review_restored_protocol_standard_20260922/robodawn/click_alarmclock/result.json",
+    "sha256": "bdf7bf23e6b4954e1776168fe80b0a0bbae9f62bd2bdb899d5fce45bea54fa69"
+  },
+  {
+    "file": "full50_completion_review_restored_protocol_standard_20260922/robodawn/click_alarmclock/trace.jsonl",
+    "sha256": "e0cf5d334f1f9dddbfe184cc03e71d90167934165a33ac5a856d187d21bbd548"
+  },
+  {
+    "file": "full50_completion_review_restored_protocol_standard_20260922/robodawn/click_bell/result.json",
+    "sha256": "ab958cc5804da661178ff64a6e2d58cdad01968b642d8faabcde397c52247bf7"
+  },
+  {
+    "file": "full50_completion_review_restored_protocol_standard_20260922/robodawn/click_bell/trace.jsonl",
+    "sha256": "7e34108a92a248a3232e43d3f8e9f14d3c0037437aab9bc5d2bc078c2c25e21b"
+  },
+  {
+    "file": "full50_completion_review_restored_protocol_standard_20260922/robodawn/dump_bin_bigbin/result.json",
+    "sha256": "4ffc5d8c65a3293354071227d4ea1bc4d51db5613c5943a3b65f876f069eee41"
+  },
+  {
+    "file": "full50_completion_review_restored_protocol_standard_20260922/robodawn/dump_bin_bigbin/trace.jsonl",
+    "sha256": "7ac7bdb231482f2715792dc8876ccbd82dd7df9a8d0db90682b4993dae789f74"
+  },
+  {
+    "file": "full50_completion_review_restored_protocol_standard_20260922/robodawn/grab_roller/result.json",
+    "sha256": "a38bb24840696996250ad9261947dc660154e6016d7f468d0f793b51b49252f9"
+  },
+  {
+    "file": "full50_completion_review_restored_protocol_standard_20260922/robodawn/grab_roller/trace.jsonl",
+    "sha256": "4ad2f2f4413269a764017a11e2848774c4dccafb86cb3eb9bda76f003de3c804"
+  },
+  {
+    "file": "full50_completion_review_restored_protocol_standard_20260922/robodawn/handover_block/result.json",
+    "sha256": "53ebc6e4568957873696ffa39b4b5b392ac20ded8f84e93b3765059926caa63c"
+  },
+  {
+    "file": "full50_completion_review_restored_protocol_standard_20260922/robodawn/handover_block/trace.jsonl",
+    "sha256": "31e49c840d7e840035f5191bb929ed1fd3b0c07b086e5d3ad28ae0b2d2feeb60"
+  },
+  {
+    "file": "full50_completion_review_restored_protocol_standard_20260922/robodawn/handover_mic/result.json",
+    "sha256": "60ba494a4c3ab09b2fed689d5626626be873d34cd5b22b4aeec35f2bab58f375"
+  },
+  {
+    "file": "full50_completion_review_restored_protocol_standard_20260922/robodawn/handover_mic/trace.jsonl",
+    "sha256": "4b175c731db8487f3d555938a7f3d192d8291b9dad084ed39834f718e5512382"
+  },
+  {
+    "file": "full50_completion_review_restored_protocol_standard_20260922/robodawn/hanging_mug/result.json",
+    "sha256": "06366ae8da4331497a998682b22b2313624c3a6c79e89eab07f0c299896ed644"
+  },
+  {
+    "file": "full50_completion_review_restored_protocol_standard_20260922/robodawn/hanging_mug/trace.jsonl",
+    "sha256": "59f36f2ee677d991337773e14eeaf261cde9622b7fd5ebb519614b1dd7a7b110"
+  },
+  {
+    "file": "full50_completion_review_restored_protocol_standard_20260922/robodawn/lift_pot/result.json",
+    "sha256": "5c65a067e09326798d7eec94e4927a022d5012fbe05b908f39d3e139dfce6aa1"
+  },
+  {
+    "file": "full50_completion_review_restored_protocol_standard_20260922/robodawn/lift_pot/trace.jsonl",
+    "sha256": "673ebec52260b2fc54b439313569045f646dd0ed494e267f8a352257725353e1"
+  },
+  {
+    "file": "full50_completion_review_restored_protocol_standard_20260922/robodawn/move_can_pot/result.json",
+    "sha256": "e288ea8444967657906061d50f3784f6ce5b396706396e9999b675dfce80fb4e"
+  },
+  {
+    "file": "full50_completion_review_restored_protocol_standard_20260922/robodawn/move_can_pot/trace.jsonl",
+    "sha256": "83c2c654623592a0027ab5e1102acd0aff8a2fdec46b62b5839e6b1cffaed8eb"
+  },
+  {
+    "file": "full50_completion_review_restored_protocol_standard_20260922/robodawn/move_pillbottle_pad/result.json",
+    "sha256": "8c1e951df63336b85accbb563f38d017adaac4d9a80df54e181fd5089b303fae"
+  },
+  {
+    "file": "full50_completion_review_restored_protocol_standard_20260922/robodawn/move_pillbottle_pad/trace.jsonl",
+    "sha256": "a8515a6a23c717d13c211b93ed5b65314f296649a9526728f9193b9d2555b2ad"
+  },
+  {
+    "file": "full50_completion_review_restored_protocol_standard_20260922/robodawn/move_playingcard_away/result.json",
+    "sha256": "261d0c10a5a41067e8bb748be54eaa7bf50fda3bdef6188cc8bc85c8f398a488"
+  },
+  {
+    "file": "full50_completion_review_restored_protocol_standard_20260922/robodawn/move_playingcard_away/trace.jsonl",
+    "sha256": "f9448bb9523a5164baf785e208e7f293d6fe133e630c84a46b49dba31aefccff"
+  },
+  {
+    "file": "full50_completion_review_restored_protocol_standard_20260922/robodawn/move_stapler_pad/result.json",
+    "sha256": "b41cb86d07c386e507be464a28f135a511f0e0600f0290dac9c35b4a37d372dd"
+  },
+  {
+    "file": "full50_completion_review_restored_protocol_standard_20260922/robodawn/move_stapler_pad/trace.jsonl",
+    "sha256": "2a066c8dc5a1a11f06f4eb59d79d55fa83ed4ae05967cb846d42c3368128c660"
+  },
+  {
+    "file": "full50_completion_review_restored_protocol_standard_20260922/robodawn/open_laptop/result.json",
+    "sha256": "52fce08323349b5c48b5358df12f1128171baf8a4b549f8f66beef203943a4f7"
+  },
+  {
+    "file": "full50_completion_review_restored_protocol_standard_20260922/robodawn/open_laptop/trace.jsonl",
+    "sha256": "e1efb1c047d351fd7121d30a46556a90343b77e483549ecdd515329d75b2563a"
+  },
+  {
+    "file": "full50_completion_review_restored_protocol_standard_20260922/robodawn/open_microwave/result.json",
+    "sha256": "b4e34cc37376c095175cdf3da9dc29bd9f9aa19797460769decfbc6a2c211ff6"
+  },
+  {
+    "file": "full50_completion_review_restored_protocol_standard_20260922/robodawn/open_microwave/trace.jsonl",
+    "sha256": "175c9f3d960c399ec1041771a6b5981f5511957127229eae8064bcf03d3040b2"
+  },
+  {
+    "file": "full50_completion_review_restored_protocol_standard_20260922/robodawn/pick_diverse_bottles/result.json",
+    "sha256": "40a5f26d1d6b2059f29cb0d5fe15aa76a92a125c49ab74718cce220bd41ee124"
+  },
+  {
+    "file": "full50_completion_review_restored_protocol_standard_20260922/robodawn/pick_diverse_bottles/trace.jsonl",
+    "sha256": "6c1239f444b5fcf149e05e053a63fef314681f4a021895222e116f5b5a14cda7"
+  },
+  {
+    "file": "full50_completion_review_restored_protocol_standard_20260922/robodawn/pick_dual_bottles/result.json",
+    "sha256": "e58942d21faa542a0f247fd937fa0927fde4df64f3a39dbcc8d118340ddb720f"
+  },
+  {
+    "file": "full50_completion_review_restored_protocol_standard_20260922/robodawn/pick_dual_bottles/trace.jsonl",
+    "sha256": "3e17e602a9d9dfc64b637051ded52b42de255b0e3daa92383057b515c549cd53"
+  },
+  {
+    "file": "full50_completion_review_restored_protocol_standard_20260922/robodawn/place_a2b_left/result.json",
+    "sha256": "fdad149ab1b199bb35100efe7e86f4b669da1801ed441dab5377619d1cd131ee"
+  },
+  {
+    "file": "full50_completion_review_restored_protocol_standard_20260922/robodawn/place_a2b_left/trace.jsonl",
+    "sha256": "f70d2a8e94789d251815a2719085dcde4668872f84147076a8fb0e10d5346f77"
+  },
+  {
+    "file": "full50_completion_review_restored_protocol_standard_20260922/robodawn/place_a2b_right/result.json",
+    "sha256": "00d1c366b3871feb13ed231a4a91b3515bc2f3d09133c25bf3586062903ca89d"
+  },
+  {
+    "file": "full50_completion_review_restored_protocol_standard_20260922/robodawn/place_a2b_right/trace.jsonl",
+    "sha256": "894d49728b61a8438c1c48e4e483fbc79bde1293719e4a58ad4fd60f3be8c0bb"
+  },
+  {
+    "file": "full50_completion_review_restored_protocol_standard_20260922/robodawn/place_bread_basket/result.json",
+    "sha256": "972ec5a81d6e4a3ca9e3ff9b8fadadaf5039e3242b0b18a06089aacdab6d6e98"
+  },
+  {
+    "file": "full50_completion_review_restored_protocol_standard_20260922/robodawn/place_bread_basket/trace.jsonl",
+    "sha256": "963d46d33d3777c8e1f4d38f84c3fe659f7da9985fc06e7be2b8f5335ef1f62f"
+  },
+  {
+    "file": "full50_completion_review_restored_protocol_standard_20260922/robodawn/place_bread_skillet/result.json",
+    "sha256": "3a0ceae97dc0786c7f88d02433f7d130e607da5008d4c0527822a0f17c987e4b"
+  },
+  {
+    "file": "full50_completion_review_restored_protocol_standard_20260922/robodawn/place_bread_skillet/trace.jsonl",
+    "sha256": "c4f5e6bfc79c0e0a1427881886e2c37e760c709365df0b7aec665ade4f72fa35"
+  },
+  {
+    "file": "full50_completion_review_restored_protocol_standard_20260922/robodawn/place_burger_fries/result.json",
+    "sha256": "a00e3633c85162e90dfddab48ddee877e52818746ad18edcd5470f9e4973356b"
+  },
+  {
+    "file": "full50_completion_review_restored_protocol_standard_20260922/robodawn/place_burger_fries/trace.jsonl",
+    "sha256": "59a51e2d00a9064e4737b1dcdfbdacd2e509c1e1d5860bfa3f7fd830bbb4d04d"
+  },
+  {
+    "file": "full50_completion_review_restored_protocol_standard_20260922/robodawn/place_can_basket/result.json",
+    "sha256": "9ded980c8de48f0facf167f871e4da44bbb67feb7f4ce1d19d340a1b233e6985"
+  },
+  {
+    "file": "full50_completion_review_restored_protocol_standard_20260922/robodawn/place_can_basket/trace.jsonl",
+    "sha256": "e09e64d904c22d0527b3b8518da00d18c65b0dfe592f966c4fdb17e61b3e0b97"
+  },
+  {
+    "file": "full50_completion_review_restored_protocol_standard_20260922/robodawn/place_cans_plasticbox/result.json",
+    "sha256": "8a1bf51739ccfd3df21ad821f8258409688a7d770b2c243365b618d3eedadf6b"
+  },
+  {
+    "file": "full50_completion_review_restored_protocol_standard_20260922/robodawn/place_cans_plasticbox/trace.jsonl",
+    "sha256": "80008ece3558b7435d5630bccece2962f43b1f71a9ca87523016247b78578946"
+  },
+  {
+    "file": "full50_completion_review_restored_protocol_standard_20260922/robodawn/place_container_plate/result.json",
+    "sha256": "9ede4ff399402fd9844b2b832590bbb26f9ccc23bed57a831260b537c352a583"
+  },
+  {
+    "file": "full50_completion_review_restored_protocol_standard_20260922/robodawn/place_container_plate/trace.jsonl",
+    "sha256": "7e935b8b1c82b37e45fc75dc66dd903fd61b96121e943e8c024ee25908ee4db0"
+  },
+  {
+    "file": "full50_completion_review_restored_protocol_standard_20260922/robodawn/place_dual_shoes/result.json",
+    "sha256": "502ebc4c39cc40194e48274b9f16bf81319ea785fdc84ce271980048cba0f325"
+  },
+  {
+    "file": "full50_completion_review_restored_protocol_standard_20260922/robodawn/place_dual_shoes/trace.jsonl",
+    "sha256": "c5aa1c90a040a533adc7c31138e5d2b0532e7b09dcdcd92b83fa38069e4ea9f2"
+  },
+  {
+    "file": "full50_completion_review_restored_protocol_standard_20260922/robodawn/place_empty_cup/result.json",
+    "sha256": "7a75a9b42b6cfff0293d1f583ce98b0d28972a8f13eed8ef0fbf183f3cc7444e"
+  },
+  {
+    "file": "full50_completion_review_restored_protocol_standard_20260922/robodawn/place_empty_cup/trace.jsonl",
+    "sha256": "11498a16dc46ebc9f7f455326c83344b47361ba1ca24d11121652e518339a1eb"
+  },
+  {
+    "file": "full50_completion_review_restored_protocol_standard_20260922/robodawn/place_fan/result.json",
+    "sha256": "ab37f85049c65c29e360bfc174629ee54ccdc4057233c7a32f11db768de9e54c"
+  },
+  {
+    "file": "full50_completion_review_restored_protocol_standard_20260922/robodawn/place_fan/trace.jsonl",
+    "sha256": "f5f9dfd6772eb2f790db216ed6980a4426faaee2f33a335d05c10094610435cd"
+  },
+  {
+    "file": "full50_completion_review_restored_protocol_standard_20260922/robodawn/place_mouse_pad/result.json",
+    "sha256": "5306d72bf5a7b5d8c3a9b78bd80fc305f1c750139962a992f94e2cfad470281b"
+  },
+  {
+    "file": "full50_completion_review_restored_protocol_standard_20260922/robodawn/place_mouse_pad/trace.jsonl",
+    "sha256": "2a6a3caa7b480970e825c7b59db6d02b1cb989c73af38811d978ab9e64e30711"
+  },
+  {
+    "file": "full50_completion_review_restored_protocol_standard_20260922/robodawn/place_object_basket/result.json",
+    "sha256": "2b2d379746ded6bef469c6da4900f62ad3aae09758fb5f1868a0e519c4ea0c4c"
+  },
+  {
+    "file": "full50_completion_review_restored_protocol_standard_20260922/robodawn/place_object_basket/trace.jsonl",
+    "sha256": "471c1641876f61b58dd7a9e5668e8cac492693c1a5e550dc65fddec9d67c407d"
+  },
+  {
+    "file": "full50_completion_review_restored_protocol_standard_20260922/robodawn/place_object_scale/result.json",
+    "sha256": "03568058eabde2ade346a928247a9d971e42d4a2baf069c787bdf74514b99575"
+  },
+  {
+    "file": "full50_completion_review_restored_protocol_standard_20260922/robodawn/place_object_scale/trace.jsonl",
+    "sha256": "20213c67cb9d32b2408b208b3962629df74c00e4ff1b7ce88b1328ba0764ebdd"
+  },
+  {
+    "file": "full50_completion_review_restored_protocol_standard_20260922/robodawn/place_object_stand/result.json",
+    "sha256": "97381d3c14394fede3b2e29c22fa14b830245330bc28a8ece8c03b3b5d8dca25"
+  },
+  {
+    "file": "full50_completion_review_restored_protocol_standard_20260922/robodawn/place_object_stand/trace.jsonl",
+    "sha256": "1af123b7ccb6e8d836ccd3c4c42f3843b4885f2ca47175f35991593e320c50af"
+  },
+  {
+    "file": "full50_completion_review_restored_protocol_standard_20260922/robodawn/place_phone_stand/result.json",
+    "sha256": "c53a344a243ffdfbd327e3c78dcb591b980371bae7cbbfdd9f26c7d4c0ab2142"
+  },
+  {
+    "file": "full50_completion_review_restored_protocol_standard_20260922/robodawn/place_phone_stand/trace.jsonl",
+    "sha256": "87b08549bffdf4baeca7d51fd6ef0e7347d383417031e92f756ba63006a91d25"
+  },
+  {
+    "file": "full50_completion_review_restored_protocol_standard_20260922/robodawn/place_shoe/result.json",
+    "sha256": "ffc7474e4195316585af0245d80ee916a62efbd30dace033b156999de0591320"
+  },
+  {
+    "file": "full50_completion_review_restored_protocol_standard_20260922/robodawn/place_shoe/trace.jsonl",
+    "sha256": "c80a2ccaaeeb870b3f1037fc961ebe8b8931c228eb98dabea9c993a8be11dacd"
+  },
+  {
+    "file": "full50_completion_review_restored_protocol_standard_20260922/robodawn/press_stapler/result.json",
+    "sha256": "abaaf9d96756eaf7a3636bc24bc806288a04346e8e43b69e497362c41e14359a"
+  },
+  {
+    "file": "full50_completion_review_restored_protocol_standard_20260922/robodawn/press_stapler/trace.jsonl",
+    "sha256": "0ab77aa10471becd1187cac2e182543457d2931bd72ee3dbb3045ab87093ad29"
+  },
+  {
+    "file": "full50_completion_review_restored_protocol_standard_20260922/robodawn/put_bottles_dustbin/result.json",
+    "sha256": "1ea78ff67127c3a7cbbd89ef351f171f37fa30c08e3514d5178df1fd64b759c3"
+  },
+  {
+    "file": "full50_completion_review_restored_protocol_standard_20260922/robodawn/put_bottles_dustbin/trace.jsonl",
+    "sha256": "021b400e20d5774182697ca2b7c4f458a78bf39fefc6a93f09a7a9f97a30e85d"
+  },
+  {
+    "file": "full50_completion_review_restored_protocol_standard_20260922/robodawn/put_object_cabinet/result.json",
+    "sha256": "84dcc7509686dafd363782a9bdf7dc5f342801752754991e56228111a3beb5d5"
+  },
+  {
+    "file": "full50_completion_review_restored_protocol_standard_20260922/robodawn/put_object_cabinet/trace.jsonl",
+    "sha256": "5ccad2c4f3c325db8316237cf82699fc9ab51547cfa2de77012a037cad499d7b"
+  },
+  {
+    "file": "full50_completion_review_restored_protocol_standard_20260922/robodawn/rotate_qrcode/result.json",
+    "sha256": "d8e5dafe8639d47cd47d90b36570486729504f39ba4ebe282beb77fac90630b4"
+  },
+  {
+    "file": "full50_completion_review_restored_protocol_standard_20260922/robodawn/rotate_qrcode/trace.jsonl",
+    "sha256": "359b2a87329bb58e119e34871494c87cb15dc5e10e4ec0fb39fb8d62a510faa1"
+  },
+  {
+    "file": "full50_completion_review_restored_protocol_standard_20260922/robodawn/scan_object/result.json",
+    "sha256": "03cff56c01967e034f7e3fa4cfe2cfe7fcf7e1644e8a671fd58ffdd370352396"
+  },
+  {
+    "file": "full50_completion_review_restored_protocol_standard_20260922/robodawn/scan_object/trace.jsonl",
+    "sha256": "e21462bf8de467c38dcaac75c5b66aab490f516b6db88027ed3e98047ca19e58"
+  },
+  {
+    "file": "full50_completion_review_restored_protocol_standard_20260922/robodawn/shake_bottle/result.json",
+    "sha256": "e144f7404c2789218c9b34c3df410a14ca4c3910433b9f6848e0da74bba8c022"
+  },
+  {
+    "file": "full50_completion_review_restored_protocol_standard_20260922/robodawn/shake_bottle/trace.jsonl",
+    "sha256": "39b4aa2e09fc5cc7cc2e5a2dc42daacae52103266db4829ab11f7741dcc899b3"
+  },
+  {
+    "file": "full50_completion_review_restored_protocol_standard_20260922/robodawn/shake_bottle_horizontally/result.json",
+    "sha256": "03f1a81acd1e45aae089634e0c2256a663424a67267a2d1b5a6145d5ebe289bf"
+  },
+  {
+    "file": "full50_completion_review_restored_protocol_standard_20260922/robodawn/shake_bottle_horizontally/trace.jsonl",
+    "sha256": "86b2eff81b92ea3ad43996964ebb3d5ae4f00d436c2de170f4e16c1d4e664fa1"
+  },
+  {
+    "file": "full50_completion_review_restored_protocol_standard_20260922/robodawn/stack_blocks_three/result.json",
+    "sha256": "33fea9301210f1bf7f27489c4582eb1140b06ca6bf3101bff10caa4af64b8b57"
+  },
+  {
+    "file": "full50_completion_review_restored_protocol_standard_20260922/robodawn/stack_blocks_three/trace.jsonl",
+    "sha256": "7d00fac53daf5433c76f1f49050f34e6e1436eb8c02555733550567537bc5954"
+  },
+  {
+    "file": "full50_completion_review_restored_protocol_standard_20260922/robodawn/stack_blocks_two/result.json",
+    "sha256": "767dedebefd19b6b2be6695b1cea47c5e7fd661800442f6c4bf33ec4056c94e9"
+  },
+  {
+    "file": "full50_completion_review_restored_protocol_standard_20260922/robodawn/stack_blocks_two/trace.jsonl",
+    "sha256": "f71c61b21ca20ce7eb44a98e93e2d047bcc750133a0788f546ceeaf374409ea8"
+  },
+  {
+    "file": "full50_completion_review_restored_protocol_standard_20260922/robodawn/stack_bowls_three/result.json",
+    "sha256": "b8c273508cd5cbf15b6fa0f775b034ee5526155eb5105a6cc5f7e1dd493f67af"
+  },
+  {
+    "file": "full50_completion_review_restored_protocol_standard_20260922/robodawn/stack_bowls_three/trace.jsonl",
+    "sha256": "2129dab44c8827130b070e4cd6dfae477705a818e3645645b2cbd439b529a30c"
+  },
+  {
+    "file": "full50_completion_review_restored_protocol_standard_20260922/robodawn/stack_bowls_two/result.json",
+    "sha256": "53f8d0be1cdbd526356585a533e97803f58664a64b0d343035df315f3f696034"
+  },
+  {
+    "file": "full50_completion_review_restored_protocol_standard_20260922/robodawn/stack_bowls_two/trace.jsonl",
+    "sha256": "3a5e902705873602ffd35bbff465f2a7349f0423ae1d163cee8f9eb54cc05fe3"
+  },
+  {
+    "file": "full50_completion_review_restored_protocol_standard_20260922/robodawn/stamp_seal/result.json",
+    "sha256": "2f4a3535157ec6443e0c8878b02266d596bb0d46376b50d5babb14fb8277804f"
+  },
+  {
+    "file": "full50_completion_review_restored_protocol_standard_20260922/robodawn/stamp_seal/trace.jsonl",
+    "sha256": "2aa95d8171a192411a73fe4700064f460f00e34cf78aab22b95c875b6a96ec62"
+  },
+  {
+    "file": "full50_completion_review_restored_protocol_standard_20260922/robodawn/turn_switch/result.json",
+    "sha256": "38069a8f3c825766aa022a172dbfb0835bbc719e577cf8e66592030ff81849b0"
+  },
+  {
+    "file": "full50_completion_review_restored_protocol_standard_20260922/robodawn/turn_switch/trace.jsonl",
+    "sha256": "a25436d2d9fab6b23e5b57476673eadd5772aed15e79908d3fe2510b350e7854"
+  }
+]
