@@ -1,5 +1,7 @@
 # VLM as Policy v72 · RoboTwin results
 
+网站：[VLM as Policy](https://liaojunchen.github.io/vlm-as-policy/) · 仓库：[LiaojunChen/vlm-as-policy](https://github.com/LiaojunChen/vlm-as-policy)
+
 参考 [robodawn.top](https://robodawn.top) 的内容组织与分析方式，展示本地 v72 的真实评测结果。
 
 主批次：`full50_completion_review_restored_protocol_standard_20260922`，50 个任务，36 次成功，成功率 72%，0 运行错误。
