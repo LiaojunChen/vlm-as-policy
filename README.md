@@ -1,4 +1,4 @@
-# RoboDawn v72 · RoboTwin results
+# VLM as Policy v72 · RoboTwin results
 
 参考 [robodawn.top](https://robodawn.top) 的内容组织与分析方式，展示本地 v72 的真实评测结果。
 
