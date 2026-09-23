@@ -5,12 +5,12 @@
   <meta name="theme-color" content="#f7f7f2">
   <meta name="description" content="VLM as Policy v72：RoboTwin 50 个任务 × 10 次官方方式采样，233/500 成功（46.6%）。完整录像、逐动作证据与失败分析。">
   <title>VLM as Policy v72 · 500 次评测与失败分析</title>
-  <link rel="stylesheet" href="styles.css"><link rel="stylesheet" href="official.css"><link rel="stylesheet" href="workflow.css">
-  <script defer src="data/snapshot.js?v=official500-20260923"></script><script defer src="vendor/echarts.min.js"></script><script defer src="official.js"></script><script defer src="workflow.js"></script>
+  <link rel="stylesheet" href="styles.css"><link rel="stylesheet" href="official.css"><link rel="stylesheet" href="workflow.css"><link rel="stylesheet" href="call-replay.css">
+  <script defer src="data/snapshot.js?v=official500-20260923"></script><script defer src="vendor/echarts.min.js"></script><script defer src="official.js"></script><script defer src="workflow.js"></script><script defer src="call-replay.js"></script>
 </head>
 <body>
   <a class="skip" href="#main">跳至内容</a>
-  <header><div class="header-inner"><a class="brand" href="#top">VLM <span>as Policy</span><small> / v72</small></a><nav aria-label="主导航"><a href="#results">500 次结果</a><a href="#replay">逐轮回放</a><a href="#workflow">真实全流程</a><a href="#analysis">Bad cases</a><a href="#protocol">评测协议</a></nav><a class="source-link" href="https://github.com/LiaojunChen/vlm-as-policy">数据与代码 ↗</a></div></header>
+  <header><div class="header-inner"><a class="brand" href="#top">VLM <span>as Policy</span><small> / v72</small></a><nav aria-label="主导航"><a href="#results">500 次结果</a><a href="#replay">逐轮回放</a><a href="#calls">调用回放</a><a href="#workflow">真实全流程</a><a href="#analysis">Bad cases</a><a href="#protocol">评测协议</a></nav><a class="source-link" href="https://github.com/LiaojunChen/vlm-as-policy">数据与代码 ↗</a></div></header>
   <main id="main">
     <section class="hero" id="top"><div><p class="eyebrow">ROBOTWIN / OFFICIAL SEED SAMPLING <span>23 SEP 2026 · 已完成</span></p><h1>500 次尝试，<br>看清能力，<br><span>也看清失败。</span></h1><p class="lead">冻结的 9B VLM，通过视觉定位与技能接口闭环控制双臂机器人。50 个任务，每任务 10 个经专家筛选的 seed：完整呈现结果、录像与动作反馈。</p><div class="hero-actions"><a class="button primary" href="#results">探索全部结果 ↗</a><a class="button" href="#analysis">查看失败分析 ↓</a></div><p class="micro">ZDTaichu5.0-9B · demo_clean · 30 次策略决策上限</p></div><figure class="hero-image"><img id="hero-image" alt="本轮三层积木任务成功 episode 的相机观测"><figcaption><span><i class="dot"></i> 本轮真实评测观测</span><a id="hero-link" href="#replay">stack_blocks_three · 查看录像 ↗</a></figcaption></figure></section>
     <div class="metrics" id="metrics" aria-label="最终结果"></div>
@@ -28,7 +28,13 @@
       <p class="micro">视频按原始记录帧率播放；episode 墙钟耗时还包含模型等待与规划，二者不相等。动作无逐步视频时间戳，因此相机观测与视频独立浏览，不做推测性同步。相机图像为无损 WebP。超时未保存最终观测时，明确标为“最后保存的动作前观测”。</p>
     </section>
 
-    <section id="workflow" aria-label="成功与失败的真实操作全流程"><div class="section-heading"><div><p class="eyebrow">INSIDE THE LOOP / TWO COMPLETE EPISODES</p><h2>从传感器输入，到任务的结局。</h2></div><p>一个成功样本，一个失败样本。逐步检查真正送入模型的 prompt 与图片、模型输出、harness 动作、运动子步骤及环境反馈。</p></div><div id="workflow-app"><p class="micro">滚动到此处加载完整流程证据…</p></div></section>
+    <section id="calls" aria-labelledby="call-replay-title">
+      <div class="section-heading"><div><p class="eyebrow">CALL BY CALL / RECORDED, NOT LIVE</p><h2 id="call-replay-title">问了五次，才动一次。</h2></div><p>跟着一条真实记录，看模型如何清点、计划、定位，再把动作交给 harness。请求、回答、拒绝、执行分开播放；调用计数与决策计数分开增加。</p></div>
+      <div id="call-replay-app" aria-busy="true"><p class="micro">正在加载逐调用回放…</p></div>
+      <p class="micro">引导式事件回放，不是实时调用或隐藏思考过程。播放停留时间仅供阅读，不代表真实耗时，也不与视频同步。调用→决策归属按原始文件保存时间恢复，并用动作内容交叉核对；各次请求耗时来自 response.elapsed_s。</p>
+    </section>
+
+    <section id="workflow" aria-label="成功与失败的真实操作全流程"><div class="section-heading"><div><p class="eyebrow">INSIDE THE LOOP / TWO COMPLETE EPISODES</p><h2>从传感器输入，到任务的结局。</h2></div><p>一个成功样本，一个失败样本。逐步检查真正送入模型的 prompt 与图片、模型输出、harness 动作、运动子步骤及环境反馈。<a href="#calls">先看逐调用回放 ↑</a></p></div><div id="workflow-app"><p class="micro">滚动到此处加载完整流程证据…</p></div></section>
 
     <section id="analysis"><div class="section-heading"><div><p class="eyebrow">BAD CASES / EVIDENCE FIRST</p><h2>267 次未成功，具体卡在哪里？</h2></div><p>结束原因是互斥统计；动作反馈可以重复出现。案例将日志事实、解释和待验证改进分开，避免将终止标签直接当作根因。</p></div>
       <div class="analysis-grid"><article><h3>失败 episode 的结束原因</h3><div id="termination-bars"></div><p class="micro">分母：267 个未成功 episode。invalid_model_action 是策略/校验终止，属于评测失败，不是基础设施错误。</p><h3 class="subheading">最常见的动作失败反馈</h3><div id="failure-signals"></div><p class="micro">全 500 次已保存 trace.result.failure 的原始字符串计数，含成功 episode 内已恢复的失败。同一 episode 可贡献多条。</p></article><article class="scatter-panel"><h3>决策数与墙钟耗时</h3><div id="cost-chart" role="img" aria-label="500 次评测决策数与耗时，点击查看 episode"></div><p id="cost-insight"></p><h3>决策次数分布</h3><div id="decision-chart" class="small-chart" role="img" aria-label="按成功与失败拆分的决策次数分布"></div><p class="micro">模型调用次数与策略决策数不同：定位、修复等可能额外调用模型。耗时与决策数的相关性不是因果归因。</p></article></div>

@@ -19,6 +19,8 @@
 
 ## 真实操作全流程
 
+`#calls` 新增逐调用引导回放，直接读取同两份 workflow 数据。按观测 → 请求 → 原始返回 → 拒绝反馈（如有）→ harness 执行 → 环境反馈展开全部记录。模型请求计数只在 request 增加，已完成决策计数只在 feedback 增加；显示真实请求累计耗时。支持播放/暂停、阅读节奏、事件滑块、逐决策跳转、拒绝与零调用章节、URL 深链接和刷新恢复。左侧只在模型调用事件展示该请求实际附图，纯文本请求明确留空；执行阶段展示保存的环境观测，不推测视频同步。播放时长为阅读节奏，不是推理时间。新增交互验证：`node scripts/browser_calls.cjs`。
+
 网页 `#workflow` 收录两个完整样本：成功的 `stack_blocks_three__00`（8 决策 / 10 调用）及失败的 `scan_object__00`（30 决策 / 37 调用）。可逐步查看三路 RGB、RGB-D 派生高度图、末端/接触状态、实际 prompt 和图片、VLM 原始输出、修复反馈、最终 harness action、全部运动子步骤与终局判定。包含原始 request/response、trace/result、114 份 RGB-D NPZ 及 SHA-256 下载。
 
 调用归属按原始 request 与 observation 图像的文件保存时间恢复（精度为秒），并用 `action.raw` / `grounding_raw` 的 JSON 语义核验；没有冒充原生 call→step ID 或视频同步。初始 mission 的纯文本请求与不需要新模型调用的动作分别明确标注。高度图是 `world_z - table_z`（显示 0–0.4 m），并非额外输入给 VLM 的图像。
