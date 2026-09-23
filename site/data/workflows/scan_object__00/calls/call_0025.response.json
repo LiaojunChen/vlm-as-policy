@@ -1,0 +1,28 @@
+{
+  "elapsed_s": 7.665961986000184,
+  "response": {
+    "id": "chatcmpl-80c99db8879347cba06d375129e8ccd3",
+    "object": "chat.completion",
+    "created": 1790127144,
+    "model": "zdtaichu",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\"skill\":\"present\",\"arm\":\"left\",\"location\":\"centre\"}"
+        },
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 2937,
+      "completion_tokens": 14,
+      "total_tokens": 2951
+    },
+    "x_elapsed_seconds": 7.663,
+    "x_enable_thinking": false,
+    "x_json_schema_enforced": false,
+    "x_constraint_backend": null
+  }
+}

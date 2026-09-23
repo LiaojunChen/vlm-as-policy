@@ -1,0 +1,22 @@
+{
+  "model": "zdtaichu",
+  "messages": [
+    {
+      "role": "user",
+      "content": [
+        {
+          "type": "image_url",
+          "image_url": {
+            "url": "call_0003_image0.jpg"
+          }
+        },
+        {
+          "type": "text",
+          "text": "The TOP panel is the full current scene with candidate boxes labeled A and B. The BOTTOM panels are enlarged crops of those SAME two candidates. For left/right/top/bottom identities use positions in the TOP full scene, NEVER the left/right order of the crop panels. Bind these requested identities: SOURCE=blue block; DESTINATION SUPPORT=green block. Describe the actual visible shape/category of each crop, then select which crop matches each requested identity. Do not assume A is the source. Do not rewrite the requested source/destination names. Also choose a graspable part of the SOURCE: body, rim, handle or edge. A vessel opening is empty, not a solid grasp surface. If either requested identity is absent or ambiguous, return unknown for that role. Return JSON {\"description_A\":string,\"description_B\":string,\"source\":\"A\" or \"B\" or \"unknown\",\"destination\":\"A\" or \"B\" or \"unknown\",\"source_grasp_part\":\"body\" or \"rim\" or \"handle\" or \"edge\"}."
+        }
+      ]
+    }
+  ],
+  "temperature": 0.0,
+  "max_tokens": 240
+}

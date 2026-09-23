@@ -1,0 +1,28 @@
+{
+  "elapsed_s": 6.307095419964753,
+  "response": {
+    "id": "chatcmpl-7134c5af1e0e489d843270236eb40548",
+    "object": "chat.completion",
+    "created": 1790126913,
+    "model": "zdtaichu",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "```json\n{\n  \"objects\": [\n    {\n      \"description\": \"small box with golden patterns\",\n      \"bbox\": [218, 362, 382, 606],\n      \"point\": [298, 484],\n      \"grasp_part\": \"body\"\n    },\n    {\n      \"description\": \"barcode scanner with curved handle\",\n      \"bbox\": [714, 434, 884, 734],\n      \"point\": [800, 584],\n      \"grasp_part\": \"handle\"\n    }\n  ]\n}\n```"
+        },
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 441,
+      "completion_tokens": 154,
+      "total_tokens": 595
+    },
+    "x_elapsed_seconds": 6.302,
+    "x_enable_thinking": false,
+    "x_json_schema_enforced": false,
+    "x_constraint_backend": null
+  }
+}

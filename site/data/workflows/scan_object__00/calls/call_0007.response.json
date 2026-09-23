@@ -1,0 +1,28 @@
+{
+  "elapsed_s": 2.871531774988398,
+  "response": {
+    "id": "chatcmpl-feeb7f6dd07d499fa61c12dfc9d1f0a3",
+    "object": "chat.completion",
+    "created": 1790127022,
+    "model": "zdtaichu",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\"skill\":\"scan\",\"arm\":\"right\",\"target\":\"small box with golden patterns\",\"grasp_part\":\"handle\",\"approach\":\"top\"}"
+        },
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 2661,
+      "completion_tokens": 29,
+      "total_tokens": 2690
+    },
+    "x_elapsed_seconds": 2.869,
+    "x_enable_thinking": false,
+    "x_json_schema_enforced": false,
+    "x_constraint_backend": null
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "elapsed_s": 29.554156969010364,
+  "response": {
+    "id": "chatcmpl-e3d963182b5145178bb0531fd6e9e021",
+    "object": "chat.completion",
+    "created": 1790126942,
+    "model": "zdtaichu",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "```json\n{\n  \"steps\": [\n    {\n      \"operation\": \"lift\",\n      \"source\": \"small box with golden patterns\",\n      \"arm\": \"left\",\n      \"location\": \"stay\",\n      \"grasp_part\": \"body\"\n    },\n    {\n      \"operation\": \"lift\",\n      \"source\": \"barcode scanner with curved handle\",\n      \"arm\": \"right\",\n      \"location\": \"stay\",\n      \"grasp_part\": \"handle\"\n    },\n    {\n      \"operation\": \"transfer\",\n      \"source\": \"small box with golden patterns\",\n      \"destination\": \"empty centre of table\",\n      \"relation\": \"on\",\n      \"arm\": \"left\",\n      \"grasp_part\": \"body\"\n    },\n    {\n      \"operation\": \"transfer\",\n      \"source\": \"barcode scanner with curved handle\",\n      \"destination\": \"empty centre of table\",\n      \"relation\": \"on\",\n      \"arm\": \"right\",\n      \"grasp_part\": \"handle\"\n    },\n    {\n      \"operation\": \"action\",\n      \"action\": {\n        \"skill\": \"grasp_handle\",\n        \"arm\": \"right\",\n        \"target\": \"barcode scanner handle\",\n        \"grasp_part\": \"handle\",\n        \"approach\": \"top\"\n      }\n    },\n    {\n      \"operation\": \"action\",\n      \"action\": {\n        \"skill\": \"grasp_handle\",\n        \"arm\": \"left\",\n        \"target\": \"small box with golden patterns\",\n        \"grasp_part\": \"body\",\n        \"approach\": \"top\"\n      }\n    },\n    {\n      \"operation\": \"action\",\n      \"action\": {\n        \"skill\": \"move\",\n        \"arm\": \"right\",\n        \"delta_xyz\": [0.0, 0.0, -0.1],\n        \"axis\": \"z\",\n        \"angle\": -5\n      }\n    },\n    {\n      \"operation\": \"action\",\n      \"action\": {\n        \"skill\": \"rotate\",\n        \"arm\": \"right\",\n        \"axis\": \"x\",\n        \"angle\": 10\n      }\n    },\n    {\n      \"operation\": \"action\",\n      \"action\": {\n        \"skill\": \"move\",\n        \"arm\": \"right\",\n        \"delta_xyz\": [0.0, 0.0, 0.1],\n        \"axis\": \"z\",\n        \"angle\": 0\n      }\n    },\n    {\n      \"operation\": \"action\",\n      \"action\": {\n        \"skill\": \"rotate\",\n        \"arm\": \"right\",\n        \"axis\": \"x\",\n        \"angle\": -10\n      }\n    },\n    {\n      \"operation\": \"action\",\n      \"action\": {\n        \"skill\": \"move\",\n        \"arm\": \"right\",\n        \"delta_xyz\": [0.0, 0.0, 0.0],\n        \"axis\": \"z\",\n        \"angle\": 0\n      }\n    }\n  ]\n}\n```"
+        },
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 1671,
+      "completion_tokens": 725,
+      "total_tokens": 2396
+    },
+    "x_elapsed_seconds": 28.954,
+    "x_enable_thinking": false,
+    "x_json_schema_enforced": false,
+    "x_constraint_backend": null
+  }
+}

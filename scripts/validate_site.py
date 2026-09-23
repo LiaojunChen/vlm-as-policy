@@ -2,6 +2,7 @@
 import csv
 import hashlib
 import json
+from validate_workflow import check as check_workflow
 from collections import Counter
 from pathlib import Path
 from statistics import mean
@@ -65,3 +66,4 @@ sizes=[p.stat().st_size for p in root.rglob('*') if p.is_file()]
 assert max(sizes)<100*1024**2
 assert sum(sizes)<1024**3, 'Published site exceeds Pages 1 GiB limit'
 print(f'Validated 500 episodes, 233 successes, 50 distinct-seed sets, 500 video hashes, {frames_count} frames, 6 cases; site {sum(sizes)/1024**2:.1f} MiB.')
+check_workflow()

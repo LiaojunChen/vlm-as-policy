@@ -1,0 +1,28 @@
+{
+  "elapsed_s": 8.179264147998765,
+  "response": {
+    "id": "chatcmpl-680cdeeac4614dfdac80168c470210f6",
+    "object": "chat.completion",
+    "created": 1790129383,
+    "model": "zdtaichu",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "```json\n{\n  \"objects\": [\n    {\n      \"description\": \"red block\",\n      \"bbox\": [253, 346, 368, 506],\n      \"point\": [310, 426],\n      \"grasp_part\": \"body\"\n    },\n    {\n      \"description\": \"green block\",\n      \"bbox\": [843, 376, 963, 536],\n      \"point\": [903, 456],\n      \"grasp_part\": \"body\"\n    },\n    {\n      \"description\": \"blue block\",\n      \"bbox\": [68, 456, 183, 616],\n      \"point\": [125, 536],\n      \"grasp_part\": \"body\"\n    }\n  ]\n}\n```"
+        },
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 425,
+      "completion_tokens": 212,
+      "total_tokens": 637
+    },
+    "x_elapsed_seconds": 8.175,
+    "x_enable_thinking": false,
+    "x_json_schema_enforced": false,
+    "x_constraint_backend": null
+  }
+}

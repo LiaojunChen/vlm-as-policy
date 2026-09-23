@@ -1,0 +1,28 @@
+{
+  "elapsed_s": 14.067825759993866,
+  "response": {
+    "id": "chatcmpl-6e11fe930624407eb79bfd1986a4b338",
+    "object": "chat.completion",
+    "created": 1790129397,
+    "model": "zdtaichu",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "```json\n{\n  \"steps\": [\n    {\n      \"operation\": \"lift\",\n      \"source\": \"red block\",\n      \"arm\": \"left\",\n      \"location\": \"stay\",\n      \"grasp_part\": \"body\"\n    },\n    {\n      \"operation\": \"transfer\",\n      \"source\": \"red block\",\n      \"destination\": \"empty centre of table\",\n      \"relation\": \"on\",\n      \"arm\": \"left\",\n      \"grasp_part\": \"body\"\n    },\n    {\n      \"operation\": \"lift\",\n      \"source\": \"green block\",\n      \"arm\": \"right\",\n      \"location\": \"stay\",\n      \"grasp_part\": \"body\"\n    },\n    {\n      \"operation\": \"transfer\",\n      \"source\": \"green block\",\n      \"destination\": \"red block\",\n      \"relation\": \"on\",\n      \"arm\": \"right\",\n      \"grasp_part\": \"body\"\n    },\n    {\n      \"operation\": \"lift\",\n      \"source\": \"blue block\",\n      \"arm\": \"left\",\n      \"location\": \"stay\",\n      \"grasp_part\": \"body\"\n    },\n    {\n      \"operation\": \"transfer\",\n      \"source\": \"blue block\",\n      \"destination\": \"green block\",\n      \"relation\": \"on\",\n      \"arm\": \"left\",\n      \"grasp_part\": \"body\"\n    }\n  ]\n}\n```"
+        },
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 1740,
+      "completion_tokens": 341,
+      "total_tokens": 2081
+    },
+    "x_elapsed_seconds": 14.022,
+    "x_enable_thinking": false,
+    "x_json_schema_enforced": false,
+    "x_constraint_backend": null
+  }
+}

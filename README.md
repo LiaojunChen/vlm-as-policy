@@ -17,7 +17,15 @@
 
 耗时口径：52 次超时的 `elapsed_s` 未保存，345.5 秒仅为其余 **448 个有记录样本**的均值，不是完整 500 次均值。缺失值保留为空，页面标为超时而非填零。超时无最终观测时显示“最后保存的动作前观测”。成功率分母始终为 500。
 
-## 发布
+## 真实操作全流程
+
+网页 `#workflow` 收录两个完整样本：成功的 `stack_blocks_three__00`（8 决策 / 10 调用）及失败的 `scan_object__00`（30 决策 / 37 调用）。可逐步查看三路 RGB、RGB-D 派生高度图、末端/接触状态、实际 prompt 和图片、VLM 原始输出、修复反馈、最终 harness action、全部运动子步骤与终局判定。包含原始 request/response、trace/result、114 份 RGB-D NPZ 及 SHA-256 下载。
+
+调用归属按原始 request 与 observation 图像的文件保存时间恢复（精度为秒），并用 `action.raw` / `grounding_raw` 的 JSON 语义核验；没有冒充原生 call→step ID 或视频同步。初始 mission 的纯文本请求与不需要新模型调用的动作分别明确标注。高度图是 `world_z - table_z`（显示 0–0.4 m），并非额外输入给 VLM 的图像。
+
+重建：在有 numpy / Pillow 的评测环境运行 `python3 scripts/build_workflow.py`；`python3 scripts/validate_site.py` 会一起检查这两份完整流程及其原始证据哈希。
+
+## 发布流程
 
 仓库 Settings → Pages → Source 设为 **GitHub Actions**。
 推送到 `main` 后，`.github/workflows/pages.yml` 校验并发布 `site/`。

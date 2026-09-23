@@ -1,0 +1,22 @@
+{
+  "model": "zdtaichu",
+  "messages": [
+    {
+      "role": "user",
+      "content": [
+        {
+          "type": "image_url",
+          "image_url": {
+            "url": "call_0000_image0.jpg"
+          }
+        },
+        {
+          "type": "text",
+          "text": "Observe this current image and list each separate task-relevant physical object once. Do not combine identical-looking objects; distinguish them by their INITIAL left/right/front/back position and visible colour. Include objects that will be moved AND their destination supports. Ignore robot arms, shadows and background. Do not plan actions and do not invent hidden objects. TASK: Pick up the small box with golden patterns and the barcode scanner with curved handle simultaneously, then scan the small box with golden patterns with the barcode scanner with curved handle.\n\nReturn JSON {\"objects\":[{\"description\":\"unique visible object description\",\"bbox\":[xmin,ymin,xmax,ymax],\"point\":[x,y],\"grasp_part\":\"body\" or \"rim\" or \"handle\" or \"edge\"}]}. Coordinates are normalized 0..1000 in this image; boxes cover the entire visible object."
+        }
+      ]
+    }
+  ],
+  "temperature": 0.0,
+  "max_tokens": 500
+}

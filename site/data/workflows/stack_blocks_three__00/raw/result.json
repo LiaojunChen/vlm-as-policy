@@ -1,0 +1,139 @@
+{
+  "task": "stack_blocks_three",
+  "project": "robodawn",
+  "model": "zdtaichu",
+  "seed": 100000,
+  "status": "completed",
+  "success": true,
+  "instruction": "Stack the blocks bottom-up: red block, then green block, then blue block.",
+  "protocol": "v3_task_contracts_rgbd_selfmask",
+  "max_policy_decisions": 30,
+  "seed_validation": "expert_validated",
+  "started_at": "2026-09-23T02:08:53Z",
+  "policy_memory": "episode_local_visual_identity_and_execution_feedback_no_extra_sensors",
+  "policy_recovery": "bounded_shared_workspace_regrasp_and_current_verified_rgbd_support_memory",
+  "policy_perception": "same_frame_contextual_pair_verification_and_collective_scene_inventory",
+  "policy_adaptive_recovery": "measured_failure_constraints_simultaneous_dependency_scheduling_and_bounded_held_view_motion",
+  "policy_memory_search": "current_frame_release_guided_crop_with_full_frame_fallback_no_stale_execution_coordinates",
+  "policy_observed_execution": "same_frame_identity_candidate_reuse_stationary_search_explicit_free_table_and_protruding_handle_geometry",
+  "head_resolution": 320,
+  "head_fov_deg": 37,
+  "task_contract": "Use verified tactile state and fresh images. Complete every named object. For placement, release and retreat to inspect the final arrangement. For lifting, presenting or scanning, retain the required objects; do not release them merely to end the task. Build a single vertical tower in the specified bottom-to-top colour order. Place each block centred on the preceding block and release.",
+  "official_step_limit": 1200,
+  "policy_decisions": 8,
+  "model_calls": 10,
+  "last_failure": null,
+  "last_success": true,
+  "end_reason": "environment_success",
+  "final_observation": {
+    "instruction": "Stack the blocks bottom-up: red block, then green block, then blue block.\nCompletion requirements: Use verified tactile state and fresh images. Complete every named object. For placement, release and retreat to inspect the final arrangement. For lifting, presenting or scanning, retain the required objects; do not release them merely to end the task. Build a single vertical tower in the specified bottom-to-top colour order. Place each block centred on the preceding block and release.",
+    "image_paths": [
+      "/mnt/vepfs01/output/watson.chen/phyRSI/robodawn_robotwin_harness_v72/results/repeat500_official_sampling_maxsteps30_20260922/robodawn/stack_blocks_three/repeat_00/attempts/attempt_000/frames/0009_head_camera.png",
+      "/mnt/vepfs01/output/watson.chen/phyRSI/robodawn_robotwin_harness_v72/results/repeat500_official_sampling_maxsteps30_20260922/robodawn/stack_blocks_three/repeat_00/attempts/attempt_000/frames/0009_left_camera.png",
+      "/mnt/vepfs01/output/watson.chen/phyRSI/robodawn_robotwin_harness_v72/results/repeat500_official_sampling_maxsteps30_20260922/robodawn/stack_blocks_three/repeat_00/attempts/attempt_000/frames/0009_right_camera.png"
+    ],
+    "observation_id": 9,
+    "endpose": {
+      "left_endpose": [
+        -0.057303134351968765,
+        -0.027179377153515816,
+        1.0044816732406616,
+        0.7742855750988312,
+        -0.12945320614704464,
+        0.5967052001949704,
+        0.16633285806599965
+      ],
+      "left_gripper": 1.0,
+      "right_endpose": [
+        0.3061942756175995,
+        -0.3126915693283081,
+        0.9409693479537964,
+        0.7027128647780219,
+        -0.0011879498955651086,
+        0.0007398934474371899,
+        0.7114721856883782
+      ],
+      "right_gripper": 1.0
+    },
+    "sensors": {
+      "left": {
+        "holding": true,
+        "finger_qpos_m": [
+          0.02582472935318947,
+          0.023385997861623764
+        ],
+        "contact_fingers": 2,
+        "opposed_contact": true,
+        "finger_normal_projection_range": {
+          "fl_link7": [
+            -0.9999995695492814,
+            -0.9999995695492814
+          ],
+          "fl_link8": [
+            0.9999995964346141,
+            0.9999995964346141
+          ]
+        },
+        "remembered_object": null
+      },
+      "right": {
+        "holding": false,
+        "finger_qpos_m": [
+          0.04499564319849014,
+          0.04500691592693329
+        ],
+        "contact_fingers": 0,
+        "opposed_contact": null,
+        "finger_normal_projection_range": {
+          "fr_link7": [],
+          "fr_link8": []
+        },
+        "remembered_object": null
+      }
+    },
+    "success": true,
+    "table_height_m": 0.74,
+    "visual_landmarks": {
+      "red": [
+        {
+          "point": [
+            -0.14622381329536438,
+            0.012791862711310387,
+            0.7415964603424072
+          ],
+          "area": 50,
+          "yaw": 0.5151044726371765,
+          "observation_id": 1,
+          "camera": "head_camera",
+          "clipped": false,
+          "image_point": [
+            344.82758620689657,
+            497.907949790795
+          ],
+          "complete_boundary": false,
+          "corners_xy": [
+            [
+              -0.1872173398733139,
+              0.011669494211673737
+            ],
+            [
+              -0.16828303039073944,
+              -0.021778635680675507
+            ],
+            [
+              -0.10523028671741486,
+              0.013914231210947037
+            ],
+            [
+              -0.12416459619998932,
+              0.04736236110329628
+            ]
+          ],
+          "exterior_background_fractions": null,
+          "physical_area_m2": 0.002784816106880861
+        }
+      ]
+    }
+  },
+  "elapsed_s": 173.7433167360141
+}

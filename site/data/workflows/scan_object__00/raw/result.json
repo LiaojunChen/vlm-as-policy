@@ -1,0 +1,105 @@
+{
+  "task": "scan_object",
+  "project": "robodawn",
+  "model": "zdtaichu",
+  "seed": 100001,
+  "status": "completed",
+  "success": false,
+  "instruction": "Pick up the small box with golden patterns and the barcode scanner with curved handle simultaneously, then scan the small box with golden patterns with the barcode scanner with curved handle.",
+  "protocol": "v3_task_contracts_rgbd_selfmask",
+  "max_policy_decisions": 30,
+  "seed_validation": "expert_validated",
+  "started_at": "2026-09-23T01:27:59Z",
+  "policy_memory": "episode_local_visual_identity_and_execution_feedback_no_extra_sensors",
+  "policy_recovery": "bounded_shared_workspace_regrasp_and_current_verified_rgbd_support_memory",
+  "policy_perception": "same_frame_contextual_pair_verification_and_collective_scene_inventory",
+  "policy_adaptive_recovery": "measured_failure_constraints_simultaneous_dependency_scheduling_and_bounded_held_view_motion",
+  "policy_memory_search": "current_frame_release_guided_crop_with_full_frame_fallback_no_stale_execution_coordinates",
+  "policy_observed_execution": "same_frame_identity_candidate_reuse_stationary_search_explicit_free_table_and_protruding_handle_geometry",
+  "head_resolution": 320,
+  "head_fov_deg": 37,
+  "task_contract": "Use verified tactile state and fresh images. Complete every named object. For placement, release and retreat to inspect the final arrangement. For lifting, presenting or scanning, retain the required objects; do not release them merely to end the task. Hold the requested object and scanner in separate hands; aim the scanner toward the object while bringing them close.",
+  "official_step_limit": 500,
+  "policy_decisions": 30,
+  "model_calls": 37,
+  "last_failure": null,
+  "last_success": false,
+  "end_reason": "decision_budget",
+  "final_observation": {
+    "instruction": "Pick up the small box with golden patterns and the barcode scanner with curved handle simultaneously, then scan the small box with golden patterns with the barcode scanner with curved handle.\nCompletion requirements: Use verified tactile state and fresh images. Complete every named object. For placement, release and retreat to inspect the final arrangement. For lifting, presenting or scanning, retain the required objects; do not release them merely to end the task. Hold the requested object and scanner in separate hands; aim the scanner toward the object while bringing them close.",
+    "image_paths": [
+      "/mnt/vepfs01/output/watson.chen/phyRSI/robodawn_robotwin_harness_v72/results/repeat500_official_sampling_maxsteps30_20260922/robodawn/scan_object/repeat_00/attempts/attempt_000/frames/0031_head_camera.png",
+      "/mnt/vepfs01/output/watson.chen/phyRSI/robodawn_robotwin_harness_v72/results/repeat500_official_sampling_maxsteps30_20260922/robodawn/scan_object/repeat_00/attempts/attempt_000/frames/0031_left_camera.png",
+      "/mnt/vepfs01/output/watson.chen/phyRSI/robodawn_robotwin_harness_v72/results/repeat500_official_sampling_maxsteps30_20260922/robodawn/scan_object/repeat_00/attempts/attempt_000/frames/0031_right_camera.png"
+    ],
+    "observation_id": 31,
+    "endpose": {
+      "left_endpose": [
+        -0.07427089661359787,
+        -0.10579368472099304,
+        1.1199493408203125,
+        0.671036670335957,
+        0.21314494272550846,
+        0.6787406906777317,
+        -0.2087824113120819
+      ],
+      "left_gripper": 0.0,
+      "right_endpose": [
+        0.24377305805683136,
+        -0.10431075841188431,
+        1.1198034286499023,
+        0.34151940915575985,
+        -0.6037389877372153,
+        0.3595633755028109,
+        0.6241617633698561
+      ],
+      "right_gripper": 0.0
+    },
+    "sensors": {
+      "left": {
+        "holding": true,
+        "finger_qpos_m": [
+          0.03948807716369629,
+          0.03693452104926109
+        ],
+        "contact_fingers": 2,
+        "opposed_contact": true,
+        "finger_normal_projection_range": {
+          "fl_link7": [
+            -0.9982624359990911,
+            -0.9929917349134366
+          ],
+          "fl_link8": [
+            0.9922575448876225,
+            0.999999999919545
+          ]
+        },
+        "remembered_object": "small box with golden patterns"
+      },
+      "right": {
+        "holding": true,
+        "finger_qpos_m": [
+          0.021783849224448204,
+          0.01944301836192608
+        ],
+        "contact_fingers": 2,
+        "opposed_contact": true,
+        "finger_normal_projection_range": {
+          "fr_link7": [
+            -0.9981811163849559,
+            -0.9981811163849559
+          ],
+          "fr_link8": [
+            0.9960215733554403,
+            0.9960215733554403
+          ]
+        },
+        "remembered_object": "barcode scanner with curved handle"
+      }
+    },
+    "success": false,
+    "table_height_m": 0.74,
+    "visual_landmarks": {}
+  },
+  "elapsed_s": 306.14985765103484
+}

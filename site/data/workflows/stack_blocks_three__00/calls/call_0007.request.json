@@ -1,0 +1,22 @@
+{
+  "model": "zdtaichu",
+  "messages": [
+    {
+      "role": "user",
+      "content": [
+        {
+          "type": "image_url",
+          "image_url": {
+            "url": "call_0007_image0.jpg"
+          }
+        },
+        {
+          "type": "text",
+          "text": "Locate the destination support surface/interior: red block. Action=place, component=body. Use only this current head-camera image. Give a tight visible bbox and a point on that component. Coordinates are normalized 0..1000 along image width and height. Return JSON: bbox (four numbers xmin,ymin,xmax,ymax), point (two numbers x,y), approach (top or side), support (table, object or container). For a container placement select inside its opening, not the handle or wall. For a handle/rim grasp bound the thin component, not the entire vessel. Use top approach for a low tool handle lying on the table; side is for upright/elevated components. If the named target is absent or entirely occluded return {\"visible\":false}. No prose.\nEPISODIC MEMORY (only past images and executed feedback; not ground truth): {\"objects\":[{\"description\":\"red block\",\"state\":\"released_or_lost_reobserve\",\"last_seen_observation\":1,\"preferred_grasp_part\":\"body\",\"inventory_identity\":true,\"verified_appearance\":\"red block\",\"identity_verification_observation_id\":1},{\"description\":\"green block\",\"state\":\"held_contact_verified\",\"last_seen_observation\":4,\"preferred_grasp_part\":\"body\",\"inventory_identity\":true,\"verified_appearance\":\"green block\",\"identity_verification_observation_id\":1,\"held_by\":\"right\"}],\"recent_outcomes\":[{\"skill\":\"pick\",\"target\":\"red block\",\"arm\":\"left\",\"grasp_part\":\"body\",\"approach\":\"side\",\"skill_success\":true,\"failure\":null}]}\nUse memory to preserve object identity and avoid repeated failures. Historical coordinates are intentionally omitted; return coordinates ONLY in the currently shown image. Objects may have moved: re-localize in the CURRENT image. A successful skill or attempted placement does not prove the goal or spatial relation. A last_release_region is a newer, uncertain search hint, not a confirmed object box. Positional words in an object identity describe its INITIAL position, which may change after moving it. The held source is NOT its destination. This is a crop of the CURRENT image around the object's uncertain last-observed/release region. The object name retains its INITIAL positional label, not its current location. Find that object here using its appearance and action history; for a placed stack member select that member of the stack. Do NOT search for the old left/right location outside this crop. If the requested object is absent, return visible=false; the full current scene will then be searched. All returned coordinates refer to THIS crop, not to old memory boxes."
+        }
+      ]
+    }
+  ],
+  "temperature": 0.0,
+  "max_tokens": 180
+}

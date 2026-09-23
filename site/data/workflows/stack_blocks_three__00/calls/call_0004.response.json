@@ -1,0 +1,28 @@
+{
+  "elapsed_s": 2.297413556021638,
+  "response": {
+    "id": "chatcmpl-2e9351d3a08b496abd7e4172a1f07219",
+    "object": "chat.completion",
+    "created": 1790129403,
+    "model": "zdtaichu",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\"bbox_2d\": [250, 345, 375, 515], \"point_2d\": [315, 430], \"approach\": \"side\", \"support\": \"table\"}"
+        },
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 604,
+      "completion_tokens": 56,
+      "total_tokens": 660
+    },
+    "x_elapsed_seconds": 2.296,
+    "x_enable_thinking": false,
+    "x_json_schema_enforced": false,
+    "x_constraint_backend": null
+  }
+}
