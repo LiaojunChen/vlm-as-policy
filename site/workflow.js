@@ -77,5 +77,5 @@
     const cam=e.target.closest('[data-camera]');if(cam){camera=cam.dataset.camera;render();}
   });
   window.addEventListener('hashchange',()=>{if(location.hash.startsWith('#workflow='))fromHash(true).catch(()=>{});});
-  loadIndex().then(async x=>{index=x;if(!await fromHash(true)){flow=await loadFlow(index[0].id);render();}}).catch(e=>{root.innerHTML=`<div class="flow-error">完整流程数据加载失败：${esc(e.message)}。可直接查看普通任务回放。</div>`;});
+  loadIndex().then(async x=>{index=x;if(!await fromHash(true)){flow=await loadFlow(index[0].id);render();}}).catch(e=>{root.innerHTML=`<div class="flow-error">完整流程数据加载失败：${esc(e.message)}。可从结果矩阵打开原始录像。</div>`;});
 })();
