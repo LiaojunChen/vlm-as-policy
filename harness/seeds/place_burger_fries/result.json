@@ -1,0 +1,6 @@
+{
+  "task": "place_burger_fries",
+  "seed": 100000,
+  "status": "expert_validated",
+  "instruction": "Place the white wrapper enclosing golden hamburg and the red container with yellow fries together onto the flat green rectangular tray."
+}

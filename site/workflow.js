@@ -2,7 +2,9 @@
   'use strict';
   const root=document.getElementById('workflow-app');if(!root)return;
   const esc=v=>String(v??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
-  const pretty=v=>typeof v==='string'?v:JSON.stringify(v,null,2);
+  // Display image basenames instead of machine-local paths; evidence downloads
+  // retain the original bytes and hashes. Prompts and model outputs are unchanged.
+  const pretty=v=>typeof v==='string'?v:JSON.stringify(v,(key,value)=>key==='image_paths'&&Array.isArray(value)?value.map(p=>p.split('/').pop()):value,2);
   const text=v=>typeof v==='object'&&v!==null?JSON.stringify(v):String(v??'');
   let index=[],flow=null,stepIndex=0,callIndex=0,camera='rgb',loadToken=0;
   const stepName=t=>t.action?.name||t.action?.skill||'动作';

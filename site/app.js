@@ -81,7 +81,7 @@
   }
   showRepeat(D.repeat);
   $('refresh-repeat').addEventListener('click',async()=>{const b=$('refresh-repeat');b.disabled=true;try{const response=await fetch('data/repeat.json',{cache:'no-store'});if(!response.ok)throw Error('http');showRepeat(await response.json(),true);}catch(_){$('repeat-updated').textContent='快照读取失败，仍显示页面内置数据。请检查网络后重试。';}finally{b.disabled=false;}});
-  $('source-path').textContent=`${D.source}/${D.cohort}`;
+  $('source-path').textContent=`VLM as Policy v72 · ${D.cohort}`;
   $('snapshot-time').textContent=`主批次更新时间 ${D.updated_utc} · 页面数据生成时间 ${D.generated_utc}`;
   const hashTask=location.hash.startsWith('#episode=')?decodeURIComponent(location.hash.slice(9)):null;
   renderEpisode(D.episodes.find(e=>e.task===hashTask)||initial);

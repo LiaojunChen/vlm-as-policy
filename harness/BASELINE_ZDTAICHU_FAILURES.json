@@ -1,0 +1,669 @@
+{
+  "source": "/mnt/vepfs01/output/watson.chen/phyRSI/robodawn_robotwin_harness_v3/results/zdtaichu_robodawn_20260920",
+  "requested": 50,
+  "successes": 13,
+  "failures": {
+    "No above-table object in visual bbox; re-ground target": 340,
+    "motion_succeeded_goal_unmet": 210,
+    "No reachable placement orientation; choose a closer destination or adjust held pose": 202,
+    "Hinge endpoint is occluded; re-ground hinge line": 29,
+    "Selected target outside table workspace": 29,
+    "press_refine: planning/tracking failure {'left': 'Success', 'right': 'Success'}, error=0.039 m": 29,
+    "approach_refine: planning/tracking failure {'left': 'Success', 'right': 'Success'}, error=0.117 m": 25,
+    "Empty grasp: no bilateral object contact": 19,
+    "No depth at destination": 16,
+    "Target is on the right side in calibrated RGB-D. Use the right arm to avoid an unreachable cross-body placement.": 10,
+    "Target is on the left side in calibrated RGB-D. Use the left arm to avoid an unreachable cross-body placement.": 10,
+    "Object lost during transfer; locate it again before placing": 5,
+    "contact_refine: planning/tracking failure {'left': 'Success', 'right': 'Success'}, error=0.043 m": 3,
+    "contact_refine: planning/tracking failure {'left': 'Success', 'right': 'Success'}, error=0.048 m": 3,
+    "contact_refine: planning/tracking failure {'left': 'Success', 'right': 'Success'}, error=0.047 m": 2,
+    "approach_refine: planning/tracking failure {'left': 'Success', 'right': 'Success'}, error=0.077 m": 2,
+    "approach_refine: planning/tracking failure {'left': 'Success', 'right': 'Success'}, error=0.076 m": 2,
+    "No reachable pushing contact; use other arm or pick/place": 2,
+    "contact_refine: planning/tracking failure {'left': 'Success', 'right': 'Success'}, error=0.036 m": 2,
+    "contact_refine: planning/tracking failure {'left': 'Success', 'right': 'Success'}, error=0.046 m": 2,
+    "contact_refine: planning/tracking failure {'left': 'Success', 'right': 'Success'}, error=0.039 m": 2,
+    "Holding object but lift unreachable; move toward robot then raise": 1,
+    "reach_refine: planning/tracking failure {'left': 'Success', 'right': 'Success'}, error=0.048 m": 1,
+    "approach_refine: planning/tracking failure {'left': 'Success', 'right': 'Success'}, error=0.071 m": 1,
+    "present_refine: planning/tracking failure {'left': 'Success', 'right': 'Success'}, error=0.054 m": 1,
+    "present_refine: planning/tracking failure {'left': 'Success', 'right': 'Success'}, error=0.050 m": 1,
+    "present_refine: planning/tracking failure {'left': 'Success', 'right': 'Success'}, error=0.043 m": 1,
+    "approach_refine: planning/tracking failure {'left': 'Success', 'right': 'Success'}, error=0.141 m": 1,
+    "approach_refine: planning/tracking failure {'left': 'Success', 'right': 'Success'}, error=0.059 m": 1,
+    "approach_refine: planning/tracking failure {'left': 'Success', 'right': 'Success'}, error=0.060 m": 1,
+    "approach_refine: planning/tracking failure {'left': 'Success', 'right': 'Success'}, error=0.063 m": 1,
+    "approach_refine: planning/tracking failure {'left': 'Success', 'right': 'Success'}, error=0.085 m": 1,
+    "contact_refine: planning/tracking failure {'left': 'Success', 'right': 'Success'}, error=0.041 m": 1,
+    "approach_refine: planning/tracking failure {'left': 'Success', 'right': 'Success'}, error=0.040 m": 1,
+    "contact_refine: planning/tracking failure {'left': 'Success', 'right': 'Success'}, error=0.042 m": 1,
+    "contact_refine: planning/tracking failure {'left': 'Success', 'right': 'Success'}, error=0.037 m": 1,
+    "approach_refine: planning/tracking failure {'left': 'Success', 'right': 'Success'}, error=0.078 m": 1,
+    "approach: planning/tracking failure {'left': 'Fail', 'right': 'Success'}, error=0.383 m": 1,
+    "move: planning/tracking failure {'left': 'Fail', 'right': 'Success'}, error=0.120 m": 1,
+    "contact_refine: planning/tracking failure {'left': 'Success', 'right': 'Success'}, error=0.045 m": 1,
+    "Grasp lost during lift": 1,
+    "transfer_refine: planning/tracking failure {'left': 'Success', 'right': 'Success'}, error=0.065 m": 1,
+    "transfer_refine: planning/tracking failure {'left': 'Success', 'right': 'Success'}, error=0.044 m": 1,
+    "approach_refine: planning/tracking failure {'left': 'Success', 'right': 'Success'}, error=0.068 m": 1,
+    "approach_refine: planning/tracking failure {'left': 'Success', 'right': 'Success'}, error=0.215 m": 1,
+    "approach_refine: planning/tracking failure {'left': 'Success', 'right': 'Success'}, error=0.144 m": 1,
+    "approach_refine: planning/tracking failure {'left': 'Success', 'right': 'Success'}, error=0.139 m": 1,
+    "contact_refine: planning/tracking failure {'left': 'Success', 'right': 'Success'}, error=0.040 m": 1,
+    "contact_refine: planning/tracking failure {'left': 'Success', 'right': 'Success'}, error=0.050 m": 1,
+    "approach_refine: planning/tracking failure {'left': 'Success', 'right': 'Success'}, error=0.038 m": 1,
+    "contact_refine: planning/tracking failure {'left': 'Success', 'right': 'Success'}, error=0.051 m": 1,
+    "contact_refine: planning/tracking failure {'left': 'Success', 'right': 'Success'}, error=0.052 m": 1,
+    "transfer_refine: planning/tracking failure {'left': 'Success', 'right': 'Success'}, error=0.046 m": 1,
+    "transfer_refine: planning/tracking failure {'left': 'Success', 'right': 'Success'}, error=0.049 m": 1,
+    "approach_refine: planning/tracking failure {'left': 'Success', 'right': 'Success'}, error=0.145 m": 1,
+    "approach_refine: planning/tracking failure {'left': 'Success', 'right': 'Success'}, error=0.137 m": 1,
+    "approach_refine: planning/tracking failure {'left': 'Success', 'right': 'Success'}, error=0.131 m": 1,
+    "move_refine: planning/tracking failure {'left': 'Success', 'right': 'Success'}, error=0.090 m": 1,
+    "contact_refine: planning/tracking failure {'left': 'Success', 'right': 'Success'}, error=0.038 m": 1,
+    "transfer_refine: planning/tracking failure {'left': 'Success', 'right': 'Success'}, error=0.055 m": 1,
+    "transfer_refine: planning/tracking failure {'left': 'Success', 'right': 'Success'}, error=0.040 m": 1,
+    "press_refine: planning/tracking failure {'left': 'Success', 'right': 'Success'}, error=0.040 m": 1
+  },
+  "tasks": [
+    {
+      "task": "adjust_bottle",
+      "success": false,
+      "end_reason": "decision_budget",
+      "decisions": 30,
+      "failures": {
+        "motion_succeeded_goal_unmet": 30
+      },
+      "error": null
+    },
+    {
+      "task": "beat_block_hammer",
+      "success": true,
+      "end_reason": "environment_success",
+      "decisions": 16,
+      "failures": {
+        "motion_succeeded_goal_unmet": 9,
+        "No reachable placement orientation; choose a closer destination or adjust held pose": 5,
+        "No above-table object in visual bbox; re-ground target": 1
+      },
+      "error": null
+    },
+    {
+      "task": "blocks_ranking_rgb",
+      "success": false,
+      "end_reason": "decision_budget",
+      "decisions": 30,
+      "failures": {
+        "motion_succeeded_goal_unmet": 7,
+        "Holding object but lift unreachable; move toward robot then raise": 1,
+        "No reachable placement orientation; choose a closer destination or adjust held pose": 22
+      },
+      "error": null
+    },
+    {
+      "task": "blocks_ranking_size",
+      "success": false,
+      "end_reason": "decision_budget",
+      "decisions": 30,
+      "failures": {
+        "motion_succeeded_goal_unmet": 14,
+        "No reachable placement orientation; choose a closer destination or adjust held pose": 16
+      },
+      "error": null
+    },
+    {
+      "task": "click_alarmclock",
+      "success": true,
+      "end_reason": "environment_success",
+      "decisions": 1,
+      "failures": {},
+      "error": null
+    },
+    {
+      "task": "click_bell",
+      "success": true,
+      "end_reason": "environment_success",
+      "decisions": 1,
+      "failures": {},
+      "error": null
+    },
+    {
+      "task": "dump_bin_bigbin",
+      "success": false,
+      "end_reason": "decision_budget",
+      "decisions": 30,
+      "failures": {
+        "Empty grasp: no bilateral object contact": 3,
+        "Target is on the right side in calibrated RGB-D. Use the right arm to avoid an unreachable cross-body placement.": 1,
+        "No above-table object in visual bbox; re-ground target": 26
+      },
+      "error": null
+    },
+    {
+      "task": "grab_roller",
+      "success": false,
+      "end_reason": "decision_budget",
+      "decisions": 30,
+      "failures": {
+        "No above-table object in visual bbox; re-ground target": 28,
+        "reach_refine: planning/tracking failure {'left': 'Success', 'right': 'Success'}, error=0.048 m": 1,
+        "motion_succeeded_goal_unmet": 1
+      },
+      "error": null
+    },
+    {
+      "task": "handover_block",
+      "success": false,
+      "end_reason": "decision_budget",
+      "decisions": 30,
+      "failures": {
+        "motion_succeeded_goal_unmet": 13,
+        "approach_refine: planning/tracking failure {'left': 'Success', 'right': 'Success'}, error=0.071 m": 1,
+        "No above-table object in visual bbox; re-ground target": 8,
+        "present_refine: planning/tracking failure {'left': 'Success', 'right': 'Success'}, error=0.054 m": 1,
+        "present_refine: planning/tracking failure {'left': 'Success', 'right': 'Success'}, error=0.050 m": 1,
+        "present_refine: planning/tracking failure {'left': 'Success', 'right': 'Success'}, error=0.043 m": 1,
+        "approach_refine: planning/tracking failure {'left': 'Success', 'right': 'Success'}, error=0.141 m": 1,
+        "approach_refine: planning/tracking failure {'left': 'Success', 'right': 'Success'}, error=0.059 m": 1,
+        "approach_refine: planning/tracking failure {'left': 'Success', 'right': 'Success'}, error=0.060 m": 1,
+        "approach_refine: planning/tracking failure {'left': 'Success', 'right': 'Success'}, error=0.063 m": 1,
+        "approach_refine: planning/tracking failure {'left': 'Success', 'right': 'Success'}, error=0.085 m": 1
+      },
+      "error": null
+    },
+    {
+      "task": "handover_mic",
+      "success": false,
+      "end_reason": "invalid_model_action",
+      "decisions": 8,
+      "failures": {
+        "No above-table object in visual bbox; re-ground target": 8
+      },
+      "error": "Invalid policy action after repair: Invalid bbox"
+    },
+    {
+      "task": "hanging_mug",
+      "success": false,
+      "end_reason": "decision_budget",
+      "decisions": 30,
+      "failures": {
+        "Empty grasp: no bilateral object contact": 1,
+        "No above-table object in visual bbox; re-ground target": 29
+      },
+      "error": null
+    },
+    {
+      "task": "lift_pot",
+      "success": false,
+      "end_reason": "decision_budget",
+      "decisions": 30,
+      "failures": {
+        "contact_refine: planning/tracking failure {'left': 'Success', 'right': 'Success'}, error=0.041 m": 1,
+        "approach_refine: planning/tracking failure {'left': 'Success', 'right': 'Success'}, error=0.040 m": 1,
+        "Empty grasp: no bilateral object contact": 1,
+        "contact_refine: planning/tracking failure {'left': 'Success', 'right': 'Success'}, error=0.042 m": 1,
+        "No above-table object in visual bbox; re-ground target": 24,
+        "contact_refine: planning/tracking failure {'left': 'Success', 'right': 'Success'}, error=0.037 m": 1,
+        "contact_refine: planning/tracking failure {'left': 'Success', 'right': 'Success'}, error=0.047 m": 1
+      },
+      "error": null
+    },
+    {
+      "task": "move_can_pot",
+      "success": false,
+      "end_reason": "decision_budget",
+      "decisions": 30,
+      "failures": {
+        "Empty grasp: no bilateral object contact": 1,
+        "motion_succeeded_goal_unmet": 2,
+        "No above-table object in visual bbox; re-ground target": 27
+      },
+      "error": null
+    },
+    {
+      "task": "move_pillbottle_pad",
+      "success": false,
+      "end_reason": "decision_budget",
+      "decisions": 30,
+      "failures": {
+        "approach_refine: planning/tracking failure {'left': 'Success', 'right': 'Success'}, error=0.077 m": 2,
+        "approach_refine: planning/tracking failure {'left': 'Success', 'right': 'Success'}, error=0.078 m": 1,
+        "approach_refine: planning/tracking failure {'left': 'Success', 'right': 'Success'}, error=0.076 m": 2,
+        "approach: planning/tracking failure {'left': 'Fail', 'right': 'Success'}, error=0.383 m": 1,
+        "Empty grasp: no bilateral object contact": 2,
+        "No above-table object in visual bbox; re-ground target": 22
+      },
+      "error": null
+    },
+    {
+      "task": "move_playingcard_away",
+      "success": false,
+      "end_reason": "decision_budget",
+      "decisions": 30,
+      "failures": {
+        "motion_succeeded_goal_unmet": 19,
+        "move: planning/tracking failure {'left': 'Fail', 'right': 'Success'}, error=0.120 m": 1,
+        "No above-table object in visual bbox; re-ground target": 10
+      },
+      "error": null
+    },
+    {
+      "task": "move_stapler_pad",
+      "success": true,
+      "end_reason": "environment_success",
+      "decisions": 2,
+      "failures": {
+        "motion_succeeded_goal_unmet": 1
+      },
+      "error": null
+    },
+    {
+      "task": "open_laptop",
+      "success": false,
+      "end_reason": "invalid_model_action",
+      "decisions": 0,
+      "failures": {},
+      "error": "Invalid policy action after repair: Invalid bbox"
+    },
+    {
+      "task": "open_microwave",
+      "success": false,
+      "end_reason": "decision_budget",
+      "decisions": 30,
+      "failures": {
+        "contact_refine: planning/tracking failure {'left': 'Success', 'right': 'Success'}, error=0.045 m": 1,
+        "Hinge endpoint is occluded; re-ground hinge line": 29
+      },
+      "error": null
+    },
+    {
+      "task": "pick_diverse_bottles",
+      "success": true,
+      "end_reason": "environment_success",
+      "decisions": 4,
+      "failures": {
+        "motion_succeeded_goal_unmet": 2,
+        "present_refine: planning/tracking failure {'left': 'Success', 'right': 'Success'}, error=0.073 m": 1
+      },
+      "error": null
+    },
+    {
+      "task": "pick_dual_bottles",
+      "success": true,
+      "end_reason": "environment_success",
+      "decisions": 4,
+      "failures": {
+        "motion_succeeded_goal_unmet": 3
+      },
+      "error": null
+    },
+    {
+      "task": "place_a2b_left",
+      "success": false,
+      "end_reason": "invalid_model_action",
+      "decisions": 4,
+      "failures": {
+        "No reachable pushing contact; use other arm or pick/place": 1,
+        "Target is on the left side in calibrated RGB-D. Use the left arm to avoid an unreachable cross-body placement.": 1,
+        "motion_succeeded_goal_unmet": 2
+      },
+      "error": "Invalid policy action after repair: Selected arm is empty. Use the arm with measured holding=True, or pick first."
+    },
+    {
+      "task": "place_a2b_right",
+      "success": false,
+      "end_reason": "decision_budget",
+      "decisions": 30,
+      "failures": {
+        "motion_succeeded_goal_unmet": 1,
+        "No reachable placement orientation; choose a closer destination or adjust held pose": 29
+      },
+      "error": null
+    },
+    {
+      "task": "place_bread_basket",
+      "success": true,
+      "end_reason": "environment_success",
+      "decisions": 2,
+      "failures": {
+        "motion_succeeded_goal_unmet": 1
+      },
+      "error": null
+    },
+    {
+      "task": "place_bread_skillet",
+      "success": false,
+      "end_reason": "decision_budget",
+      "decisions": 30,
+      "failures": {
+        "Grasp lost during lift": 1,
+        "motion_succeeded_goal_unmet": 13,
+        "No reachable placement orientation; choose a closer destination or adjust held pose": 16
+      },
+      "error": null
+    },
+    {
+      "task": "place_burger_fries",
+      "success": false,
+      "end_reason": "decision_budget",
+      "decisions": 30,
+      "failures": {
+        "motion_succeeded_goal_unmet": 5,
+        "transfer_refine: planning/tracking failure {'left': 'Success', 'right': 'Success'}, error=0.065 m": 1,
+        "transfer_refine: planning/tracking failure {'left': 'Success', 'right': 'Success'}, error=0.044 m": 1,
+        "Object lost during transfer; locate it again before placing": 1,
+        "Empty grasp: no bilateral object contact": 4,
+        "No above-table object in visual bbox; re-ground target": 5,
+        "Target is on the right side in calibrated RGB-D. Use the right arm to avoid an unreachable cross-body placement.": 3,
+        "approach_refine: planning/tracking failure {'left': 'Success', 'right': 'Success'}, error=0.068 m": 1,
+        "approach_refine: planning/tracking failure {'left': 'Success', 'right': 'Success'}, error=0.215 m": 1,
+        "Target is on the left side in calibrated RGB-D. Use the left arm to avoid an unreachable cross-body placement.": 3,
+        "approach_refine: planning/tracking failure {'left': 'Success', 'right': 'Success'}, error=0.144 m": 1,
+        "approach_refine: planning/tracking failure {'left': 'Success', 'right': 'Success'}, error=0.139 m": 1,
+        "contact_refine: planning/tracking failure {'left': 'Success', 'right': 'Success'}, error=0.040 m": 1,
+        "contact_refine: planning/tracking failure {'left': 'Success', 'right': 'Success'}, error=0.036 m": 2
+      },
+      "error": null
+    },
+    {
+      "task": "place_can_basket",
+      "success": false,
+      "end_reason": "decision_budget",
+      "decisions": 30,
+      "failures": {
+        "motion_succeeded_goal_unmet": 1,
+        "No reachable placement orientation; choose a closer destination or adjust held pose": 29
+      },
+      "error": null
+    },
+    {
+      "task": "place_cans_plasticbox",
+      "success": true,
+      "end_reason": "environment_success",
+      "decisions": 6,
+      "failures": {
+        "motion_succeeded_goal_unmet": 3,
+        "transfer_refine: planning/tracking failure {'left': 'Success', 'right': 'Success'}, error=0.821 m": 1,
+        "lower_refine: planning/tracking failure {'left': 'Success', 'right': 'Success'}, error=0.044 m": 1
+      },
+      "error": null
+    },
+    {
+      "task": "place_container_plate",
+      "success": false,
+      "end_reason": "decision_budget",
+      "decisions": 30,
+      "failures": {
+        "contact_refine: planning/tracking failure {'left': 'Success', 'right': 'Success'}, error=0.046 m": 2,
+        "Object lost during transfer; locate it again before placing": 1,
+        "No above-table object in visual bbox; re-ground target": 4,
+        "Target is on the left side in calibrated RGB-D. Use the left arm to avoid an unreachable cross-body placement.": 4,
+        "contact_refine: planning/tracking failure {'left': 'Success', 'right': 'Success'}, error=0.050 m": 1,
+        "Target is on the right side in calibrated RGB-D. Use the right arm to avoid an unreachable cross-body placement.": 3,
+        "Empty grasp: no bilateral object contact": 3,
+        "approach_refine: planning/tracking failure {'left': 'Success', 'right': 'Success'}, error=0.038 m": 1,
+        "contact_refine: planning/tracking failure {'left': 'Success', 'right': 'Success'}, error=0.043 m": 3,
+        "contact_refine: planning/tracking failure {'left': 'Success', 'right': 'Success'}, error=0.048 m": 2,
+        "motion_succeeded_goal_unmet": 4,
+        "contact_refine: planning/tracking failure {'left': 'Success', 'right': 'Success'}, error=0.051 m": 1,
+        "contact_refine: planning/tracking failure {'left': 'Success', 'right': 'Success'}, error=0.052 m": 1
+      },
+      "error": null
+    },
+    {
+      "task": "place_dual_shoes",
+      "success": false,
+      "end_reason": "decision_budget",
+      "decisions": 30,
+      "failures": {
+        "motion_succeeded_goal_unmet": 1,
+        "Selected target outside table workspace": 29
+      },
+      "error": null
+    },
+    {
+      "task": "place_empty_cup",
+      "success": false,
+      "end_reason": "decision_budget",
+      "decisions": 30,
+      "failures": {
+        "No above-table object in visual bbox; re-ground target": 30
+      },
+      "error": null
+    },
+    {
+      "task": "place_fan",
+      "success": false,
+      "end_reason": "decision_budget",
+      "decisions": 30,
+      "failures": {
+        "motion_succeeded_goal_unmet": 1,
+        "transfer_refine: planning/tracking failure {'left': 'Success', 'right': 'Success'}, error=0.046 m": 1,
+        "No reachable placement orientation; choose a closer destination or adjust held pose": 1,
+        "transfer_refine: planning/tracking failure {'left': 'Success', 'right': 'Success'}, error=0.049 m": 1,
+        "No above-table object in visual bbox; re-ground target": 26
+      },
+      "error": null
+    },
+    {
+      "task": "place_mouse_pad",
+      "success": false,
+      "end_reason": "decision_budget",
+      "decisions": 30,
+      "failures": {
+        "motion_succeeded_goal_unmet": 3,
+        "No above-table object in visual bbox; re-ground target": 27
+      },
+      "error": null
+    },
+    {
+      "task": "place_object_basket",
+      "success": false,
+      "end_reason": "decision_budget",
+      "decisions": 30,
+      "failures": {
+        "motion_succeeded_goal_unmet": 1,
+        "No reachable placement orientation; choose a closer destination or adjust held pose": 29
+      },
+      "error": null
+    },
+    {
+      "task": "place_object_scale",
+      "success": false,
+      "end_reason": "decision_budget",
+      "decisions": 30,
+      "failures": {
+        "motion_succeeded_goal_unmet": 4,
+        "No above-table object in visual bbox; re-ground target": 26
+      },
+      "error": null
+    },
+    {
+      "task": "place_object_stand",
+      "success": true,
+      "end_reason": "environment_success",
+      "decisions": 2,
+      "failures": {
+        "motion_succeeded_goal_unmet": 1
+      },
+      "error": null
+    },
+    {
+      "task": "place_phone_stand",
+      "success": false,
+      "end_reason": "decision_budget",
+      "decisions": 30,
+      "failures": {
+        "motion_succeeded_goal_unmet": 6,
+        "No depth at destination": 2,
+        "No reachable placement orientation; choose a closer destination or adjust held pose": 22
+      },
+      "error": null
+    },
+    {
+      "task": "place_shoe",
+      "success": true,
+      "end_reason": "environment_success",
+      "decisions": 3,
+      "failures": {
+        "motion_succeeded_goal_unmet": 1,
+        "transfer_refine: planning/tracking failure {'left': 'Success', 'right': 'Success'}, error=0.038 m": 1
+      },
+      "error": null
+    },
+    {
+      "task": "press_stapler",
+      "success": true,
+      "end_reason": "environment_success",
+      "decisions": 1,
+      "failures": {},
+      "error": null
+    },
+    {
+      "task": "put_bottles_dustbin",
+      "success": false,
+      "end_reason": "invalid_model_action",
+      "decisions": 5,
+      "failures": {
+        "Target is on the right side in calibrated RGB-D. Use the right arm to avoid an unreachable cross-body placement.": 1,
+        "motion_succeeded_goal_unmet": 2,
+        "Empty grasp: no bilateral object contact": 2
+      },
+      "error": "Invalid policy action after repair: Selected arm is empty. Use the arm with measured holding=True, or pick first."
+    },
+    {
+      "task": "put_object_cabinet",
+      "success": false,
+      "end_reason": "decision_budget",
+      "decisions": 30,
+      "failures": {
+        "No reachable pushing contact; use other arm or pick/place": 1,
+        "Target is on the left side in calibrated RGB-D. Use the left arm to avoid an unreachable cross-body placement.": 1,
+        "approach_refine: planning/tracking failure {'left': 'Success', 'right': 'Success'}, error=0.145 m": 1,
+        "approach_refine: planning/tracking failure {'left': 'Success', 'right': 'Success'}, error=0.137 m": 1,
+        "approach_refine: planning/tracking failure {'left': 'Success', 'right': 'Success'}, error=0.131 m": 1,
+        "approach_refine: planning/tracking failure {'left': 'Success', 'right': 'Success'}, error=0.117 m": 25
+      },
+      "error": null
+    },
+    {
+      "task": "rotate_qrcode",
+      "success": false,
+      "end_reason": "decision_budget",
+      "decisions": 30,
+      "failures": {
+        "No above-table object in visual bbox; re-ground target": 4,
+        "motion_succeeded_goal_unmet": 26
+      },
+      "error": null
+    },
+    {
+      "task": "scan_object",
+      "success": false,
+      "end_reason": "decision_budget",
+      "decisions": 30,
+      "failures": {
+        "Target is on the right side in calibrated RGB-D. Use the right arm to avoid an unreachable cross-body placement.": 1,
+        "motion_succeeded_goal_unmet": 29
+      },
+      "error": null
+    },
+    {
+      "task": "shake_bottle",
+      "success": true,
+      "end_reason": "environment_success",
+      "decisions": 1,
+      "failures": {},
+      "error": null
+    },
+    {
+      "task": "shake_bottle_horizontally",
+      "success": true,
+      "end_reason": "environment_success",
+      "decisions": 1,
+      "failures": {},
+      "error": null
+    },
+    {
+      "task": "stack_blocks_three",
+      "success": false,
+      "end_reason": "decision_budget",
+      "decisions": 30,
+      "failures": {
+        "motion_succeeded_goal_unmet": 1,
+        "No reachable placement orientation; choose a closer destination or adjust held pose": 29
+      },
+      "error": null
+    },
+    {
+      "task": "stack_blocks_two",
+      "success": false,
+      "end_reason": "invalid_model_action",
+      "decisions": 8,
+      "failures": {
+        "motion_succeeded_goal_unmet": 3,
+        "No reachable placement orientation; choose a closer destination or adjust held pose": 5
+      },
+      "error": "Invalid policy action after repair: Selected arm is empty. Use the arm with measured holding=True, or pick first."
+    },
+    {
+      "task": "stack_bowls_three",
+      "success": false,
+      "end_reason": "decision_budget",
+      "decisions": 30,
+      "failures": {
+        "contact_refine: planning/tracking failure {'left': 'Success', 'right': 'Success'}, error=0.047 m": 1,
+        "No reachable placement orientation; choose a closer destination or adjust held pose": 4,
+        "motion_succeeded_goal_unmet": 8,
+        "move_refine: planning/tracking failure {'left': 'Success', 'right': 'Success'}, error=0.090 m": 1,
+        "Target is on the right side in calibrated RGB-D. Use the right arm to avoid an unreachable cross-body placement.": 1,
+        "contact_refine: planning/tracking failure {'left': 'Success', 'right': 'Success'}, error=0.038 m": 1,
+        "No above-table object in visual bbox; re-ground target": 8,
+        "Object lost during transfer; locate it again before placing": 2,
+        "Empty grasp: no bilateral object contact": 1,
+        "transfer_refine: planning/tracking failure {'left': 'Success', 'right': 'Success'}, error=0.055 m": 1,
+        "transfer_refine: planning/tracking failure {'left': 'Success', 'right': 'Success'}, error=0.040 m": 1,
+        "Target is on the left side in calibrated RGB-D. Use the left arm to avoid an unreachable cross-body placement.": 1
+      },
+      "error": null
+    },
+    {
+      "task": "stack_bowls_two",
+      "success": false,
+      "end_reason": "decision_budget",
+      "decisions": 30,
+      "failures": {
+        "contact_refine: planning/tracking failure {'left': 'Success', 'right': 'Success'}, error=0.048 m": 1,
+        "Object lost during transfer; locate it again before placing": 1,
+        "contact_refine: planning/tracking failure {'left': 'Success', 'right': 'Success'}, error=0.039 m": 2,
+        "Empty grasp: no bilateral object contact": 1,
+        "motion_succeeded_goal_unmet": 11,
+        "No depth at destination": 14
+      },
+      "error": null
+    },
+    {
+      "task": "stamp_seal",
+      "success": false,
+      "end_reason": "decision_budget",
+      "decisions": 30,
+      "failures": {
+        "motion_succeeded_goal_unmet": 2,
+        "No above-table object in visual bbox; re-ground target": 28
+      },
+      "error": null
+    },
+    {
+      "task": "turn_switch",
+      "success": false,
+      "end_reason": "decision_budget",
+      "decisions": 30,
+      "failures": {
+        "press_refine: planning/tracking failure {'left': 'Success', 'right': 'Success'}, error=0.039 m": 29,
+        "press_refine: planning/tracking failure {'left': 'Success', 'right': 'Success'}, error=0.040 m": 1
+      },
+      "error": null
+    }
+  ]
+}

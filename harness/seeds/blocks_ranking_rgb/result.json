@@ -1,0 +1,6 @@
+{
+  "task": "blocks_ranking_rgb",
+  "seed": 100000,
+  "status": "expert_validated",
+  "instruction": "Using the left arm, the right arm, and the left arm, arrange red block, green block, and blue block sequentially from left to right in a single row."
+}

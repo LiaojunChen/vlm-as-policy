@@ -1,0 +1,6 @@
+{
+  "task": "turn_switch",
+  "seed": 100000,
+  "status": "expert_validated",
+  "instruction": "Activate the switch trapezoid shape brown marking with the left arm."
+}

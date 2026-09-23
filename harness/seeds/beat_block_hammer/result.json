@@ -1,0 +1,6 @@
+{
+  "task": "beat_block_hammer",
+  "seed": 100000,
+  "status": "expert_validated",
+  "instruction": "Take the grippy handle hammer using the left arm, hit the block."
+}

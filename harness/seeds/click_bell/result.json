@@ -1,0 +1,6 @@
+{
+  "task": "click_bell",
+  "seed": 100000,
+  "status": "expert_validated",
+  "instruction": "Command the right arm to press the blue bell's top."
+}

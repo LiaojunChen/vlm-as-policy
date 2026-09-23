@@ -1,0 +1,6 @@
+{
+  "task": "move_stapler_pad",
+  "seed": 100000,
+  "status": "expert_validated",
+  "instruction": "Grab the stapler with blue plastic handle using the left arm and shift it to Cyan"
+}

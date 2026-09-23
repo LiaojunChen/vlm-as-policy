@@ -1,0 +1,6 @@
+{
+  "task": "place_cans_plasticbox",
+  "seed": 100000,
+  "status": "expert_validated",
+  "instruction": "Use the arms to transfer the hand-sized red can for drinks and the metallic drink can with pull-tab into the plasticbox with hinged lid."
+}

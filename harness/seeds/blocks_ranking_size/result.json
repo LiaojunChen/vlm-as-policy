@@ -1,0 +1,6 @@
+{
+  "task": "blocks_ranking_size",
+  "seed": 100000,
+  "status": "expert_validated",
+  "instruction": "Use the left arm, the right arm, and the left arm to arrange large block, medium block, small block in order here."
+}

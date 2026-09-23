@@ -1,0 +1,6 @@
+{
+  "task": "stack_blocks_two",
+  "seed": 100000,
+  "status": "expert_validated",
+  "instruction": "the left arm moves red block to the center, the right arm stacks green block onto red block."
+}

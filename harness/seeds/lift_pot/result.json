@@ -1,0 +1,6 @@
+{
+  "task": "lift_pot",
+  "seed": 100000,
+  "status": "expert_validated",
+  "instruction": "Both arms lift the kitchenpot with smooth exterior upright"
+}

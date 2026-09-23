@@ -1,0 +1,6 @@
+{
+  "task": "press_stapler",
+  "seed": 100000,
+  "status": "expert_validated",
+  "instruction": "Push down on the stapler with blue plastic handle to staple"
+}

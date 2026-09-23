@@ -1,0 +1,6 @@
+{
+  "task": "place_phone_stand",
+  "seed": 100000,
+  "status": "expert_validated",
+  "instruction": "Take the compact phone with flat design to the phonestand with green hooks."
+}

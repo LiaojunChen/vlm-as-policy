@@ -1,0 +1,6 @@
+{
+  "task": "place_mouse_pad",
+  "seed": 100000,
+  "status": "expert_validated",
+  "instruction": "Grab the small mouse with smooth surface and drop it on Cyan mat."
+}

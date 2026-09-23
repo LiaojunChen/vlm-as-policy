@@ -1,0 +1,6 @@
+{
+  "task": "place_object_scale",
+  "seed": 100000,
+  "status": "expert_validated",
+  "instruction": "After grabbing the small blue and brown bell, place it on the small rectangular electronicscale."
+}

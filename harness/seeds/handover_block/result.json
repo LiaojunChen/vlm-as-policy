@@ -1,0 +1,6 @@
+{
+  "task": "handover_block",
+  "seed": 100000,
+  "status": "expert_validated",
+  "instruction": "Pick the red block up with the left arm, hand it to the right arm, and set it on the blue pad."
+}

@@ -1,0 +1,6 @@
+{
+  "task": "adjust_bottle",
+  "seed": 100001,
+  "status": "expert_validated",
+  "instruction": "Use the right arm to hold the dark drink bottle with logo from the table"
+}

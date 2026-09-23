@@ -1,0 +1,6 @@
+{
+  "task": "move_playingcard_away",
+  "seed": 100000,
+  "status": "expert_validated",
+  "instruction": "Lift the cardboard playing cards box and push it off the table."
+}

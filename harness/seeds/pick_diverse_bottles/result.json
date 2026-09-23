@@ -1,0 +1,6 @@
+{
+  "task": "pick_diverse_bottles",
+  "seed": 100000,
+  "status": "expert_validated",
+  "instruction": "Pick up the medium bottle with glossy surface and the yellow text bottle simultaneously."
+}

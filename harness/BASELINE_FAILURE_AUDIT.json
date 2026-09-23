@@ -1,0 +1,11 @@
+{
+  "decisions": 1980,
+  "counts": {
+    "execution_not_ok": 1572,
+    "motion_failure_hover": 648,
+    "motion_failure_reach": 910,
+    "wait_without_skill": 32,
+    "motion_failure_lift": 14
+  },
+  "consecutive_identical_failed_actions": 454
+}

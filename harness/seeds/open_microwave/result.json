@@ -1,0 +1,6 @@
+{
+  "task": "open_microwave",
+  "seed": 100000,
+  "status": "expert_validated",
+  "instruction": "Pull to open the microwave."
+}

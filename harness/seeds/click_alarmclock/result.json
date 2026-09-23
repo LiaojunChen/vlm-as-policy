@@ -1,0 +1,6 @@
+{
+  "task": "click_alarmclock",
+  "seed": 100000,
+  "status": "expert_validated",
+  "instruction": "Use the left arm to tap the smooth black alarm-clock's top button center"
+}

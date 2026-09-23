@@ -1,0 +1,6 @@
+{
+  "task": "rotate_qrcode",
+  "seed": 100001,
+  "status": "expert_validated",
+  "instruction": "Grab the white stand sign, lift it from the table, and rotate it QR front"
+}

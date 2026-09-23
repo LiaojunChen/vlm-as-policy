@@ -2,7 +2,9 @@
 
 网站：[VLM as Policy](https://liaojunchen.github.io/vlm-as-policy/) · 仓库：[LiaojunChen/vlm-as-policy](https://github.com/LiaojunChen/vlm-as-policy)
 
-参考 [robodawn.top](https://robodawn.top) 的内容组织与分析方式，展示本地 v72 的真实评测结果。
+VLM as Policy 的 v72 源码、真实评测结果与交互式证据展示。
+
+评测源码位于 [`harness/`](harness/)，同步范围、外部依赖与运行说明见 [HARNESS.md](HARNESS.md)，逐文件校验清单见 [harness-source-manifest.json](harness-source-manifest.json)。
 
 主批次：`repeat500_official_sampling_maxsteps30_20260922`，50 个任务 × 10 个不同接受 seed，233/500 成功，成功率 **46.6%**，0 基础设施错误。2026-09-23 03:48:09 UTC 完成。
 模型为 `phyRSI/ZDTaichu5.0-9B`；`demo_clean`、30 决策预算、1200 秒墙钟预算。按 RoboTwin 官方方式从 seed 100000 顺序扫描，专家验证通过后取每任务前 10 个 seed（官方常规为每任务 100 次）。与官网 C2R 不同评测口径，不构成同榜排名。历史开发批次 36/50（72%）单独展示，不能作为同 seed 配对比较。

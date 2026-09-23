@@ -1,0 +1,6 @@
+{
+  "task": "pick_dual_bottles",
+  "seed": 100000,
+  "status": "expert_validated",
+  "instruction": "Raise the bottle with white neck and red top and the bottle with white printed label at the same time."
+}

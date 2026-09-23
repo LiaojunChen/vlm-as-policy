@@ -1,0 +1,6 @@
+{
+  "task": "put_bottles_dustbin",
+  "seed": 100000,
+  "status": "expert_validated",
+  "instruction": "Take all of the medium yellow cylindrical bottle, the bottle with ribbed design, and the bottle with curved body shape to the black bin with white liner."
+}

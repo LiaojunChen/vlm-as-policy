@@ -1,0 +1,6 @@
+{
+  "task": "shake_bottle_horizontally",
+  "seed": 100000,
+  "status": "expert_validated",
+  "instruction": "Lift the bottle with green and white label with the right arm, then shake it side to side."
+}

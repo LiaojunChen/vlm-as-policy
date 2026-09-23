@@ -1,0 +1,6 @@
+{
+  "task": "place_container_plate",
+  "seed": 100000,
+  "status": "expert_validated",
+  "instruction": "Place the medium-sized bowl for holding food squarely on top of the smooth ceramic plate."
+}

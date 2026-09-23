@@ -1,0 +1,6 @@
+{
+  "task": "scan_object",
+  "seed": 100002,
+  "status": "expert_validated",
+  "instruction": "Use both arms in parallel for the rectangle tea-box and the medium handheld scanner, then perform the scan."
+}

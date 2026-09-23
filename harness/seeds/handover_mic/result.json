@@ -1,0 +1,6 @@
+{
+  "task": "handover_mic",
+  "seed": 100000,
+  "status": "expert_validated",
+  "instruction": "Take the microphone with cylindrical handle and move it to another hand."
+}

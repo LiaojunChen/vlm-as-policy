@@ -1,0 +1,6 @@
+{
+  "task": "place_shoe",
+  "seed": 100000,
+  "status": "expert_validated",
+  "instruction": "Using the right arm, lift the shoe with thick rubber sole from the table and place it onto the mat"
+}

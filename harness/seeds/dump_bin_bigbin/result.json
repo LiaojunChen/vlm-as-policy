@@ -1,0 +1,6 @@
+{
+  "task": "dump_bin_bigbin",
+  "seed": 100001,
+  "status": "expert_validated",
+  "instruction": "Use arm to pick the tabletrashbin with grooves on sides, pour in bin"
+}

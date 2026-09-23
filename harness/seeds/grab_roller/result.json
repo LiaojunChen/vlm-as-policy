@@ -1,0 +1,6 @@
+{
+  "task": "grab_roller",
+  "seed": 100000,
+  "status": "expert_validated",
+  "instruction": "Grab the roller with polished surface placed on the table."
+}

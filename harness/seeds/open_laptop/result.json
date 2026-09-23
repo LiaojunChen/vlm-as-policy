@@ -1,0 +1,6 @@
+{
+  "task": "open_laptop",
+  "seed": 100000,
+  "status": "expert_validated",
+  "instruction": "Carefully open the metal laptop using the left arm"
+}

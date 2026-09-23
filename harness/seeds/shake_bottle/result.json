@@ -1,0 +1,6 @@
+{
+  "task": "shake_bottle",
+  "seed": 100001,
+  "status": "expert_validated",
+  "instruction": "Using the left arm, shake the handheld bottle and then place it back."
+}

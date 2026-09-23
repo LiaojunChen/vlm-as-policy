@@ -1,0 +1,11 @@
+{
+  "source": "/mnt/vepfs01/output/watson.chen/robodawn_robotwin",
+  "policy_source": "/mnt/vepfs01/output/watson.chen/robodawn_robotwin_review_20260916",
+  "destination": "/mnt/vepfs01/output/watson.chen/robodawn_robotwin_harness_v3",
+  "independent_code": true,
+  "shared_readonly": [
+    "RoboTwin/assets",
+    "/mnt/vepfs01/output/watson.chen/robodawn_robotwin/.venv-robotwin310"
+  ],
+  "original_code_edited": false
+}

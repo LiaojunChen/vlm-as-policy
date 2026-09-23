@@ -1,0 +1,6 @@
+{
+  "task": "stack_blocks_three",
+  "seed": 100000,
+  "status": "expert_validated",
+  "instruction": "Set red block down first, place green block on it, and finish with blue block."
+}

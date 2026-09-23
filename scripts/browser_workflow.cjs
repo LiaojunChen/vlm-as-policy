@@ -25,7 +25,10 @@ const {chromium}=require(process.env.PLAYWRIGHT_MODULE||'playwright');
         assert.equal(await p.locator('.flow-model-images img').count(),calls[j].attachments.length);
         checkedCalls++;
       }
-      assert.equal(await p.locator('#workflow-app a[href="undefined"]').count(),0);checkedSteps++;
+      assert.equal(await p.locator('#workflow-app a[href="undefined"]').count(),0);
+      assert.doesNotMatch(await p.locator('body').textContent(),/robodawn/i);
+      assert.equal(await p.locator('a[href*="robodawn"]').count(),0);
+      checkedSteps++;
     }
     assert.match(await p.locator('.flow-end-title').innerText(),id.startsWith('stack')?/任务完成/:/任务未完成/);
   }

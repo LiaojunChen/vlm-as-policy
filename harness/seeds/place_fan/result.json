@@ -1,0 +1,6 @@
+{
+  "task": "place_fan",
+  "seed": 100002,
+  "status": "expert_validated",
+  "instruction": "Using the left arm, grab the portable white fan and put it on the Tan mat facing the robot."
+}
