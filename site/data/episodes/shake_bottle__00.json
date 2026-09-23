@@ -1,0 +1,1 @@
+{"id":"shake_bottle__00","trace":[{"step":0,"observation_id":1,"skill":"pick","arm":"right","target":"plastic bottle","destination":null,"skill_success":true,"official_success":true,"failure":null,"recovery":null,"frames":{"head_camera":"0001_head_camera.webp","left_camera":"0001_left_camera.webp","right_camera":"0001_right_camera.webp"}}]}

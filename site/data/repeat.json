@@ -1,1 +1,1 @@
-{"requested": 500, "terminated": 0, "completed": 0, "successes": 0, "failures": 0, "errors": 0, "updated_utc": "2026-09-22T08:26:37Z", "statuses": {"pending": 498, "running": 2}, "max_steps": 20, "cohort": "repeat500_maxsteps20_protocol_standard_20260922"}
+{"requested":500,"completed":500,"successes":233,"failures":267,"errors":0}

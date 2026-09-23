@@ -1,0 +1,1 @@
+{"id":"click_bell__00","trace":[{"step":0,"observation_id":1,"skill":"press","arm":"right","target":"blue bell top center","destination":null,"skill_success":true,"official_success":true,"failure":null,"recovery":null,"frames":{"head_camera":"0001_head_camera.webp","left_camera":"0001_left_camera.webp","right_camera":"0001_right_camera.webp"}}]}

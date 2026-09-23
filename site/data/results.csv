@@ -1,51 +1,501 @@
-task,family,seed,success,policy_decisions,model_calls,elapsed_s,end_reason,last_failure
-adjust_bottle,抓取与双臂协作,100001,True,2,3,58.874010291998275,environment_success,
-beat_block_hammer,接触与工具操作,100000,True,2,9,121.80606067500776,environment_success,
-blocks_ranking_rgb,堆叠与排序,100000,True,8,6,86.09770723601105,environment_success,
-blocks_ranking_size,堆叠与排序,100000,True,8,5,71.98917987797176,environment_success,
-click_alarmclock,接触与工具操作,100000,True,1,3,23.27448572695721,environment_success,
-click_bell,接触与工具操作,100000,True,1,2,16.296302132017445,environment_success,
-dump_bin_bigbin,姿态与特殊目标,100001,False,30,65,275.35217987402575,decision_budget,No depth at destination
-grab_roller,抓取与双臂协作,100000,True,4,5,53.61645887501072,environment_success,
-handover_block,抓取与双臂协作,100000,True,4,7,58.29725000297185,environment_success,
-handover_mic,抓取与双臂协作,100000,True,2,2,29.185407932964154,environment_success,
-hanging_mug,姿态与特殊目标,100000,False,17,49,235.79080439498648,invalid_model_action,No reachable empty-arm observation pose
-lift_pot,抓取与双臂协作,100000,True,3,6,52.398012693971395,environment_success,
-move_can_pot,放置与搬运,100000,True,4,11,71.7213466350222,environment_success,
-move_pillbottle_pad,放置与搬运,100002,True,2,7,42.15998605597997,environment_success,
-move_playingcard_away,放置与搬运,100000,False,30,134,587.843002706999,decision_budget,No reachable grasp orientation; change arm or contact location
-move_stapler_pad,放置与搬运,100000,True,2,6,37.3567871460109,environment_success,
-open_laptop,接触与工具操作,100000,False,4,36,162.51005980803166,invalid_model_action,
-open_microwave,接触与工具操作,100000,True,17,46,265.8290646550013,environment_success,
-pick_diverse_bottles,抓取与双臂协作,100000,True,5,7,72.24129700002959,environment_success,
-pick_dual_bottles,抓取与双臂协作,100000,True,4,6,66.6925752160023,environment_success,
-place_a2b_left,放置与搬运,100000,True,5,11,86.561875408981,environment_success,
-place_a2b_right,放置与搬运,100000,True,6,10,81.33245170698501,environment_success,
-place_bread_basket,放置与搬运,100000,True,2,6,44.31849859695649,environment_success,
-place_bread_skillet,放置与搬运,100004,True,6,11,92.24029018497095,environment_success,
-place_burger_fries,放置与搬运,100000,True,5,10,73.80286906805122,environment_success,
-place_can_basket,放置与搬运,100000,True,7,15,123.32689945603488,environment_success,
-place_cans_plasticbox,放置与搬运,100000,True,5,11,73.36883065698203,environment_success,
-place_container_plate,放置与搬运,100000,True,2,6,40.28062749101082,environment_success,
-place_dual_shoes,放置与搬运,100001,False,30,85,477.65352957497817,decision_budget,Empty grasp: no bilateral object contact
-place_empty_cup,放置与搬运,100000,False,30,157,384.6387556850095,decision_budget,PUSH distance must be 1.5–45 cm
-place_fan,放置与搬运,100002,False,29,388,1200.6331607079483,wall_time_budget,
-place_mouse_pad,放置与搬运,100000,True,4,10,86.75009743100964,environment_success,
-place_object_basket,放置与搬运,100000,False,4,10,70.85097965103341,invalid_model_action,
-place_object_scale,放置与搬运,100000,True,2,7,80.44251569296466,environment_success,
-place_object_stand,放置与搬运,100000,True,2,6,41.42700013000285,environment_success,
-place_phone_stand,放置与搬运,100000,True,2,6,41.14704097399954,environment_success,
-place_shoe,放置与搬运,100000,True,3,9,57.370597718982026,environment_success,
-press_stapler,接触与工具操作,100000,True,2,10,52.825764469977,environment_success,
-put_bottles_dustbin,放置与搬运,100000,False,22,293,1200.8060140209855,wall_time_budget,
-put_object_cabinet,放置与搬运,100029,False,15,65,292.0916829490452,invalid_model_action,
-rotate_qrcode,姿态与特殊目标,100001,False,30,48,300.91553238302004,decision_budget,
-scan_object,姿态与特殊目标,100002,False,30,45,321.5090645670425,decision_budget,
-shake_bottle,姿态与特殊目标,100001,True,1,2,30.17667621502187,environment_success,
-shake_bottle_horizontally,姿态与特殊目标,100000,True,1,2,22.439524970017374,environment_success,
-stack_blocks_three,堆叠与排序,100000,True,8,12,100.25549421098549,environment_success,
-stack_blocks_two,堆叠与排序,100000,True,6,12,73.5912808739813,environment_success,
-stack_bowls_three,堆叠与排序,100000,False,30,83,482.1788734240108,decision_budget,Empty grasp: no bilateral object contact
-stack_bowls_two,堆叠与排序,100000,True,7,9,80.46770759898936,environment_success,
-stamp_seal,接触与工具操作,100000,False,16,61,237.55538882303517,invalid_model_action,No reachable placement orientation; choose a closer destination or adjust held pose
-turn_switch,接触与工具操作,100000,True,3,8,83.05390569102019,environment_success,
+id,task,repeat_index,seed,success,policy_decisions,model_calls,elapsed_s,end_reason,error,last_failure
+adjust_bottle__00,adjust_bottle,0,100001,False,14,32,252.85438281099778,invalid_model_action,Invalid policy action after repair: That unchanged action was already tried twice without completing the goal. Choose a DIFFERENT recovery action or contact part.,
+adjust_bottle__01,adjust_bottle,1,100002,False,30,33,247.88604652899085,decision_budget,,"move: planning/tracking failure {'left': 'Success', 'right': 'Fail'}, error=0.100 m"
+adjust_bottle__02,adjust_bottle,2,100005,False,30,32,274.87048906402197,decision_budget,,"move: planning/tracking failure {'left': 'Fail', 'right': 'Success'}, error=0.100 m"
+adjust_bottle__03,adjust_bottle,3,100006,False,30,32,249.51313259400195,decision_budget,,"move: planning/tracking failure {'left': 'Success', 'right': 'Fail'}, error=0.100 m"
+adjust_bottle__04,adjust_bottle,4,100008,False,30,37,292.1443888259819,decision_budget,,
+adjust_bottle__05,adjust_bottle,5,100010,False,4,43,264.8175467120018,invalid_model_action,"Invalid policy action after repair: right_camera: No above-table object in current right_camera visual bbox; re-ground or try another current camera; head_camera: Grounding invalid after repair: Your contact point is on the ROBOT, not the requested scene object. The calibrated robot silhouette is now neutral GREY in this same current image. Locate a visible part of the requested object OUTSIDE the grey robot region, or return visible=false if it is fully occluded. Do not guess through the robot.",
+adjust_bottle__06,adjust_bottle,6,100012,True,2,4,73.57130402699113,environment_success,,
+adjust_bottle__07,adjust_bottle,7,100013,False,30,58,430.97783684299793,decision_budget,,"move: planning/tracking failure {'left': 'Success', 'right': 'Fail'}, error=0.100 m"
+adjust_bottle__08,adjust_bottle,8,100015,False,16,33,266.67284920002567,invalid_model_action,Invalid policy action after repair: That unchanged action was already tried twice without completing the goal. Choose a DIFFERENT recovery action or contact part.,
+adjust_bottle__09,adjust_bottle,9,100016,False,15,93,534.2439852830139,invalid_model_action,Invalid policy action after repair: left_camera: No above-table object in current left_camera visual bbox; re-ground or try another current camera; head_camera: No current above-table contact surface; change view,
+beat_block_hammer__00,beat_block_hammer,0,100000,False,30,47,309.64727506705094,decision_budget,,Insufficient visible support surface for stacking
+beat_block_hammer__01,beat_block_hammer,1,100002,True,5,11,137.37515899701975,environment_success,,
+beat_block_hammer__02,beat_block_hammer,2,100003,True,2,9,88.12747924803989,environment_success,,
+beat_block_hammer__03,beat_block_hammer,3,100004,False,7,38,271.49178762198426,invalid_model_action,"Invalid policy action after repair: right_camera: No above-table object in current right_camera visual bbox; re-ground or try another current camera; head_camera: Grounding invalid after repair: Your contact point is on the ROBOT, not the requested scene object. The calibrated robot silhouette is now neutral GREY in this same current image. Locate a visible part of the requested object OUTSIDE the grey robot region, or return visible=false if it is fully occluded. Do not guess through the robot.",
+beat_block_hammer__04,beat_block_hammer,4,100007,False,30,74,473.9441761369817,decision_budget,,Destination block is not visible; re-ground before stacking
+beat_block_hammer__05,beat_block_hammer,5,100008,True,2,8,83.78734709700802,environment_success,,
+beat_block_hammer__06,beat_block_hammer,6,100009,False,30,46,342.01930282701505,decision_budget,,No reachable placement orientation; choose a closer destination or adjust held pose
+beat_block_hammer__07,beat_block_hammer,7,100010,True,4,9,100.4721681610099,environment_success,,
+beat_block_hammer__08,beat_block_hammer,8,100011,False,16,54,418.9539041200187,invalid_model_action,"Invalid policy action after repair: left_camera: Grounding invalid after repair: Your contact point is on the ROBOT, not the requested scene object. The calibrated robot silhouette is now neutral GREY in this same current image. Locate a visible part of the requested object OUTSIDE the grey robot region, or return visible=false if it is fully occluded. Do not guess through the robot.; head_camera: Grounding invalid after repair: Your contact point is on the ROBOT, not the requested scene object. The calibrated robot silhouette is now neutral GREY in this same current image. Locate a visible part of the requested object OUTSIDE the grey robot region, or return visible=false if it is fully occluded. Do not guess through the robot.",
+beat_block_hammer__09,beat_block_hammer,9,100012,False,16,50,440.1897366399644,invalid_model_action,"Invalid policy action after repair: head_camera: Grounding invalid after repair: Your contact point is on the ROBOT, not the requested scene object. The calibrated robot silhouette is now neutral GREY in this same current image. Locate a visible part of the requested object OUTSIDE the grey robot region, or return visible=false if it is fully occluded. Do not guess through the robot.",Empty grasp: no bilateral object contact
+blocks_ranking_rgb__00,blocks_ranking_rgb,0,100000,True,8,4,134.1256876020343,environment_success,,
+blocks_ranking_rgb__01,blocks_ranking_rgb,1,100001,False,15,36,351.18830020399764,invalid_model_action,"Invalid policy action after repair: This held-source/destination placement has exhausted reachability twice with NO intervening motion. Changing wording, approach or grasp_part cannot change the existing grasp. Plan a physical prerequisite BEFORE retrying: move a held object, acquire/reposition a destination with the free arm when permitted by the task, or stage and regrasp. Preserve the original goal and arm constraints.",No reachable placement orientation; choose a closer destination or adjust held pose
+blocks_ranking_rgb__02,blocks_ranking_rgb,2,100002,True,8,6,142.90521020296728,environment_success,,
+blocks_ranking_rgb__03,blocks_ranking_rgb,3,100003,False,30,56,583.0985537889646,decision_budget,,No reachable placement orientation; choose a closer destination or adjust held pose
+blocks_ranking_rgb__04,blocks_ranking_rgb,4,100004,True,8,6,120.51916443102527,environment_success,,
+blocks_ranking_rgb__05,blocks_ranking_rgb,5,100005,False,30,60,738.586061153037,decision_budget,,
+blocks_ranking_rgb__06,blocks_ranking_rgb,6,100006,True,13,18,248.5230818389682,environment_success,,
+blocks_ranking_rgb__07,blocks_ranking_rgb,7,100007,True,8,5,138.47572125599254,environment_success,,
+blocks_ranking_rgb__08,blocks_ranking_rgb,8,100008,True,23,16,333.63017259398475,environment_success,,
+blocks_ranking_rgb__09,blocks_ranking_rgb,9,100009,False,27,55,557.39616427297,invalid_model_action,"Invalid policy action after repair: This arm is empty. Pick/grasp_handle first, or use the occupied arm.",
+blocks_ranking_size__00,blocks_ranking_size,0,100000,False,30,58,599.4161258990061,decision_budget,,
+blocks_ranking_size__01,blocks_ranking_size,1,100001,False,30,46,549.5895598850329,decision_budget,,No observed clear table patch fits the held footprint near the requested point
+blocks_ranking_size__02,blocks_ranking_size,2,100002,False,12,17,250.71332843299024,invalid_model_action,"Invalid policy action after repair: This arm is empty. Pick/grasp_handle first, or use the occupied arm.",
+blocks_ranking_size__03,blocks_ranking_size,3,100003,True,8,4,114.86517244396964,environment_success,,
+blocks_ranking_size__04,blocks_ranking_size,4,100004,False,30,35,359.111150110024,decision_budget,,No reachable grasp orientation; change arm or contact location
+blocks_ranking_size__05,blocks_ranking_size,5,100005,True,17,12,263.8213906690362,environment_success,,
+blocks_ranking_size__06,blocks_ranking_size,6,100006,True,17,12,291.6127584410133,environment_success,,
+blocks_ranking_size__07,blocks_ranking_size,7,100007,True,8,4,134.54118400695734,environment_success,,
+blocks_ranking_size__08,blocks_ranking_size,8,100008,True,17,11,218.77597267203964,environment_success,,
+blocks_ranking_size__09,blocks_ranking_size,9,100009,False,23,73,564.9136129770195,invalid_model_action,"Invalid policy action after repair: left_camera: No above-table object in current left_camera visual bbox; re-ground or try another current camera; head_camera: Grounding invalid after repair: Your contact point is on the ROBOT, not the requested scene object. The calibrated robot silhouette is now neutral GREY in this same current image. Locate a visible part of the requested object OUTSIDE the grey robot region, or return visible=false if it is fully occluded. Do not guess through the robot.",
+click_alarmclock__00,click_alarmclock,0,100000,True,1,3,74.50352170004044,environment_success,,
+click_alarmclock__01,click_alarmclock,1,100002,True,1,3,65.51029953296529,environment_success,,
+click_alarmclock__02,click_alarmclock,2,100003,True,1,2,50.09231486497447,environment_success,,
+click_alarmclock__03,click_alarmclock,3,100004,True,1,3,68.70232854300411,environment_success,,
+click_alarmclock__04,click_alarmclock,4,100007,True,1,3,40.245559592032805,environment_success,,
+click_alarmclock__05,click_alarmclock,5,100008,True,5,20,161.91620518203126,environment_success,,
+click_alarmclock__06,click_alarmclock,6,100009,True,10,19,207.61690272198757,environment_success,,
+click_alarmclock__07,click_alarmclock,7,100010,False,21,55,360.55240850301925,invalid_model_action,Invalid policy action after repair: head_camera: Grounding invalid after repair: Model generation ended before completing JSON; return a shorter valid response.,"press_refine: planning/tracking failure {'left': 'Success', 'right': 'Success'}, error=0.046 m"
+click_alarmclock__08,click_alarmclock,8,100011,True,1,2,47.88023852801416,environment_success,,
+click_alarmclock__09,click_alarmclock,9,100012,True,1,2,53.44257724401541,environment_success,,
+click_bell__00,click_bell,0,100000,True,1,4,48.864352762990166,environment_success,,
+click_bell__01,click_bell,1,100001,True,9,125,692.5426652120077,environment_success,,
+click_bell__02,click_bell,2,100002,True,2,7,73.84924036095617,environment_success,,
+click_bell__03,click_bell,3,100003,True,1,2,46.79307953600073,environment_success,,
+click_bell__04,click_bell,4,100004,True,1,5,63.73973129101796,environment_success,,
+click_bell__05,click_bell,5,100005,True,30,88,547.6308203280205,environment_success,,
+click_bell__06,click_bell,6,100006,True,11,129,764.891109240998,environment_success,,
+click_bell__07,click_bell,7,100007,True,2,4,95.51420619501732,environment_success,,
+click_bell__08,click_bell,8,100008,True,2,7,78.5215900199837,environment_success,,
+click_bell__09,click_bell,9,100009,True,2,10,114.06757237698184,environment_success,,
+dump_bin_bigbin__00,dump_bin_bigbin,0,100002,False,28,140,,wall_time_budget,Episode exceeded the frozen wall-time budget and hard cleanup allowance,
+dump_bin_bigbin__01,dump_bin_bigbin,1,100003,False,30,89,723.3458000130486,decision_budget,,No reachable grasp orientation; change arm or contact location
+dump_bin_bigbin__02,dump_bin_bigbin,2,100004,False,9,88,695.8450801380095,invalid_model_action,"Invalid policy action after repair: right_camera: No above-table object in current right_camera visual bbox; re-ground or try another current camera; head_camera: Grounding invalid after repair: Your contact point is on the ROBOT, not the requested scene object. The calibrated robot silhouette is now neutral GREY in this same current image. Locate a visible part of the requested object OUTSIDE the grey robot region, or return visible=false if it is fully occluded. Do not guess through the robot.",Empty grasp: no bilateral object contact
+dump_bin_bigbin__03,dump_bin_bigbin,3,100005,False,19,69,638.9513897380093,invalid_model_action,"Invalid policy action after repair: head_camera: Grounding invalid after repair: Your contact point is on the ROBOT, not the requested scene object. The calibrated robot silhouette is now neutral GREY in this same current image. Locate a visible part of the requested object OUTSIDE the grey robot region, or return visible=false if it is fully occluded. Do not guess through the robot.",
+dump_bin_bigbin__04,dump_bin_bigbin,4,100007,False,10,40,310.79648921702756,invalid_model_action,"Invalid policy action after repair: This arm is empty. Pick/grasp_handle first, or use the occupied arm.",
+dump_bin_bigbin__05,dump_bin_bigbin,5,100010,False,18,103,632.133183234022,invalid_model_action,Invalid policy action after repair: That unchanged action was already tried twice without completing the goal. Choose a DIFFERENT recovery action or contact part.,
+dump_bin_bigbin__06,dump_bin_bigbin,6,100016,False,24,167,,wall_time_budget,Episode exceeded the frozen wall-time budget and hard cleanup allowance,
+dump_bin_bigbin__07,dump_bin_bigbin,7,100019,False,30,58,432.0082410489558,decision_budget,,No observed clear table patch fits the held footprint near the requested point
+dump_bin_bigbin__08,dump_bin_bigbin,8,100022,False,14,163,,wall_time_budget,Episode exceeded the frozen wall-time budget and hard cleanup allowance,
+dump_bin_bigbin__09,dump_bin_bigbin,9,100023,False,30,40,399.84918235003715,decision_budget,,No reachable grasp orientation; change arm or contact location
+grab_roller__00,grab_roller,0,100000,True,4,5,91.68795874901116,environment_success,,
+grab_roller__01,grab_roller,1,100001,True,3,3,70.76171147701098,environment_success,,
+grab_roller__02,grab_roller,2,100002,True,3,4,89.9529292449588,environment_success,,
+grab_roller__03,grab_roller,3,100003,False,17,211,,wall_time_budget,Episode exceeded the frozen wall-time budget and hard cleanup allowance,
+grab_roller__04,grab_roller,4,100004,False,3,39,328.0508907880285,invalid_model_action,"Invalid policy action after repair: right_camera: No above-table object in current right_camera visual bbox; re-ground or try another current camera; head_camera: Grounding invalid after repair: Your contact point is on the ROBOT, not the requested scene object. The calibrated robot silhouette is now neutral GREY in this same current image. Locate a visible part of the requested object OUTSIDE the grey robot region, or return visible=false if it is fully occluded. Do not guess through the robot.",
+grab_roller__05,grab_roller,5,100006,True,5,5,99.63827079697512,environment_success,,
+grab_roller__06,grab_roller,6,100007,True,4,5,105.71911787101999,environment_success,,
+grab_roller__07,grab_roller,7,100008,True,3,3,73.52633291098755,environment_success,,
+grab_roller__08,grab_roller,8,100009,False,14,194,,wall_time_budget,Episode exceeded the frozen wall-time budget and hard cleanup allowance,
+grab_roller__09,grab_roller,9,100010,True,3,3,77.59615549701266,environment_success,,
+handover_block__00,handover_block,0,100000,True,4,7,100.48529467801563,environment_success,,
+handover_block__01,handover_block,1,100002,False,30,62,509.97533397201914,decision_budget,,"transfer_refine: planning/tracking failure {'left': 'Success', 'right': 'Success'}, error=0.038 m"
+handover_block__02,handover_block,2,100003,False,30,85,524.8922138320049,decision_budget,,No reachable grasp orientation; change arm or contact location
+handover_block__03,handover_block,3,100004,False,30,79,609.3054164870409,decision_budget,,No reachable placement orientation; choose a closer destination or adjust held pose
+handover_block__04,handover_block,4,100006,True,16,32,314.6386884939857,environment_success,,
+handover_block__05,handover_block,5,100007,False,30,38,496.69058068998856,decision_budget,,
+handover_block__06,handover_block,6,100008,False,30,139,1153.5874619160313,decision_budget,,No reachable placement orientation; choose a closer destination or adjust held pose
+handover_block__07,handover_block,7,100009,False,30,38,467.9206313280156,decision_budget,,
+handover_block__08,handover_block,8,100010,False,25,162,,wall_time_budget,Episode exceeded the frozen wall-time budget and hard cleanup allowance,
+handover_block__09,handover_block,9,100011,True,4,7,140.86007025599247,environment_success,,
+handover_mic__00,handover_mic,0,100000,False,30,78,623.872467854002,decision_budget,,No reachable grasp orientation; change arm or contact location
+handover_mic__01,handover_mic,1,100001,False,30,54,462.1312847340014,decision_budget,,
+handover_mic__02,handover_mic,2,100002,False,30,176,1147.8155242860084,decision_budget,,
+handover_mic__03,handover_mic,3,100003,False,26,50,439.7998977599782,invalid_model_action,Invalid policy action after repair: Handover requires an empty receiver and the named source held by its distinct donor.,
+handover_mic__04,handover_mic,4,100005,False,30,182,1151.5362968719564,decision_budget,,
+handover_mic__05,handover_mic,5,100006,True,2,2,58.235107858025,environment_success,,
+handover_mic__06,handover_mic,6,100007,False,30,75,669.1628967170254,decision_budget,,Empty grasp: no bilateral object contact
+handover_mic__07,handover_mic,7,100008,False,30,91,739.053175353969,decision_budget,,Empty grasp: no bilateral object contact
+handover_mic__08,handover_mic,8,100009,True,2,3,64.310826009023,environment_success,,
+handover_mic__09,handover_mic,9,100010,False,29,159,,wall_time_budget,Episode exceeded the frozen wall-time budget and hard cleanup allowance,
+hanging_mug__00,hanging_mug,0,100000,False,30,94,707.9514280920266,decision_budget,,No reachable grasp orientation; change arm or contact location
+hanging_mug__01,hanging_mug,1,100001,False,30,64,643.8406260489719,decision_budget,,No reachable placement orientation; choose a closer destination or adjust held pose
+hanging_mug__02,hanging_mug,2,100002,False,30,71,706.0053748199716,decision_budget,,"move: planning/tracking failure {'left': 'Fail', 'right': 'Success'}, error=0.100 m"
+hanging_mug__03,hanging_mug,3,100003,False,26,81,744.091218734975,invalid_model_action,Invalid policy action after repair: Model generation ended before completing JSON; return a shorter valid response.,No reachable placement orientation; choose a closer destination or adjust held pose
+hanging_mug__04,hanging_mug,4,100004,False,30,75,748.1501997679588,decision_budget,,No reachable placement orientation; choose a closer destination or adjust held pose
+hanging_mug__05,hanging_mug,5,100005,False,13,50,494.3460666129831,invalid_model_action,Invalid policy action after repair: That unchanged action was already tried twice without completing the goal. Choose a DIFFERENT recovery action or contact part.,
+hanging_mug__06,hanging_mug,6,100006,False,30,74,676.3601131250034,decision_budget,,
+hanging_mug__07,hanging_mug,7,100008,False,21,137,,wall_time_budget,Episode exceeded the frozen wall-time budget and hard cleanup allowance,
+hanging_mug__08,hanging_mug,8,100009,False,30,83,772.1813024459989,decision_budget,,No reachable grasp orientation; change arm or contact location
+hanging_mug__09,hanging_mug,9,100010,False,30,75,795.1835094550042,decision_budget,,No reachable placement orientation; choose a closer destination or adjust held pose
+lift_pot__00,lift_pot,0,100000,True,10,18,280.1172888180008,environment_success,,
+lift_pot__01,lift_pot,1,100002,True,3,5,106.16758646100061,environment_success,,
+lift_pot__02,lift_pot,2,100003,True,3,5,90.2496543499874,environment_success,,
+lift_pot__03,lift_pot,3,100005,True,3,5,102.53267094999319,environment_success,,
+lift_pot__04,lift_pot,4,100009,True,3,5,100.19094842701452,environment_success,,
+lift_pot__05,lift_pot,5,100012,False,24,170,,wall_time_budget,Episode exceeded the frozen wall-time budget and hard cleanup allowance,
+lift_pot__06,lift_pot,6,100014,False,6,35,342.8158496329561,invalid_model_action,Invalid policy action after repair: right_camera: Implausible measured hinge span; head_camera: Hinge endpoints lack current nonrobot above-table depth,
+lift_pot__07,lift_pot,7,100019,False,30,108,835.1881762929843,decision_budget,,DUAL_MOVE unreachable for right
+lift_pot__08,lift_pot,8,100020,True,3,5,103.98527867603116,environment_success,,
+lift_pot__09,lift_pot,9,100022,True,3,5,111.02116524794837,environment_success,,
+move_can_pot__00,move_can_pot,0,100000,False,22,94,754.012612802966,invalid_model_action,"Invalid policy action after repair: right_camera: No above-table object in current right_camera visual bbox; re-ground or try another current camera; left_camera: No above-table object in current left_camera visual bbox; re-ground or try another current camera; head_camera: Grounding invalid after repair: Your contact point is on the ROBOT, not the requested scene object. The calibrated robot silhouette is now neutral GREY in this same current image. Locate a visible part of the requested object OUTSIDE the grey robot region, or return visible=false if it is fully occluded. Do not guess through the robot.",
+move_can_pot__01,move_can_pot,1,100001,False,24,168,,wall_time_budget,Episode exceeded the frozen wall-time budget and hard cleanup allowance,
+move_can_pot__02,move_can_pot,2,100002,False,30,83,638.1236663839663,decision_budget,,No reachable grasp orientation; change arm or contact location
+move_can_pot__03,move_can_pot,3,100003,False,23,71,774.9809522940195,invalid_model_action,"Invalid policy action after repair: right_camera: No above-table object in current right_camera visual bbox; re-ground or try another current camera; head_camera: Grounding invalid after repair: Your contact point is on the ROBOT, not the requested scene object. The calibrated robot silhouette is now neutral GREY in this same current image. Locate a visible part of the requested object OUTSIDE the grey robot region, or return visible=false if it is fully occluded. Do not guess through the robot.",
+move_can_pot__04,move_can_pot,4,100004,False,18,76,725.1638924280414,invalid_model_action,"Invalid policy action after repair: right_camera: No above-table object in current right_camera visual bbox; re-ground or try another current camera; head_camera: Grounding invalid after repair: Your contact point is on the ROBOT, not the requested scene object. The calibrated robot silhouette is now neutral GREY in this same current image. Locate a visible part of the requested object OUTSIDE the grey robot region, or return visible=false if it is fully occluded. Do not guess through the robot.",
+move_can_pot__05,move_can_pot,5,100005,True,2,7,90.96694506099448,environment_success,,
+move_can_pot__06,move_can_pot,6,100006,False,11,52,370.983406037034,invalid_model_action,"Invalid policy action after repair: right_camera: Grounding invalid after repair: Your contact point is on the ROBOT, not the requested scene object. The calibrated robot silhouette is now neutral GREY in this same current image. Locate a visible part of the requested object OUTSIDE the grey robot region, or return visible=false if it is fully occluded. Do not guess through the robot.; head_camera: Grounding invalid after repair: Model generation ended before completing JSON; return a shorter valid response.",
+move_can_pot__07,move_can_pot,7,100007,False,5,57,357.3085305499844,invalid_model_action,"Invalid policy action after repair: right_camera: No above-table object in current right_camera visual bbox; re-ground or try another current camera; left_camera: No above-table object in current left_camera visual bbox; re-ground or try another current camera; head_camera: Grounding invalid after repair: Reacquisition identity different: remembered object is A cylindrical jar with a brown lid and a yellow label, likely a food product.; current proposed object is A round, blue-lidded container with a small knob on top, possibly a spice jar or similar item.. Re-localize the SAME remembered target in the current image; do not grab this different/uncertain candidate. Return visible=false if the remembered object is absent from this crop.",
+move_can_pot__08,move_can_pot,8,100008,False,30,57,418.0232637199806,decision_budget,,No reachable grasp orientation; change arm or contact location
+move_can_pot__09,move_can_pot,9,100009,True,3,7,169.965833491995,environment_success,,
+move_pillbottle_pad__00,move_pillbottle_pad,0,100002,True,2,6,70.64426945900777,environment_success,,
+move_pillbottle_pad__01,move_pillbottle_pad,1,100004,False,20,105,661.6830532710301,invalid_model_action,Invalid policy action after repair: right_camera: No above-table object in current right_camera visual bbox; re-ground or try another current camera; head_camera: No current above-table contact surface; change view,No reachable empty-arm observation pose
+move_pillbottle_pad__02,move_pillbottle_pad,2,100005,True,3,9,132.37837079900783,environment_success,,
+move_pillbottle_pad__03,move_pillbottle_pad,3,100006,True,2,7,93.0032667570049,environment_success,,
+move_pillbottle_pad__04,move_pillbottle_pad,4,100007,False,12,183,,wall_time_budget,Episode exceeded the frozen wall-time budget and hard cleanup allowance,
+move_pillbottle_pad__05,move_pillbottle_pad,5,100008,True,3,7,97.0400762350182,environment_success,,
+move_pillbottle_pad__06,move_pillbottle_pad,6,100009,False,6,44,333.4003751730197,invalid_model_action,"Invalid policy action after repair: left_camera: No above-table object in current left_camera visual bbox; re-ground or try another current camera; head_camera: Grounding invalid after repair: Your contact point is on the ROBOT, not the requested scene object. The calibrated robot silhouette is now neutral GREY in this same current image. Locate a visible part of the requested object OUTSIDE the grey robot region, or return visible=false if it is fully occluded. Do not guess through the robot.",
+move_pillbottle_pad__07,move_pillbottle_pad,7,100010,False,30,67,591.5059157600044,decision_budget,,No observed clear table patch fits the held footprint near the requested point
+move_pillbottle_pad__08,move_pillbottle_pad,8,100011,True,2,7,118.49031524098245,environment_success,,
+move_pillbottle_pad__09,move_pillbottle_pad,9,100013,False,30,58,520.2347065960057,decision_budget,,No reachable grasp orientation; change arm or contact location
+move_playingcard_away__00,move_playingcard_away,0,100000,False,11,43,399.3029863460106,invalid_model_action,Invalid policy action after repair: right_camera: No above-table object in current right_camera visual bbox; re-ground or try another current camera; head_camera: Grounding invalid after repair: Model generation ended before completing JSON; return a shorter valid response.,Empty grasp: no bilateral object contact
+move_playingcard_away__01,move_playingcard_away,1,100001,False,29,85,,wall_time_budget,Episode exceeded the frozen wall-time budget and hard cleanup allowance,"move: planning/tracking failure {'left': 'Fail', 'right': 'Success'}, error=0.200 m"
+move_playingcard_away__02,move_playingcard_away,2,100002,True,20,42,679.0422654190334,environment_success,,
+move_playingcard_away__03,move_playingcard_away,3,100003,False,25,88,797.1873675279785,invalid_model_action,Invalid policy action after repair: left_camera: No above-table object in current left_camera visual bbox; re-ground or try another current camera; head_camera: Grounding invalid after repair: Model generation ended before completing JSON; return a shorter valid response.,
+move_playingcard_away__04,move_playingcard_away,4,100004,False,30,64,681.388197283959,decision_budget,,"transfer_refine: planning/tracking failure {'left': 'Success', 'right': 'Success'}, error=0.054 m"
+move_playingcard_away__05,move_playingcard_away,5,100005,False,28,94,,wall_time_budget,Episode exceeded the frozen wall-time budget and hard cleanup allowance,
+move_playingcard_away__06,move_playingcard_away,6,100006,False,3,11,182.73215318802977,invalid_model_action,Invalid policy action after repair: Model generation ended before completing JSON; return a shorter valid response.,No observed clear table patch fits the held footprint near the requested point
+move_playingcard_away__07,move_playingcard_away,7,100007,False,21,141,,wall_time_budget,Episode exceeded the frozen wall-time budget and hard cleanup allowance,
+move_playingcard_away__08,move_playingcard_away,8,100008,False,21,134,,wall_time_budget,Episode exceeded the frozen wall-time budget and hard cleanup allowance,
+move_playingcard_away__09,move_playingcard_away,9,100009,False,12,73,612.7993781550322,invalid_model_action,"Invalid policy action after repair: head_camera: Grounding invalid after repair: Your contact point is on the ROBOT, not the requested scene object. The calibrated robot silhouette is now neutral GREY in this same current image. Locate a visible part of the requested object OUTSIDE the grey robot region, or return visible=false if it is fully occluded. Do not guess through the robot.",
+move_stapler_pad__00,move_stapler_pad,0,100000,True,2,6,102.33755784097593,environment_success,,
+move_stapler_pad__01,move_stapler_pad,1,100001,True,5,9,150.30558490596013,environment_success,,
+move_stapler_pad__02,move_stapler_pad,2,100003,False,30,151,941.9203991679824,decision_budget,,PUSH distance must be 1.5–45 cm
+move_stapler_pad__03,move_stapler_pad,3,100004,True,2,6,115.4466770250001,environment_success,,
+move_stapler_pad__04,move_stapler_pad,4,100005,True,5,9,130.63364218798233,environment_success,,
+move_stapler_pad__05,move_stapler_pad,5,100006,True,5,9,117.5949263300281,environment_success,,
+move_stapler_pad__06,move_stapler_pad,6,100007,True,2,6,102.22065041901078,environment_success,,
+move_stapler_pad__07,move_stapler_pad,7,100008,True,2,6,84.12960069999099,environment_success,,
+move_stapler_pad__08,move_stapler_pad,8,100009,False,30,138,933.5073884629528,decision_budget,,PUSH distance must be 1.5–45 cm
+move_stapler_pad__09,move_stapler_pad,9,100010,True,2,6,77.58542922401102,environment_success,,
+open_laptop__00,open_laptop,0,100000,False,12,74,586.1727775339969,invalid_model_action,"Invalid policy action after repair: right_camera: Hinge endpoints lack current nonrobot above-table depth; head_camera: Grounding invalid after repair: Your contact point is on the ROBOT, not the requested scene object. The calibrated robot silhouette is now neutral GREY in this same current image. Locate a visible part of the requested object OUTSIDE the grey robot region, or return visible=false if it is fully occluded. Do not guess through the robot.",
+open_laptop__01,open_laptop,1,100001,False,6,34,315.0142059089849,invalid_model_action,Invalid policy action after repair: right_camera: Hinge endpoints lack current nonrobot above-table depth; head_camera: Grounding invalid after repair: Model generation ended before completing JSON; return a shorter valid response.,
+open_laptop__02,open_laptop,2,100002,False,2,43,325.594345666992,invalid_model_action,"Invalid policy action after repair: right_camera: Grounding invalid after repair: Your contact point is on the ROBOT, not the requested scene object. The calibrated robot silhouette is now neutral GREY in this same current image. Locate a visible part of the requested object OUTSIDE the grey robot region, or return visible=false if it is fully occluded. Do not guess through the robot.; head_camera: Grounding invalid after repair: Your contact point is on the ROBOT, not the requested scene object. The calibrated robot silhouette is now neutral GREY in this same current image. Locate a visible part of the requested object OUTSIDE the grey robot region, or return visible=false if it is fully occluded. Do not guess through the robot.",
+open_laptop__03,open_laptop,3,100003,False,27,112,,wall_time_budget,Episode exceeded the frozen wall-time budget and hard cleanup allowance,Empty grasp: no bilateral object contact
+open_laptop__04,open_laptop,4,100004,False,11,45,477.24340909795137,invalid_model_action,Invalid policy action after repair: right_camera: Hinge endpoints lack current nonrobot above-table depth; head_camera: Grounding invalid after repair: Model generation ended before completing JSON; return a shorter valid response.,
+open_laptop__05,open_laptop,5,100005,False,6,40,327.86239729297813,invalid_model_action,Invalid policy action after repair: right_camera: Grounding invalid after repair: Need two distinct visible hinge endpoints within the current bbox; left_camera: Hinge endpoints lack current nonrobot above-table depth; head_camera: Hinge endpoints lack current nonrobot above-table depth,
+open_laptop__06,open_laptop,6,100006,False,6,48,413.63677786197513,invalid_model_action,"Invalid policy action after repair: left_camera: Hinge endpoints lack current nonrobot above-table depth; right_camera: Hinge endpoints lack current nonrobot above-table depth; head_camera: Grounding invalid after repair: Your contact point is on the ROBOT, not the requested scene object. The calibrated robot silhouette is now neutral GREY in this same current image. Locate a visible part of the requested object OUTSIDE the grey robot region, or return visible=false if it is fully occluded. Do not guess through the robot.",
+open_laptop__07,open_laptop,7,100007,False,29,161,,wall_time_budget,Episode exceeded the frozen wall-time budget and hard cleanup allowance,Empty grasp: no bilateral object contact
+open_laptop__08,open_laptop,8,100008,False,3,25,298.4612443280057,invalid_model_action,"Invalid policy action after repair: right_camera: Hinge endpoints lack current nonrobot above-table depth; head_camera: Grounding invalid after repair: Your contact point is on the ROBOT, not the requested scene object. The calibrated robot silhouette is now neutral GREY in this same current image. Locate a visible part of the requested object OUTSIDE the grey robot region, or return visible=false if it is fully occluded. Do not guess through the robot.",
+open_laptop__09,open_laptop,9,100009,True,2,6,84.49648013303522,environment_success,,
+open_microwave__00,open_microwave,0,100000,False,19,87,742.9092058649985,invalid_model_action,"Invalid policy action after repair: right_camera: Grounding invalid after repair: Need two distinct visible hinge endpoints within the current bbox; head_camera: Grounding invalid after repair: Your contact point is on the ROBOT, not the requested scene object. The calibrated robot silhouette is now neutral GREY in this same current image. Locate a visible part of the requested object OUTSIDE the grey robot region, or return visible=false if it is fully occluded. Do not guess through the robot.",No observed clear table patch fits the held footprint near the requested point
+open_microwave__01,open_microwave,1,100002,False,8,39,328.8048874649685,invalid_model_action,"Invalid policy action after repair: head_camera: Grounding invalid after repair: Your contact point is on the ROBOT, not the requested scene object. The calibrated robot silhouette is now neutral GREY in this same current image. Locate a visible part of the requested object OUTSIDE the grey robot region, or return visible=false if it is fully occluded. Do not guess through the robot.",No reachable empty-arm observation pose
+open_microwave__02,open_microwave,2,100003,False,6,31,309.222491440014,invalid_model_action,Invalid policy action after repair: head_camera: Target not visible in current camera image; move the occluding empty arm or choose a visible target.,No reachable empty-arm observation pose
+open_microwave__03,open_microwave,3,100012,False,5,33,307.2883366930182,invalid_model_action,Invalid policy action after repair: right_camera: Hinge endpoints lack current nonrobot above-table depth; head_camera: Grounding invalid after repair: Model generation ended before completing JSON; return a shorter valid response.,
+open_microwave__04,open_microwave,4,100013,False,12,79,577.3175613830099,invalid_model_action,"Invalid policy action after repair: right_camera: Hinge endpoints lack current nonrobot above-table depth; head_camera: Grounding invalid after repair: Your contact point is on the ROBOT, not the requested scene object. The calibrated robot silhouette is now neutral GREY in this same current image. Locate a visible part of the requested object OUTSIDE the grey robot region, or return visible=false if it is fully occluded. Do not guess through the robot.",
+open_microwave__05,open_microwave,5,100014,False,3,29,256.2528735480155,invalid_model_action,"Invalid policy action after repair: head_camera: Grounding invalid after repair: Your contact point is on the ROBOT, not the requested scene object. The calibrated robot silhouette is now neutral GREY in this same current image. Locate a visible part of the requested object OUTSIDE the grey robot region, or return visible=false if it is fully occluded. Do not guess through the robot.",No reachable empty-arm observation pose
+open_microwave__06,open_microwave,6,100018,False,17,120,783.2986373000313,invalid_model_action,"Invalid policy action after repair: head_camera: Grounding invalid after repair: Your contact point is on the ROBOT, not the requested scene object. The calibrated robot silhouette is now neutral GREY in this same current image. Locate a visible part of the requested object OUTSIDE the grey robot region, or return visible=false if it is fully occluded. Do not guess through the robot.",
+open_microwave__07,open_microwave,7,100019,False,5,20,192.27156283700606,invalid_model_action,"Invalid policy action after repair: This arm is empty. Pick/grasp_handle first, or use the occupied arm.",
+open_microwave__08,open_microwave,8,100020,False,30,130,792.0863951260108,decision_budget,,No depth at destination
+open_microwave__09,open_microwave,9,100022,False,30,154,1100.2106658380362,decision_budget,,Working part is not clearly observed; re-ground the tool head/tip
+pick_diverse_bottles__00,pick_diverse_bottles,0,100000,False,30,69,508.3402857609908,decision_budget,,
+pick_diverse_bottles__01,pick_diverse_bottles,1,100002,False,3,23,178.58423392102122,invalid_model_action,"Invalid policy action after repair: head_camera: Grounding invalid after repair: Your contact point is on the ROBOT, not the requested scene object. The calibrated robot silhouette is now neutral GREY in this same current image. Locate a visible part of the requested object OUTSIDE the grey robot region, or return visible=false if it is fully occluded. Do not guess through the robot.",Inspection region is outside the calibrated local workspace
+pick_diverse_bottles__02,pick_diverse_bottles,2,100007,True,9,20,198.34430534398416,environment_success,,
+pick_diverse_bottles__03,pick_diverse_bottles,3,100009,False,30,41,465.1544357690145,decision_budget,,Object region too large; use a tighter bbox
+pick_diverse_bottles__04,pick_diverse_bottles,4,100012,True,15,19,311.93502392899245,environment_success,,
+pick_diverse_bottles__05,pick_diverse_bottles,5,100013,True,5,4,112.37709324300522,environment_success,,
+pick_diverse_bottles__06,pick_diverse_bottles,6,100014,False,29,167,,wall_time_budget,Episode exceeded the frozen wall-time budget and hard cleanup allowance,
+pick_diverse_bottles__07,pick_diverse_bottles,7,100015,True,5,6,108.97405215998879,environment_success,,
+pick_diverse_bottles__08,pick_diverse_bottles,8,100016,False,30,36,457.05263862898573,decision_budget,,
+pick_diverse_bottles__09,pick_diverse_bottles,9,100022,False,30,60,616.7153451439808,decision_budget,,Empty grasp: no bilateral object contact
+pick_dual_bottles__00,pick_dual_bottles,0,100000,True,4,6,103.42426469997736,environment_success,,
+pick_dual_bottles__01,pick_dual_bottles,1,100001,True,4,4,103.03050008800346,environment_success,,
+pick_dual_bottles__02,pick_dual_bottles,2,100002,True,4,6,97.2644371240167,environment_success,,
+pick_dual_bottles__03,pick_dual_bottles,3,100003,True,4,5,103.1496475180029,environment_success,,
+pick_dual_bottles__04,pick_dual_bottles,4,100004,True,4,5,118.22505502298009,environment_success,,
+pick_dual_bottles__05,pick_dual_bottles,5,100005,True,4,6,99.31690885097487,environment_success,,
+pick_dual_bottles__06,pick_dual_bottles,6,100006,True,4,7,106.60785060597118,environment_success,,
+pick_dual_bottles__07,pick_dual_bottles,7,100007,True,4,5,90.86881639296189,environment_success,,
+pick_dual_bottles__08,pick_dual_bottles,8,100008,True,4,5,88.49185366497841,environment_success,,
+pick_dual_bottles__09,pick_dual_bottles,9,100009,True,4,6,104.94470835995162,environment_success,,
+place_a2b_left__00,place_a2b_left,0,100000,True,11,7,159.38303291599732,environment_success,,
+place_a2b_left__01,place_a2b_left,1,100001,False,30,70,622.9654766250169,decision_budget,,"approach_refine: planning/tracking failure {'left': 'Success', 'right': 'Success'}, error=0.051 m"
+place_a2b_left__02,place_a2b_left,2,100003,True,14,12,201.494691186992,environment_success,,
+place_a2b_left__03,place_a2b_left,3,100004,True,5,10,115.72726565098856,environment_success,,
+place_a2b_left__04,place_a2b_left,4,100005,False,30,81,649.9350537980208,decision_budget,,No depth at destination
+place_a2b_left__05,place_a2b_left,5,100007,True,2,8,107.71289709099801,environment_success,,
+place_a2b_left__06,place_a2b_left,6,100008,True,3,7,104.62942986399867,environment_success,,
+place_a2b_left__07,place_a2b_left,7,100009,True,2,6,92.11905832600314,environment_success,,
+place_a2b_left__08,place_a2b_left,8,100010,True,11,7,152.58926461800002,environment_success,,
+place_a2b_left__09,place_a2b_left,9,100012,False,12,23,236.71241051703691,invalid_model_action,Invalid policy action after repair: That unchanged action was already tried twice without completing the goal. Choose a DIFFERENT recovery action or contact part.,
+place_a2b_right__00,place_a2b_right,0,100000,False,5,14,170.39121389499633,invalid_model_action,"Invalid policy action after repair: This arm is empty. Pick/grasp_handle first, or use the occupied arm.",
+place_a2b_right__01,place_a2b_right,1,100001,False,9,56,400.48269510798855,invalid_model_action,"Invalid policy action after repair: left_camera: No above-table object in current left_camera visual bbox; re-ground or try another current camera; head_camera: Grounding invalid after repair: Reacquisition identity uncertain: remembered object is The object is a golden-brown, irregularly shaped bread roll with visible air pockets and a soft texture. It appears to be a close-up of a baked good, possibly a brioche or similar type of bread.; current proposed object is The object is a rectangular, golden-brown baked item with a smooth surface and distinct air pockets. It resembles a loaf of bread or a similar baked good, with a uniform color and shape.. Re-localize the SAME remembered target in the current image; do not grab this different/uncertain candidate. Return visible=false if the remembered object is absent from this crop.",
+place_a2b_right__02,place_a2b_right,2,100002,True,2,6,85.58355327998288,environment_success,,
+place_a2b_right__03,place_a2b_right,3,100003,True,2,7,82.23511332698399,environment_success,,
+place_a2b_right__04,place_a2b_right,4,100004,False,15,25,237.47386882902356,invalid_model_action,"Invalid policy action after repair: This held-source/destination placement has exhausted reachability twice with NO intervening motion. Changing wording, approach or grasp_part cannot change the existing grasp. Plan a physical prerequisite BEFORE retrying: move a held object, acquire/reposition a destination with the free arm when permitted by the task, or stage and regrasp. Preserve the original goal and arm constraints.",No reachable placement orientation; choose a closer destination or adjust held pose
+place_a2b_right__05,place_a2b_right,5,100005,False,14,73,528.2391715859994,invalid_model_action,"Invalid policy action after repair: left_camera: Grounding invalid after repair: Your contact point is on the ROBOT, not the requested scene object. The calibrated robot silhouette is now neutral GREY in this same current image. Locate a visible part of the requested object OUTSIDE the grey robot region, or return visible=false if it is fully occluded. Do not guess through the robot.; head_camera: Grounding invalid after repair: Your contact point is on the ROBOT, not the requested scene object. The calibrated robot silhouette is now neutral GREY in this same current image. Locate a visible part of the requested object OUTSIDE the grey robot region, or return visible=false if it is fully occluded. Do not guess through the robot.","transfer_refine: planning/tracking failure {'left': 'Success', 'right': 'Success'}, error=0.079 m"
+place_a2b_right__06,place_a2b_right,6,100006,True,7,39,348.0516252290108,environment_success,,
+place_a2b_right__07,place_a2b_right,7,100007,False,15,28,245.10894874000223,invalid_model_action,"Invalid policy action after repair: This held-source/destination placement has exhausted reachability twice with NO intervening motion. Changing wording, approach or grasp_part cannot change the existing grasp. Plan a physical prerequisite BEFORE retrying: move a held object, acquire/reposition a destination with the free arm when permitted by the task, or stage and regrasp. Preserve the original goal and arm constraints.",No reachable placement orientation; choose a closer destination or adjust held pose
+place_a2b_right__08,place_a2b_right,8,100008,True,8,21,204.16805352497613,environment_success,,
+place_a2b_right__09,place_a2b_right,9,100009,True,3,11,105.88217961596092,environment_success,,
+place_bread_basket__00,place_bread_basket,0,100000,True,2,6,68.64812672400149,environment_success,,
+place_bread_basket__01,place_bread_basket,1,100001,True,5,11,121.67694732605014,environment_success,,
+place_bread_basket__02,place_bread_basket,2,100002,True,2,6,96.69764797296375,environment_success,,
+place_bread_basket__03,place_bread_basket,3,100004,True,2,7,133.09770917100832,environment_success,,
+place_bread_basket__04,place_bread_basket,4,100005,True,5,12,160.8380482699722,environment_success,,
+place_bread_basket__05,place_bread_basket,5,100006,True,5,11,114.28603017696878,environment_success,,
+place_bread_basket__06,place_bread_basket,6,100007,True,5,15,164.33442476403434,environment_success,,
+place_bread_basket__07,place_bread_basket,7,100008,False,30,72,699.0174860479892,decision_budget,,Empty grasp: no bilateral object contact
+place_bread_basket__08,place_bread_basket,8,100009,True,2,6,92.08023846603464,environment_success,,
+place_bread_basket__09,place_bread_basket,9,100010,False,20,91,764.7071177699836,invalid_model_action,"Invalid policy action after repair: right_camera: Grounding invalid after repair: Your contact point is on the ROBOT, not the requested scene object. The calibrated robot silhouette is now neutral GREY in this same current image. Locate a visible part of the requested object OUTSIDE the grey robot region, or return visible=false if it is fully occluded. Do not guess through the robot.; head_camera: Grounding invalid after repair: Your contact point is on the ROBOT, not the requested scene object. The calibrated robot silhouette is now neutral GREY in this same current image. Locate a visible part of the requested object OUTSIDE the grey robot region, or return visible=false if it is fully occluded. Do not guess through the robot.",No reachable empty-arm observation pose
+place_bread_skillet__00,place_bread_skillet,0,100000,False,9,41,319.1384237430175,invalid_model_action,"Invalid policy action after repair: This held-source/destination placement has exhausted reachability twice with NO intervening motion. Changing wording, approach or grasp_part cannot change the existing grasp. Plan a physical prerequisite BEFORE retrying: move a held object, acquire/reposition a destination with the free arm when permitted by the task, or stage and regrasp. Preserve the original goal and arm constraints.",No reachable placement orientation; choose a closer destination or adjust held pose
+place_bread_skillet__01,place_bread_skillet,1,100004,False,5,17,187.2702969799866,invalid_model_action,"Invalid policy action after repair: This held-source/destination placement has exhausted reachability twice with NO intervening motion. Changing wording, approach or grasp_part cannot change the existing grasp. Plan a physical prerequisite BEFORE retrying: move a held object, acquire/reposition a destination with the free arm when permitted by the task, or stage and regrasp. Preserve the original goal and arm constraints.",No reachable placement orientation; choose a closer destination or adjust held pose
+place_bread_skillet__02,place_bread_skillet,2,100005,False,17,31,320.27858060604194,invalid_model_action,"Invalid policy action after repair: This held-source/destination placement has exhausted reachability twice with NO intervening motion. Changing wording, approach or grasp_part cannot change the existing grasp. Plan a physical prerequisite BEFORE retrying: move a held object, acquire/reposition a destination with the free arm when permitted by the task, or stage and regrasp. Preserve the original goal and arm constraints.",No reachable placement orientation; choose a closer destination or adjust held pose
+place_bread_skillet__03,place_bread_skillet,3,100006,False,30,81,807.9751124419854,decision_budget,,"inspection_clearance_refine: planning/tracking failure {'left': 'Success', 'right': 'Success'}, error=0.069 m"
+place_bread_skillet__04,place_bread_skillet,4,100008,True,2,6,81.63443785603158,environment_success,,
+place_bread_skillet__05,place_bread_skillet,5,100011,True,4,8,98.97701701603364,environment_success,,
+place_bread_skillet__06,place_bread_skillet,6,100015,True,7,13,242.61700032197405,environment_success,,
+place_bread_skillet__07,place_bread_skillet,7,100018,True,6,14,153.78177169297123,environment_success,,
+place_bread_skillet__08,place_bread_skillet,8,100021,False,8,15,202.20638912700815,invalid_model_action,"Invalid policy action after repair: This arm is empty. Pick/grasp_handle first, or use the occupied arm.",
+place_bread_skillet__09,place_bread_skillet,9,100025,False,7,17,197.8867295330274,invalid_model_action,"Invalid policy action after repair: This arm is empty. Pick/grasp_handle first, or use the occupied arm.",
+place_burger_fries__00,place_burger_fries,0,100000,True,5,9,143.50176386302337,environment_success,,
+place_burger_fries__01,place_burger_fries,1,100001,True,5,10,133.12969672499457,environment_success,,
+place_burger_fries__02,place_burger_fries,2,100002,False,8,17,212.21304127102485,invalid_model_action,Invalid policy action after repair: That unchanged action was already tried twice without completing the goal. Choose a DIFFERENT recovery action or contact part.,
+place_burger_fries__03,place_burger_fries,3,100004,True,5,10,125.87233809899772,environment_success,,
+place_burger_fries__04,place_burger_fries,4,100005,False,13,178,,wall_time_budget,Episode exceeded the frozen wall-time budget and hard cleanup allowance,
+place_burger_fries__05,place_burger_fries,5,100006,False,30,150,1068.5679139640415,decision_budget,,
+place_burger_fries__06,place_burger_fries,6,100007,True,5,10,146.8934225270059,environment_success,,
+place_burger_fries__07,place_burger_fries,7,100008,False,30,46,366.2198318860028,decision_budget,,No reachable grasp orientation; change arm or contact location
+place_burger_fries__08,place_burger_fries,8,100009,False,9,86,614.7682061090018,invalid_model_action,"Invalid policy action after repair: left_camera: No above-table object in current left_camera visual bbox; re-ground or try another current camera; right_camera: No above-table object in current right_camera visual bbox; re-ground or try another current camera; head_camera: Grounding invalid after repair: Reacquisition identity uncertain: remembered object is The crop shows a rounded, white object with a brownish-red circular region near the top center. The edges are soft and blurred, with orange-tinted areas surrounding the white mass. The overall shape is irregular but roughly oval.; current proposed object is The crop displays a similar white, rounded object with a brownish-red circular area near the top. It is partially occluded by a red structure on the left side, and the surrounding area includes orange hues and a beige background. The shape is comparable but slightly distorted due to the occlusion.. Re-localize the SAME remembered target in the current image; do not grab this different/uncertain candidate. Return visible=false if the remembered object is absent from this crop.",
+place_burger_fries__09,place_burger_fries,9,100010,False,16,169,,wall_time_budget,Episode exceeded the frozen wall-time budget and hard cleanup allowance,
+place_can_basket__00,place_can_basket,0,100000,True,6,14,177.35700548702152,environment_success,,
+place_can_basket__01,place_can_basket,1,100001,True,4,8,124.53439931198955,environment_success,,
+place_can_basket__02,place_can_basket,2,100003,False,4,11,134.5963153539924,invalid_model_action,"Invalid policy action after repair: This arm is empty. Pick/grasp_handle first, or use the occupied arm.",
+place_can_basket__03,place_can_basket,3,100004,False,9,32,338.20295216701925,invalid_model_action,"Invalid policy action after repair: This held-source/destination placement has exhausted reachability twice with NO intervening motion. Changing wording, approach or grasp_part cannot change the existing grasp. Plan a physical prerequisite BEFORE retrying: move a held object, acquire/reposition a destination with the free arm when permitted by the task, or stage and regrasp. Preserve the original goal and arm constraints.",No reachable placement orientation; choose a closer destination or adjust held pose
+place_can_basket__04,place_can_basket,4,100005,False,17,195,,wall_time_budget,Episode exceeded the frozen wall-time budget and hard cleanup allowance,
+place_can_basket__05,place_can_basket,5,100006,True,4,8,128.1779749080306,environment_success,,
+place_can_basket__06,place_can_basket,6,100007,False,7,17,186.82857733598212,invalid_model_action,"Invalid policy action after repair: This arm is empty. Pick/grasp_handle first, or use the occupied arm.",
+place_can_basket__07,place_can_basket,7,100009,True,4,8,111.96822635398712,environment_success,,
+place_can_basket__08,place_can_basket,8,100012,True,13,33,369.6873598800157,environment_success,,
+place_can_basket__09,place_can_basket,9,100013,True,4,8,114.78040342504391,environment_success,,
+place_cans_plasticbox__00,place_cans_plasticbox,0,100000,True,5,11,162.00754463899648,environment_success,,
+place_cans_plasticbox__01,place_cans_plasticbox,1,100001,True,5,12,165.80727023002692,environment_success,,
+place_cans_plasticbox__02,place_cans_plasticbox,2,100002,True,5,12,152.15470562397968,environment_success,,
+place_cans_plasticbox__03,place_cans_plasticbox,3,100003,True,5,8,123.58877671096707,environment_success,,
+place_cans_plasticbox__04,place_cans_plasticbox,4,100004,True,5,8,139.85188802098855,environment_success,,
+place_cans_plasticbox__05,place_cans_plasticbox,5,100005,True,5,10,136.0181015250273,environment_success,,
+place_cans_plasticbox__06,place_cans_plasticbox,6,100006,False,15,45,342.77604262699606,invalid_model_action,Invalid policy action after repair: head_camera: Grounding invalid after repair: Model generation ended before completing JSON; return a shorter valid response.,Empty grasp: no bilateral object contact
+place_cans_plasticbox__07,place_cans_plasticbox,7,100007,False,15,68,467.5433775429847,invalid_model_action,Invalid policy action after repair: left_camera: No above-table object in current left_camera visual bbox; re-ground or try another current camera; right_camera: No above-table object in current right_camera visual bbox; re-ground or try another current camera; head_camera: Grounding invalid after repair: Reacquisition identity different: remembered object is The object is a cylindrical can with a gold-colored top and a white body featuring red graphics. It appears to be a beverage can.; current proposed object is The object is a cylindrical can with a brownish-orange body and a black base. It has white text and graphics on the side.. Re-localize the SAME remembered target in the current image; do not grab this different/uncertain candidate. Return visible=false if the remembered object is absent from this crop.,No reachable empty-arm observation pose
+place_cans_plasticbox__08,place_cans_plasticbox,8,100008,True,5,10,154.633672269003,environment_success,,
+place_cans_plasticbox__09,place_cans_plasticbox,9,100009,True,5,8,126.20522448595148,environment_success,,
+place_container_plate__00,place_container_plate,0,100000,True,2,6,79.50285964499926,environment_success,,
+place_container_plate__01,place_container_plate,1,100003,True,2,6,83.75943936000112,environment_success,,
+place_container_plate__02,place_container_plate,2,100004,True,2,6,87.81670670001768,environment_success,,
+place_container_plate__03,place_container_plate,3,100005,True,2,6,112.35430865496164,environment_success,,
+place_container_plate__04,place_container_plate,4,100006,True,2,4,98.448776884994,environment_success,,
+place_container_plate__05,place_container_plate,5,100007,False,27,137,1122.8915424739826,invalid_model_action,"Invalid policy action after repair: head_camera: Grounding invalid after repair: Your contact point is on the ROBOT, not the requested scene object. The calibrated robot silhouette is now neutral GREY in this same current image. Locate a visible part of the requested object OUTSIDE the grey robot region, or return visible=false if it is fully occluded. Do not guess through the robot.",
+place_container_plate__06,place_container_plate,6,100008,False,30,175,1190.0712080940139,decision_budget,,Empty grasp: no bilateral object contact
+place_container_plate__07,place_container_plate,7,100009,False,24,135,,wall_time_budget,Episode exceeded the frozen wall-time budget and hard cleanup allowance,
+place_container_plate__08,place_container_plate,8,100010,True,2,6,85.73860707203858,environment_success,,
+place_container_plate__09,place_container_plate,9,100011,True,2,6,91.02248748700367,environment_success,,
+place_dual_shoes__00,place_dual_shoes,0,100000,False,30,139,916.6787619239767,decision_budget,,No observed container floor patch fits the entire directed object footprint; rearrange the contents or choose a different layout
+place_dual_shoes__01,place_dual_shoes,1,100001,False,22,131,,wall_time_budget,Episode exceeded the frozen wall-time budget and hard cleanup allowance,No observed container floor patch fits the entire directed object footprint; rearrange the contents or choose a different layout
+place_dual_shoes__02,place_dual_shoes,2,100002,False,30,86,820.9160882279975,decision_budget,,No observed container floor patch fits the entire directed object footprint; rearrange the contents or choose a different layout
+place_dual_shoes__03,place_dual_shoes,3,100003,False,30,52,573.6596102580079,decision_budget,,Directed container layout requires observed source footprint and endpoints
+place_dual_shoes__04,place_dual_shoes,4,100004,False,30,70,577.2992347200052,decision_budget,,No reachable placement orientation; choose a closer destination or adjust held pose
+place_dual_shoes__05,place_dual_shoes,5,100007,False,30,84,670.4379956260091,decision_budget,,No reachable placement orientation; choose a closer destination or adjust held pose
+place_dual_shoes__06,place_dual_shoes,6,100008,False,30,56,801.3813604089664,decision_budget,,Directed container layout requires observed source footprint and endpoints
+place_dual_shoes__07,place_dual_shoes,7,100011,False,30,127,1032.9284250789788,decision_budget,,No observed container floor patch fits the entire directed object footprint; rearrange the contents or choose a different layout
+place_dual_shoes__08,place_dual_shoes,8,100012,False,30,95,782.3679308610153,decision_budget,,Directed container layout requires observed source footprint and endpoints
+place_dual_shoes__09,place_dual_shoes,9,100013,False,30,96,748.3533954040031,decision_budget,,Directed container layout requires observed source footprint and endpoints
+place_empty_cup__00,place_empty_cup,0,100000,False,25,166,,wall_time_budget,Episode exceeded the frozen wall-time budget and hard cleanup allowance,
+place_empty_cup__01,place_empty_cup,1,100001,True,2,6,76.4167975379969,environment_success,,
+place_empty_cup__02,place_empty_cup,2,100002,True,16,29,283.1462196970242,environment_success,,
+place_empty_cup__03,place_empty_cup,3,100004,True,2,7,102.86232690000907,environment_success,,
+place_empty_cup__04,place_empty_cup,4,100005,False,12,52,458.1253048639628,invalid_model_action,Invalid policy action after repair: head_camera: Grounding invalid after repair: Model generation ended before completing JSON; return a shorter valid response.,No reachable empty-arm observation pose
+place_empty_cup__05,place_empty_cup,5,100007,True,2,7,97.49666900502052,environment_success,,
+place_empty_cup__06,place_empty_cup,6,100008,False,30,128,855.328846561024,decision_budget,,PUSH distance must be 1.5–45 cm
+place_empty_cup__07,place_empty_cup,7,100009,False,30,87,666.0858601439977,decision_budget,,
+place_empty_cup__08,place_empty_cup,8,100010,False,30,150,1010.7675320290145,decision_budget,,PUSH distance must be 1.5–45 cm
+place_empty_cup__09,place_empty_cup,9,100011,False,30,177,1034.1245161660481,decision_budget,,PUSH distance must be 1.5–45 cm
+place_fan__00,place_fan,0,100002,False,23,110,733.4020685550058,invalid_model_action,"Invalid policy action after repair: head_camera: Grounding invalid after repair: Your contact point is on the ROBOT, not the requested scene object. The calibrated robot silhouette is now neutral GREY in this same current image. Locate a visible part of the requested object OUTSIDE the grey robot region, or return visible=false if it is fully occluded. Do not guess through the robot.",
+place_fan__01,place_fan,1,100003,False,15,102,646.2451097349986,invalid_model_action,Invalid policy action after repair: That unchanged action was already tried twice without completing the goal. Choose a DIFFERENT recovery action or contact part.,
+place_fan__02,place_fan,2,100004,False,16,195,,wall_time_budget,Episode exceeded the frozen wall-time budget and hard cleanup allowance,
+place_fan__03,place_fan,3,100005,False,12,208,,wall_time_budget,Episode exceeded the frozen wall-time budget and hard cleanup allowance,
+place_fan__04,place_fan,4,100006,False,12,190,,wall_time_budget,Episode exceeded the frozen wall-time budget and hard cleanup allowance,
+place_fan__05,place_fan,5,100007,False,12,186,,wall_time_budget,Episode exceeded the frozen wall-time budget and hard cleanup allowance,
+place_fan__06,place_fan,6,100008,False,30,74,516.9500182479969,decision_budget,,
+place_fan__07,place_fan,7,100009,False,9,59,421.75542198697804,invalid_model_action,Invalid policy action after repair: left_camera: No above-table object in current left_camera visual bbox; re-ground or try another current camera; right_camera: No above-table object in current right_camera visual bbox; re-ground or try another current camera; head_camera: No current above-table contact surface; change view,
+place_fan__08,place_fan,8,100010,False,15,211,,wall_time_budget,Episode exceeded the frozen wall-time budget and hard cleanup allowance,
+place_fan__09,place_fan,9,100011,False,17,213,,wall_time_budget,Episode exceeded the frozen wall-time budget and hard cleanup allowance,
+place_mouse_pad__00,place_mouse_pad,0,100000,True,4,9,96.85387468198314,environment_success,,
+place_mouse_pad__01,place_mouse_pad,1,100001,True,28,55,553.2144162850454,environment_success,,
+place_mouse_pad__02,place_mouse_pad,2,100002,False,30,111,934.6975773819722,decision_budget,,
+place_mouse_pad__03,place_mouse_pad,3,100003,True,2,7,114.82237501099007,environment_success,,
+place_mouse_pad__04,place_mouse_pad,4,100004,True,2,6,81.83280779403867,environment_success,,
+place_mouse_pad__05,place_mouse_pad,5,100005,True,2,7,139.98583149700426,environment_success,,
+place_mouse_pad__06,place_mouse_pad,6,100006,False,30,62,593.7090008369996,decision_budget,,
+place_mouse_pad__07,place_mouse_pad,7,100007,True,2,6,98.71646896400489,environment_success,,
+place_mouse_pad__08,place_mouse_pad,8,100008,False,22,89,706.1271543570329,invalid_model_action,"Invalid policy action after repair: head_camera: Grounding invalid after repair: Your contact point is on the ROBOT, not the requested scene object. The calibrated robot silhouette is now neutral GREY in this same current image. Locate a visible part of the requested object OUTSIDE the grey robot region, or return visible=false if it is fully occluded. Do not guess through the robot.",
+place_mouse_pad__09,place_mouse_pad,9,100009,True,2,6,97.3314546609763,environment_success,,
+place_object_basket__00,place_object_basket,0,100000,False,25,161,,wall_time_budget,Episode exceeded the frozen wall-time budget and hard cleanup allowance,
+place_object_basket__01,place_object_basket,1,100001,False,6,17,225.39531541097676,invalid_model_action,"Invalid policy action after repair: PLACE target names the object already held by this arm. Name the destination instead, such as an empty table patch left of another object or the top of a different block.",
+place_object_basket__02,place_object_basket,2,100003,False,9,54,492.8898834279971,invalid_model_action,"Invalid policy action after repair: right_camera: Grounding invalid after repair: Your contact point is on the ROBOT, not the requested scene object. The calibrated robot silhouette is now neutral GREY in this same current image. Locate a visible part of the requested object OUTSIDE the grey robot region, or return visible=false if it is fully occluded. Do not guess through the robot.; head_camera: Grounding invalid after repair: Your contact point is on the ROBOT, not the requested scene object. The calibrated robot silhouette is now neutral GREY in this same current image. Locate a visible part of the requested object OUTSIDE the grey robot region, or return visible=false if it is fully occluded. Do not guess through the robot.",
+place_object_basket__03,place_object_basket,3,100008,False,27,160,,wall_time_budget,Episode exceeded the frozen wall-time budget and hard cleanup allowance,
+place_object_basket__04,place_object_basket,4,100010,False,24,149,,wall_time_budget,Episode exceeded the frozen wall-time budget and hard cleanup allowance,
+place_object_basket__05,place_object_basket,5,100011,False,4,10,121.35098002600716,invalid_model_action,"Invalid policy action after repair: This arm is empty. Pick/grasp_handle first, or use the occupied arm.",
+place_object_basket__06,place_object_basket,6,100012,False,15,155,,wall_time_budget,Episode exceeded the frozen wall-time budget and hard cleanup allowance,
+place_object_basket__07,place_object_basket,7,100013,False,11,45,414.34194605599623,invalid_model_action,"Invalid policy action after repair: This held-source/destination placement has exhausted reachability twice with NO intervening motion. Changing wording, approach or grasp_part cannot change the existing grasp. Plan a physical prerequisite BEFORE retrying: move a held object, acquire/reposition a destination with the free arm when permitted by the task, or stage and regrasp. Preserve the original goal and arm constraints.",No reachable placement orientation; choose a closer destination or adjust held pose
+place_object_basket__08,place_object_basket,8,100014,False,26,165,,wall_time_budget,Episode exceeded the frozen wall-time budget and hard cleanup allowance,
+place_object_basket__09,place_object_basket,9,100015,False,24,55,616.3934108630056,invalid_model_action,"Invalid policy action after repair: This held-source/destination placement has exhausted reachability twice with NO intervening motion. Changing wording, approach or grasp_part cannot change the existing grasp. Plan a physical prerequisite BEFORE retrying: move a held object, acquire/reposition a destination with the free arm when permitted by the task, or stage and regrasp. Preserve the original goal and arm constraints.",No reachable placement orientation; choose a closer destination or adjust held pose
+place_object_scale__00,place_object_scale,0,100000,True,2,6,99.08429431699915,environment_success,,
+place_object_scale__01,place_object_scale,1,100002,False,30,81,756.0318463209551,decision_budget,,Empty grasp: no bilateral object contact
+place_object_scale__02,place_object_scale,2,100003,False,11,50,363.14880261500366,invalid_model_action,"Invalid policy action after repair: left_camera: Grounding invalid after repair: Your contact point is on the ROBOT, not the requested scene object. The calibrated robot silhouette is now neutral GREY in this same current image. Locate a visible part of the requested object OUTSIDE the grey robot region, or return visible=false if it is fully occluded. Do not guess through the robot.; head_camera: Grounding invalid after repair: Your contact point is on the ROBOT, not the requested scene object. The calibrated robot silhouette is now neutral GREY in this same current image. Locate a visible part of the requested object OUTSIDE the grey robot region, or return visible=false if it is fully occluded. Do not guess through the robot.",
+place_object_scale__03,place_object_scale,3,100004,True,2,6,91.37044526002137,environment_success,,
+place_object_scale__04,place_object_scale,4,100006,False,18,105,708.150801545009,invalid_model_action,Invalid policy action after repair: right_camera: No above-table object in current right_camera visual bbox; re-ground or try another current camera; head_camera: Grounding invalid after repair: Model generation ended before completing JSON; return a shorter valid response.,
+place_object_scale__05,place_object_scale,5,100007,False,21,80,567.3845390200149,invalid_model_action,Invalid policy action after repair: right_camera: Grounding invalid after repair: Model generation ended before completing JSON; return a shorter valid response.; head_camera: Grounding invalid after repair: Model generation ended before completing JSON; return a shorter valid response.,Empty grasp: no bilateral object contact
+place_object_scale__06,place_object_scale,6,100009,False,30,73,568.3541339440271,decision_budget,,No reachable placement orientation; choose a closer destination or adjust held pose
+place_object_scale__07,place_object_scale,7,100010,True,2,6,93.41839457204333,environment_success,,
+place_object_scale__08,place_object_scale,8,100011,True,2,6,74.61599789798493,environment_success,,
+place_object_scale__09,place_object_scale,9,100012,True,15,29,264.51838059397414,environment_success,,
+place_object_stand__00,place_object_stand,0,100000,True,2,6,98.88122190703871,environment_success,,
+place_object_stand__01,place_object_stand,1,100001,False,9,82,423.4789732720237,invalid_model_action,"Invalid policy action after repair: right_camera: No above-table object in current right_camera visual bbox; re-ground or try another current camera; left_camera: No above-table object in current left_camera visual bbox; re-ground or try another current camera; head_camera: Grounding invalid after repair: Reacquisition identity different: remembered object is The object is a blue, elongated tool with a black rectangular grip area and a metallic tip, resembling a screwdriver or similar handheld device.; current proposed object is The object is a blue, curved tool with a black section and a metallic component, appearing to be a different type of handheld device or part.. Re-localize the SAME remembered target in the current image; do not grab this different/uncertain candidate. Return visible=false if the remembered object is absent from this crop.",
+place_object_stand__02,place_object_stand,2,100002,True,2,6,101.33413808600744,environment_success,,
+place_object_stand__03,place_object_stand,3,100004,True,2,6,69.85167779400945,environment_success,,
+place_object_stand__04,place_object_stand,4,100005,True,2,6,71.26619785901858,environment_success,,
+place_object_stand__05,place_object_stand,5,100006,True,8,19,161.99574251001468,environment_success,,
+place_object_stand__06,place_object_stand,6,100007,True,2,6,92.05898804398021,environment_success,,
+place_object_stand__07,place_object_stand,7,100008,True,2,6,86.97297188901575,environment_success,,
+place_object_stand__08,place_object_stand,8,100009,True,2,6,64.46800067898585,environment_success,,
+place_object_stand__09,place_object_stand,9,100010,True,2,6,79.06603913300205,environment_success,,
+place_phone_stand__00,place_phone_stand,0,100000,False,30,72,676.0842341210227,decision_budget,,No reachable placement orientation; choose a closer destination or adjust held pose
+place_phone_stand__01,place_phone_stand,1,100001,False,30,63,639.3006578729837,decision_budget,,Empty grasp: no bilateral object contact
+place_phone_stand__02,place_phone_stand,2,100002,False,30,65,664.996757476998,decision_budget,,No reachable placement orientation; choose a closer destination or adjust held pose
+place_phone_stand__03,place_phone_stand,3,100005,True,5,12,139.95847533800406,environment_success,,
+place_phone_stand__04,place_phone_stand,4,100006,False,26,65,604.5600875369855,invalid_model_action,"Invalid policy action after repair: left_camera: No above-table object in current left_camera visual bbox; re-ground or try another current camera; head_camera: Grounding invalid after repair: Your contact point is on the ROBOT, not the requested scene object. The calibrated robot silhouette is now neutral GREY in this same current image. Locate a visible part of the requested object OUTSIDE the grey robot region, or return visible=false if it is fully occluded. Do not guess through the robot.",
+place_phone_stand__05,place_phone_stand,5,100007,True,14,35,345.8659386850195,environment_success,,
+place_phone_stand__06,place_phone_stand,6,100008,False,30,141,1136.0298784589977,decision_budget,,
+place_phone_stand__07,place_phone_stand,7,100010,True,2,6,85.81243884097785,environment_success,,
+place_phone_stand__08,place_phone_stand,8,100012,False,30,67,626.0686162830098,decision_budget,,"move_refine: planning/tracking failure {'left': 'Success', 'right': 'Success'}, error=0.093 m"
+place_phone_stand__09,place_phone_stand,9,100014,True,2,6,87.18691825901624,environment_success,,
+place_shoe__00,place_shoe,0,100000,True,2,7,110.3483770309831,environment_success,,
+place_shoe__01,place_shoe,1,100001,False,22,87,691.5520152989775,invalid_model_action,"Invalid policy action after repair: head_camera: Grounding invalid after repair: Your contact point is on the ROBOT, not the requested scene object. The calibrated robot silhouette is now neutral GREY in this same current image. Locate a visible part of the requested object OUTSIDE the grey robot region, or return visible=false if it is fully occluded. Do not guess through the robot.",No reachable empty-arm observation pose
+place_shoe__02,place_shoe,2,100002,False,30,82,759.4212195629952,decision_budget,,
+place_shoe__03,place_shoe,3,100003,False,30,81,764.6621168429847,decision_budget,,
+place_shoe__04,place_shoe,4,100004,True,2,7,102.24321983702248,environment_success,,
+place_shoe__05,place_shoe,5,100005,True,23,66,626.2706552679883,environment_success,,
+place_shoe__06,place_shoe,6,100006,True,2,7,104.92282820004039,environment_success,,
+place_shoe__07,place_shoe,7,100007,False,30,83,780.7946780140046,decision_budget,,
+place_shoe__08,place_shoe,8,100008,False,24,92,674.0443908919697,invalid_model_action,"Invalid policy action after repair: left_camera: No above-table object in current left_camera visual bbox; re-ground or try another current camera; head_camera: Grounding invalid after repair: Your contact point is on the ROBOT, not the requested scene object. The calibrated robot silhouette is now neutral GREY in this same current image. Locate a visible part of the requested object OUTSIDE the grey robot region, or return visible=false if it is fully occluded. Do not guess through the robot.",
+place_shoe__09,place_shoe,9,100009,True,2,7,100.06850495899562,environment_success,,
+press_stapler__00,press_stapler,0,100000,True,1,2,62.13035462296102,environment_success,,
+press_stapler__01,press_stapler,1,100002,True,1,2,58.33304430596763,environment_success,,
+press_stapler__02,press_stapler,2,100003,True,1,2,58.29278025397798,environment_success,,
+press_stapler__03,press_stapler,3,100004,True,1,5,81.03942789701978,environment_success,,
+press_stapler__04,press_stapler,4,100005,True,2,11,114.67941446101759,environment_success,,
+press_stapler__05,press_stapler,5,100006,True,1,2,45.40762700501364,environment_success,,
+press_stapler__06,press_stapler,6,100007,True,1,3,48.457049530989025,environment_success,,
+press_stapler__07,press_stapler,7,100009,True,1,8,75.3809299620334,environment_success,,
+press_stapler__08,press_stapler,8,100010,True,1,2,37.802277597016655,environment_success,,
+press_stapler__09,press_stapler,9,100011,True,2,7,80.26756656198995,environment_success,,
+put_bottles_dustbin__00,put_bottles_dustbin,0,100000,False,16,183,,wall_time_budget,Episode exceeded the frozen wall-time budget and hard cleanup allowance,
+put_bottles_dustbin__01,put_bottles_dustbin,1,100002,False,4,39,305.16042352397926,invalid_model_action,"Invalid policy action after repair: head_camera: Grounding invalid after repair: Your contact point is on the ROBOT, not the requested scene object. The calibrated robot silhouette is now neutral GREY in this same current image. Locate a visible part of the requested object OUTSIDE the grey robot region, or return visible=false if it is fully occluded. Do not guess through the robot.",Inspection region is outside the calibrated local workspace
+put_bottles_dustbin__02,put_bottles_dustbin,2,100004,False,22,158,,wall_time_budget,Episode exceeded the frozen wall-time budget and hard cleanup allowance,
+put_bottles_dustbin__03,put_bottles_dustbin,3,100005,True,3,11,120.55252395302523,environment_success,,
+put_bottles_dustbin__04,put_bottles_dustbin,4,100006,False,25,166,,wall_time_budget,Episode exceeded the frozen wall-time budget and hard cleanup allowance,Selected target outside table workspace
+put_bottles_dustbin__05,put_bottles_dustbin,5,100007,False,7,180,,wall_time_budget,Episode exceeded the frozen wall-time budget and hard cleanup allowance,
+put_bottles_dustbin__06,put_bottles_dustbin,6,100008,False,16,131,,wall_time_budget,Episode exceeded the frozen wall-time budget and hard cleanup allowance,
+put_bottles_dustbin__07,put_bottles_dustbin,7,100009,False,18,165,,wall_time_budget,Episode exceeded the frozen wall-time budget and hard cleanup allowance,No depth at destination
+put_bottles_dustbin__08,put_bottles_dustbin,8,100010,False,13,147,,wall_time_budget,Episode exceeded the frozen wall-time budget and hard cleanup allowance,
+put_bottles_dustbin__09,put_bottles_dustbin,9,100013,False,13,144,,wall_time_budget,Episode exceeded the frozen wall-time budget and hard cleanup allowance,
+put_object_cabinet__00,put_object_cabinet,0,100008,False,30,37,344.7243215870112,decision_budget,,
+put_object_cabinet__01,put_object_cabinet,1,100021,False,28,104,927.7473685730365,invalid_model_action,"Invalid policy action after repair: This held-source/destination placement has exhausted reachability twice with NO intervening motion. Changing wording, approach or grasp_part cannot change the existing grasp. Plan a physical prerequisite BEFORE retrying: move a held object, acquire/reposition a destination with the free arm when permitted by the task, or stage and regrasp. Preserve the original goal and arm constraints.",No reachable placement orientation; choose a closer destination or adjust held pose
+put_object_cabinet__02,put_object_cabinet,2,100026,False,30,62,699.8683764290181,decision_budget,,"clearance_travel_refine: planning/tracking failure {'left': 'Success', 'right': 'Success'}, error=0.102 m"
+put_object_cabinet__03,put_object_cabinet,3,100027,False,30,71,658.9849999810103,decision_budget,,No reachable placement orientation; choose a closer destination or adjust held pose
+put_object_cabinet__04,put_object_cabinet,4,100030,False,30,107,781.7201963390107,decision_budget,,PUSH distance must be 1.5–45 cm
+put_object_cabinet__05,put_object_cabinet,5,100031,False,15,52,586.7087535739993,invalid_model_action,"Invalid policy action after repair: This arm holds an object. Use place, move, rotate, arc, present, shake or open.",No reachable placement orientation; choose a closer destination or adjust held pose
+put_object_cabinet__06,put_object_cabinet,6,100045,False,30,69,780.464334646007,decision_budget,,No reachable placement orientation; choose a closer destination or adjust held pose
+put_object_cabinet__07,put_object_cabinet,7,100048,False,25,127,1160.2500195429893,invalid_model_action,"Invalid policy action after repair: head_camera: Grounding invalid after repair: Your contact point is on the ROBOT, not the requested scene object. The calibrated robot silhouette is now neutral GREY in this same current image. Locate a visible part of the requested object OUTSIDE the grey robot region, or return visible=false if it is fully occluded. Do not guess through the robot.","clearance_travel_refine: planning/tracking failure {'left': 'Success', 'right': 'Success'}, error=0.095 m"
+put_object_cabinet__08,put_object_cabinet,8,100053,False,22,123,,wall_time_budget,Episode exceeded the frozen wall-time budget and hard cleanup allowance,
+put_object_cabinet__09,put_object_cabinet,9,100054,False,23,112,,wall_time_budget,Episode exceeded the frozen wall-time budget and hard cleanup allowance,
+rotate_qrcode__00,rotate_qrcode,0,100000,False,30,57,646.4036083740066,decision_budget,,
+rotate_qrcode__01,rotate_qrcode,1,100001,False,30,45,441.1647362370277,decision_budget,,"rotate: planning/tracking failure {'left': 'Success', 'right': 'Fail'}, error=0.120 m"
+rotate_qrcode__02,rotate_qrcode,2,100002,False,15,54,626.4798345449963,invalid_model_action,"Invalid policy action after repair: left_camera: No above-table object in current left_camera visual bbox; re-ground or try another current camera; head_camera: Grounding invalid after repair: Your contact point is on the ROBOT, not the requested scene object. The calibrated robot silhouette is now neutral GREY in this same current image. Locate a visible part of the requested object OUTSIDE the grey robot region, or return visible=false if it is fully occluded. Do not guess through the robot.",
+rotate_qrcode__03,rotate_qrcode,3,100003,False,12,122,,wall_time_budget,Episode exceeded the frozen wall-time budget and hard cleanup allowance,
+rotate_qrcode__04,rotate_qrcode,4,100004,False,30,124,1165.6198725659633,decision_budget,,No observed clear table patch fits the held footprint near the requested point
+rotate_qrcode__05,rotate_qrcode,5,100005,False,19,23,363.90367536002304,invalid_model_action,Invalid policy action after repair: Model generation ended before completing JSON; return a shorter valid response.,
+rotate_qrcode__06,rotate_qrcode,6,100006,False,16,139,,wall_time_budget,Episode exceeded the frozen wall-time budget and hard cleanup allowance,
+rotate_qrcode__07,rotate_qrcode,7,100008,False,30,110,999.6495469050133,decision_budget,,Retained working part is not currently visible; change view and reobserve
+rotate_qrcode__08,rotate_qrcode,8,100009,False,7,9,149.70952009101165,invalid_model_action,Invalid policy action after repair: Model generation ended before completing JSON; return a shorter valid response.,
+rotate_qrcode__09,rotate_qrcode,9,100010,False,30,136,1143.1462146830163,decision_budget,,
+scan_object__00,scan_object,0,100001,False,30,37,306.14985765103484,decision_budget,,
+scan_object__01,scan_object,1,100002,False,30,49,491.9728079580236,decision_budget,,
+scan_object__02,scan_object,2,100006,False,2,39,376.707404027984,invalid_model_action,"Invalid policy action after repair: right_camera: No above-table object in current right_camera visual bbox; re-ground or try another current camera; head_camera: Grounding invalid after repair: Your contact point is on the ROBOT, not the requested scene object. The calibrated robot silhouette is now neutral GREY in this same current image. Locate a visible part of the requested object OUTSIDE the grey robot region, or return visible=false if it is fully occluded. Do not guess through the robot.",
+scan_object__03,scan_object,3,100011,False,12,155,,wall_time_budget,Episode exceeded the frozen wall-time budget and hard cleanup allowance,
+scan_object__04,scan_object,4,100014,False,30,126,1069.379246800032,decision_budget,,
+scan_object__05,scan_object,5,100017,False,30,45,408.43175784498453,decision_budget,,
+scan_object__06,scan_object,6,100019,False,8,70,622.1644051990006,invalid_model_action,"Invalid policy action after repair: left_camera: Grounding invalid after repair: Your contact point is on the ROBOT, not the requested scene object. The calibrated robot silhouette is now neutral GREY in this same current image. Locate a visible part of the requested object OUTSIDE the grey robot region, or return visible=false if it is fully occluded. Do not guess through the robot.; head_camera: Grounding invalid after repair: Your contact point is on the ROBOT, not the requested scene object. The calibrated robot silhouette is now neutral GREY in this same current image. Locate a visible part of the requested object OUTSIDE the grey robot region, or return visible=false if it is fully occluded. Do not guess through the robot.","transfer_refine: planning/tracking failure {'left': 'Success', 'right': 'Success'}, error=0.234 m"
+scan_object__07,scan_object,7,100029,False,13,69,524.4205945389695,invalid_model_action,"Invalid policy action after repair: This arm is empty. Pick/grasp_handle first, or use the occupied arm.",
+scan_object__08,scan_object,8,100037,True,17,138,908.6757594569935,environment_success,,
+scan_object__09,scan_object,9,100038,False,28,146,,wall_time_budget,Episode exceeded the frozen wall-time budget and hard cleanup allowance,"lower_refine: planning/tracking failure {'left': 'Success', 'right': 'Success'}, error=0.043 m"
+shake_bottle__00,shake_bottle,0,100000,True,1,2,73.85911487601697,environment_success,,
+shake_bottle__01,shake_bottle,1,100001,True,1,2,51.00593312596902,environment_success,,
+shake_bottle__02,shake_bottle,2,100003,True,1,2,57.86243717500474,environment_success,,
+shake_bottle__03,shake_bottle,3,100004,True,1,2,61.516933929000515,environment_success,,
+shake_bottle__04,shake_bottle,4,100005,True,1,2,54.080776104005054,environment_success,,
+shake_bottle__05,shake_bottle,5,100006,True,1,3,63.9077465350274,environment_success,,
+shake_bottle__06,shake_bottle,6,100009,True,1,3,57.94607846799772,environment_success,,
+shake_bottle__07,shake_bottle,7,100013,True,1,2,55.01928993104957,environment_success,,
+shake_bottle__08,shake_bottle,8,100015,True,7,10,169.91062992304796,environment_success,,
+shake_bottle__09,shake_bottle,9,100018,True,1,2,46.9332396480022,environment_success,,
+shake_bottle_horizontally__00,shake_bottle_horizontally,0,100000,True,1,2,58.29761604196392,environment_success,,
+shake_bottle_horizontally__01,shake_bottle_horizontally,1,100001,True,1,3,72.93289892200846,environment_success,,
+shake_bottle_horizontally__02,shake_bottle_horizontally,2,100003,True,1,3,84.67576169001404,environment_success,,
+shake_bottle_horizontally__03,shake_bottle_horizontally,3,100004,True,1,3,80.99088906904217,environment_success,,
+shake_bottle_horizontally__04,shake_bottle_horizontally,4,100005,True,1,3,68.72640425199643,environment_success,,
+shake_bottle_horizontally__05,shake_bottle_horizontally,5,100006,True,1,2,63.78519928100286,environment_success,,
+shake_bottle_horizontally__06,shake_bottle_horizontally,6,100009,True,1,3,65.49218198703602,environment_success,,
+shake_bottle_horizontally__07,shake_bottle_horizontally,7,100013,True,1,3,65.35694086703006,environment_success,,
+shake_bottle_horizontally__08,shake_bottle_horizontally,8,100015,True,1,3,75.49596195900813,environment_success,,
+shake_bottle_horizontally__09,shake_bottle_horizontally,9,100018,True,1,3,55.6901060960372,environment_success,,
+stack_blocks_three__00,stack_blocks_three,0,100000,True,8,10,173.7433167360141,environment_success,,
+stack_blocks_three__01,stack_blocks_three,1,100001,False,21,113,,wall_time_budget,Episode exceeded the frozen wall-time budget and hard cleanup allowance,No observed clear table patch fits the held footprint near the requested point
+stack_blocks_three__02,stack_blocks_three,2,100002,True,8,13,211.67019999795593,environment_success,,
+stack_blocks_three__03,stack_blocks_three,3,100003,True,8,10,169.86310364701785,environment_success,,
+stack_blocks_three__04,stack_blocks_three,4,100004,False,16,50,435.65299651701935,invalid_model_action,"Invalid policy action after repair: right_camera: Target not visible in current camera image; move the occluding empty arm or choose a visible target.; head_camera: Grounding invalid after repair: Your contact point is on the ROBOT, not the requested scene object. The calibrated robot silhouette is now neutral GREY in this same current image. Locate a visible part of the requested object OUTSIDE the grey robot region, or return visible=false if it is fully occluded. Do not guess through the robot.",
+stack_blocks_three__05,stack_blocks_three,5,100005,True,21,102,1087.8529314089683,environment_success,,
+stack_blocks_three__06,stack_blocks_three,6,100006,True,8,10,184.0794855300337,environment_success,,
+stack_blocks_three__07,stack_blocks_three,7,100008,False,9,71,694.2913150099921,invalid_model_action,"Invalid policy action after repair: This held-source/destination placement has exhausted reachability twice with NO intervening motion. Changing wording, approach or grasp_part cannot change the existing grasp. Plan a physical prerequisite BEFORE retrying: move a held object, acquire/reposition a destination with the free arm when permitted by the task, or stage and regrasp. Preserve the original goal and arm constraints.",No reachable placement orientation; choose a closer destination or adjust held pose
+stack_blocks_three__08,stack_blocks_three,8,100009,True,8,15,235.79157291498268,environment_success,,
+stack_blocks_three__09,stack_blocks_three,9,100010,True,9,11,183.8607710460201,environment_success,,
+stack_blocks_two__00,stack_blocks_two,0,100000,True,8,9,197.69947037601378,environment_success,,
+stack_blocks_two__01,stack_blocks_two,1,100001,False,19,191,,wall_time_budget,Episode exceeded the frozen wall-time budget and hard cleanup allowance,No observed clear table patch fits the held footprint near the requested point
+stack_blocks_two__02,stack_blocks_two,2,100002,True,5,7,133.85585879301652,environment_success,,
+stack_blocks_two__03,stack_blocks_two,3,100003,True,5,7,100.68392769899219,environment_success,,
+stack_blocks_two__04,stack_blocks_two,4,100004,True,5,7,129.49871824099682,environment_success,,
+stack_blocks_two__05,stack_blocks_two,5,100005,True,5,7,101.36494250100804,environment_success,,
+stack_blocks_two__06,stack_blocks_two,6,100006,True,5,9,133.321687698015,environment_success,,
+stack_blocks_two__07,stack_blocks_two,7,100007,True,5,10,119.50763107900275,environment_success,,
+stack_blocks_two__08,stack_blocks_two,8,100008,True,5,7,106.46941030700691,environment_success,,
+stack_blocks_two__09,stack_blocks_two,9,100009,True,8,11,165.5027875759988,environment_success,,
+stack_bowls_three__00,stack_bowls_three,0,100001,False,11,30,268.0462003030116,invalid_model_action,"Invalid policy action after repair: This arm is empty. Pick/grasp_handle first, or use the occupied arm.",
+stack_bowls_three__01,stack_bowls_three,1,100002,False,7,31,413.17435137199936,invalid_model_action,"Invalid policy action after repair: This held-source/destination placement has exhausted reachability twice with NO intervening motion. Changing wording, approach or grasp_part cannot change the existing grasp. Plan a physical prerequisite BEFORE retrying: move a held object, acquire/reposition a destination with the free arm when permitted by the task, or stage and regrasp. Preserve the original goal and arm constraints.",No reachable placement orientation; choose a closer destination or adjust held pose
+stack_bowls_three__02,stack_bowls_three,2,100006,False,15,47,481.5383622860536,invalid_model_action,"Invalid policy action after repair: head_camera: Grounding invalid after repair: Your contact point is on the ROBOT, not the requested scene object. The calibrated robot silhouette is now neutral GREY in this same current image. Locate a visible part of the requested object OUTSIDE the grey robot region, or return visible=false if it is fully occluded. Do not guess through the robot.",No reachable empty-arm observation pose
+stack_bowls_three__03,stack_bowls_three,3,100008,False,10,60,500.4407147089951,invalid_model_action,"Invalid policy action after repair: This held-source/destination placement has exhausted reachability twice with NO intervening motion. Changing wording, approach or grasp_part cannot change the existing grasp. Plan a physical prerequisite BEFORE retrying: move a held object, acquire/reposition a destination with the free arm when permitted by the task, or stage and regrasp. Preserve the original goal and arm constraints.",No reachable placement orientation; choose a closer destination or adjust held pose
+stack_bowls_three__04,stack_bowls_three,4,100009,False,16,129,,wall_time_budget,Episode exceeded the frozen wall-time budget and hard cleanup allowance,
+stack_bowls_three__05,stack_bowls_three,5,100011,False,1,11,157.19420010299655,invalid_model_action,"Invalid policy action after repair: PLACE target names the object already held by this arm. Name the destination instead, such as an empty table patch left of another object or the top of a different block.",
+stack_bowls_three__06,stack_bowls_three,6,100015,False,4,39,441.0343368600006,invalid_model_action,"Invalid policy action after repair: This held-source/destination placement has exhausted reachability twice with NO intervening motion. Changing wording, approach or grasp_part cannot change the existing grasp. Plan a physical prerequisite BEFORE retrying: move a held object, acquire/reposition a destination with the free arm when permitted by the task, or stage and regrasp. Preserve the original goal and arm constraints.",No reachable placement orientation; choose a closer destination or adjust held pose
+stack_bowls_three__07,stack_bowls_three,7,100016,False,30,51,670.2984942040057,decision_budget,,
+stack_bowls_three__08,stack_bowls_three,8,100017,False,4,14,195.22783428704133,invalid_model_action,"Invalid policy action after repair: PLACE target names the object already held by this arm. Name the destination instead, such as an empty table patch left of another object or the top of a different block.",
+stack_bowls_three__09,stack_bowls_three,9,100020,False,14,79,776.5420863759937,invalid_model_action,"Invalid policy action after repair: head_camera: Grounding invalid after repair: Your contact point is on the ROBOT, not the requested scene object. The calibrated robot silhouette is now neutral GREY in this same current image. Locate a visible part of the requested object OUTSIDE the grey robot region, or return visible=false if it is fully occluded. Do not guess through the robot.",
+stack_bowls_two__00,stack_bowls_two,0,100000,False,3,61,579.205031118996,invalid_model_action,"Invalid policy action after repair: head_camera: Grounding invalid after repair: Your contact point is on the ROBOT, not the requested scene object. The calibrated robot silhouette is now neutral GREY in this same current image. Locate a visible part of the requested object OUTSIDE the grey robot region, or return visible=false if it is fully occluded. Do not guess through the robot.",
+stack_bowls_two__01,stack_bowls_two,1,100001,False,22,89,694.7752709579654,invalid_model_action,"Invalid policy action after repair: left_camera: Grounding invalid after repair: Your contact point is on the ROBOT, not the requested scene object. The calibrated robot silhouette is now neutral GREY in this same current image. Locate a visible part of the requested object OUTSIDE the grey robot region, or return visible=false if it is fully occluded. Do not guess through the robot.; right_camera: No above-table object in current right_camera visual bbox; re-ground or try another current camera; head_camera: Grounding invalid after repair: Your contact point is on the ROBOT, not the requested scene object. The calibrated robot silhouette is now neutral GREY in this same current image. Locate a visible part of the requested object OUTSIDE the grey robot region, or return visible=false if it is fully occluded. Do not guess through the robot.",Empty grasp: no bilateral object contact
+stack_bowls_two__02,stack_bowls_two,2,100002,False,20,164,1137.1641981499852,invalid_model_action,"Invalid policy action after repair: head_camera: Grounding invalid after repair: Your contact point is on the ROBOT, not the requested scene object. The calibrated robot silhouette is now neutral GREY in this same current image. Locate a visible part of the requested object OUTSIDE the grey robot region, or return visible=false if it is fully occluded. Do not guess through the robot.",No reachable grasp orientation; change arm or contact location
+stack_bowls_two__03,stack_bowls_two,3,100003,False,16,33,341.8023798500071,invalid_model_action,"Invalid policy action after repair: This arm is empty. Pick/grasp_handle first, or use the occupied arm.",
+stack_bowls_two__04,stack_bowls_two,4,100004,False,30,87,602.3187477900065,decision_budget,,No observed clear table patch fits the held footprint near the requested point
+stack_bowls_two__05,stack_bowls_two,5,100006,False,30,69,484.1594026720268,decision_budget,,No depth at destination
+stack_bowls_two__06,stack_bowls_two,6,100008,True,13,17,214.03436163498554,environment_success,,
+stack_bowls_two__07,stack_bowls_two,7,100009,True,6,8,128.2043363180128,environment_success,,
+stack_bowls_two__08,stack_bowls_two,8,100011,True,2,6,85.14947171497624,environment_success,,
+stack_bowls_two__09,stack_bowls_two,9,100014,False,30,80,562.4730656569591,decision_budget,,No depth at destination
+stamp_seal__00,stamp_seal,0,100000,True,2,6,76.84942181297811,environment_success,,
+stamp_seal__01,stamp_seal,1,100001,False,30,66,507.4218241130002,decision_budget,,
+stamp_seal__02,stamp_seal,2,100004,True,6,20,209.56695111695444,environment_success,,
+stamp_seal__03,stamp_seal,3,100006,True,2,6,71.12944802799029,environment_success,,
+stamp_seal__04,stamp_seal,4,100007,False,30,99,841.047033467039,decision_budget,,
+stamp_seal__05,stamp_seal,5,100008,False,30,91,639.1751579479896,decision_budget,,"press_refine: planning/tracking failure {'left': 'Success', 'right': 'Success'}, error=0.051 m"
+stamp_seal__06,stamp_seal,6,100009,True,2,6,83.80262442003004,environment_success,,
+stamp_seal__07,stamp_seal,7,100010,True,8,17,185.8968478589668,environment_success,,
+stamp_seal__08,stamp_seal,8,100011,True,2,6,89.25970297399908,environment_success,,
+stamp_seal__09,stamp_seal,9,100013,False,30,71,584.4649654709501,decision_budget,,"move_refine: planning/tracking failure {'left': 'Success', 'right': 'Success'}, error=0.050 m"
+turn_switch__00,turn_switch,0,100000,True,6,11,167.5974814920337,environment_success,,
+turn_switch__01,turn_switch,1,100001,True,1,3,86.54271327599417,environment_success,,
+turn_switch__02,turn_switch,2,100002,True,4,15,162.06091284297872,environment_success,,
+turn_switch__03,turn_switch,3,100004,True,20,59,525.2219099719659,environment_success,,
+turn_switch__04,turn_switch,4,100005,True,1,4,120.42618383199442,environment_success,,
+turn_switch__05,turn_switch,5,100006,False,30,44,460.7314396839938,decision_budget,,"press_refine: planning/tracking failure {'left': 'Success', 'right': 'Success'}, error=0.054 m"
+turn_switch__06,turn_switch,6,100007,True,1,3,95.1401430190308,environment_success,,
+turn_switch__07,turn_switch,7,100008,False,30,73,508.7540744879516,decision_budget,,"press_refine: planning/tracking failure {'left': 'Success', 'right': 'Success'}, error=0.036 m"
+turn_switch__08,turn_switch,8,100009,True,9,66,399.6360753719928,environment_success,,
+turn_switch__09,turn_switch,9,100010,True,3,4,101.57804407202639,environment_success,,
